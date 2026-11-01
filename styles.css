@@ -1817,11 +1817,11 @@ body {
   line-height: 1.55;
 }
 
-/* Lima Kad Subjek */
+/* Enam Kad Subjek */
 .subject-cards-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.15rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
   text-align: left;
   align-items: stretch;
 }
@@ -1898,6 +1898,16 @@ body {
   box-shadow: 0 28px 65px rgba(0, 0, 0, 0.65), 0 0 35px rgba(56, 189, 248, 0.45);
 }
 
+.card-biologi {
+  background: linear-gradient(160deg, rgba(8, 54, 38, 0.92) 0%, rgba(4, 28, 20, 0.96) 100%);
+  border-color: rgba(16, 185, 129, 0.55);
+}
+
+.card-biologi:hover {
+  border-color: #10b981;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.65), 0 0 35px rgba(16, 185, 129, 0.45);
+}
+
 .shc-badge {
   display: inline-flex;
   align-items: center;
@@ -1950,6 +1960,12 @@ body {
   color: #bae6fd;
 }
 
+.badge-biology {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: #10b981;
+  color: #a7f3d0;
+}
+
 .shc-avatar-wrap {
   position: relative;
   width: 100%;
@@ -1980,6 +1996,10 @@ body {
 
 .card-fizik .shc-avatar-wrap {
   background: radial-gradient(circle at 50% 30%, #0c4a6e, #08203d);
+}
+
+.card-biologi .shc-avatar-wrap {
+  background: radial-gradient(circle at 50% 30%, #064e3b, #022c22);
 }
 
 .shc-avatar-img {
@@ -2155,6 +2175,17 @@ body {
   box-shadow: 0 8px 28px rgba(56, 189, 248, 0.7);
 }
 
+.btn-biology-enter {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+}
+
+.btn-biology-enter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(16, 185, 129, 0.7);
+}
+
 /* THEME ACCENTS FOR SAINS */
 body.theme-sains {
   background: radial-gradient(circle at 50% 18%, #124d3a 0%, #0a2928 45%, #05141c 100%);
@@ -2223,6 +2254,23 @@ body.theme-fizik .character-frame {
   border-color: rgba(56, 189, 248, 0.58);
 }
 
+/* THEME ACCENTS FOR BIOLOGI */
+body.theme-biologi {
+  background: radial-gradient(circle at 50% 18%, #064e3b 0%, #032d22 45%, #011a13 100%);
+}
+
+body.theme-biologi .hero-stage {
+  background:
+    radial-gradient(circle at 50% 25%, rgba(16, 185, 129, 0.25) 0%, transparent 55%),
+    linear-gradient(180deg, rgba(6, 78, 59, 0.9) 0%, rgba(4, 45, 34, 0.96) 76%, #1a3a2a 100%);
+  border-color: rgba(16, 185, 129, 0.45);
+}
+
+body.theme-biologi .character-frame {
+  background: radial-gradient(circle at 50% 40%, #059669, #064e3b);
+  border-color: rgba(16, 185, 129, 0.58);
+}
+
 /* MATH STEP-BY-STEP HIGHLIGHTING & EQUATIONS */
 .verbatim-list li {
   white-space: pre-wrap;
@@ -2243,7 +2291,7 @@ body.theme-fizik .character-frame {
   left: 0.45rem !important;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1550px) {
   .subject-cards-grid {
     grid-template-columns: repeat(3, 1fr);
   }

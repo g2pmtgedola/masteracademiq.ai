@@ -1,9 +1,9 @@
 /* ==========================================================================
    APP.JS — ENJIN PEMBELAJARAN INTERAKTIF MASTERACADEMIQ.AI TINGKATAN 4
-   Menyokong 5 Subjek: SEJARAH, SAINS, MATEMATIK, KIMIA & FIZIK TINGKATAN 4 KSSM
+   Menyokong 6 Subjek: SEJARAH, SAINS, MATEMATIK, KIMIA, FIZIK & BIOLOGI TINGKATAN 4 KSSM
    ========================================================================== */
 
-let currentSubject = "sejarah"; // 'sejarah' | 'sains' | 'matematik' | 'kimia' | 'fizik'
+let currentSubject = "sejarah"; // 'sejarah' | 'sains' | 'matematik' | 'kimia' | 'fizik' | 'biologi'
 let currentBabId = "bab1";
 let currentMainView = "nota";
 let noteDisplayMode = "both"; // 'both' | 'verbatim'
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Semak jika pengguna telah memilih subjek sebelum ini, jika belum buka portal
   const savedSubject = localStorage.getItem("academiq_subject");
-  if (savedSubject && ["sejarah", "sains", "matematik", "kimia", "fizik"].includes(savedSubject)) {
+  if (savedSubject && ["sejarah", "sains", "matematik", "kimia", "fizik", "biologi"].includes(savedSubject)) {
     setSubject(savedSubject, false);
     closeSubjectPortal();
   } else {
@@ -72,6 +72,9 @@ function setSubject(subject, triggerAnimation = true) {
   } else if (currentSubject === "fizik") {
     currentBabId = "fizik-bab1";
     document.body.className = "theme-fizik";
+  } else if (currentSubject === "biologi") {
+    currentBabId = "bio-bab1";
+    document.body.className = "theme-biologi";
   }
 
   // Update Top Navigation Bar Indicators
@@ -93,6 +96,9 @@ function setSubject(subject, triggerAnimation = true) {
   } else if (currentSubject === "fizik") {
     if (switchIcon) switchIcon.textContent = "🔭";
     if (switchLabel) switchLabel.textContent = "FIZIK TINGKATAN 4";
+  } else if (currentSubject === "biologi") {
+    if (switchIcon) switchIcon.textContent = "🧬";
+    if (switchLabel) switchLabel.textContent = "BIOLOGI TINGKATAN 4";
   }
 
   // Update Hero Section
@@ -296,6 +302,41 @@ function updateHeroSectionUI() {
         <div class="book-spine book-purple" onclick="selectChapterAndScroll('fizik-bab6')">🔍 Bab 6: Cahaya & Optik</div>
       `;
     }
+  } else if (currentSubject === "biologi") {
+    // Current Subject: BIOLOGI
+    if (heroSubjectSpan) heroSubjectSpan.textContent = "Biology";
+    if (heroSubtitle) heroSubtitle.textContent = "Explore Cells, Physiology & Genetics • Kuasai Semua 15 Bab Biologi Tingkatan 4 KSSM";
+    if (heroCharImg) {
+      heroCharImg.src = "assets/hero-biology-tutor.png";
+      heroCharImg.alt = "Biologi 3D Tutor";
+    }
+    if (fallbackEmoji) fallbackEmoji.textContent = "👩‍🔬🧬🌿";
+    if (fallbackCaption) fallbackCaption.textContent = "Mod Biologi Tingkatan 4 Aktif";
+    if (ribbonEyebrow) ribbonEyebrow.textContent = "SILIBUS LENGKAP BIOLOGI TINGKATAN 4 KSSM";
+    if (ribbonTitle) ribbonTitle.textContent = "Pilih Bab Biologi Pembelajaran Anda";
+    if (guideStep1P) guideStep1P.textContent = "Pilih daripada 15 Bab Biologi Tingkatan 4 merangkumi semua subtopik & fisiologi";
+    if (viewNotaDesc) viewNotaDesc.innerHTML = "Setiap nota di bawah merangkumi konsep biologi sel, fisiologi manusia dan haiwan serta eksperimen berlandaskan sukatan KSSM.";
+
+    // Floating Neon Biology Symbols
+    if (symbolsContainer) {
+      symbolsContainer.innerHTML = `
+        <div class="floating-symbol sym-1" title="Heliks Ganda Dua DNA">DNA</div>
+        <div class="floating-symbol sym-2" title="Mata Wang Tenaga Sel (ATP)">ATP</div>
+        <div class="floating-symbol sym-3" title="Glukosa Respirasi Sel">C₆H₁₂O₆</div>
+        <div class="floating-symbol sym-4" title="Gas Karbon Dioksida">CO₂</div>
+        <div class="floating-symbol sym-5" title="Oksihemoglobin Darah">Hb(O₂)₄</div>
+        <div class="floating-symbol sym-6" title="Hormon Antidiuresis Ginjal">ADH</div>
+      `;
+    }
+
+    // Mini Book Stack for Biologi
+    if (bookStackContainer) {
+      bookStackContainer.innerHTML = `
+        <div class="book-spine book-blue" onclick="selectChapterAndScroll('bio-bab2')">🧫 Bab 2: Biologi Sel</div>
+        <div class="book-spine book-green" onclick="selectChapterAndScroll('bio-bab7')">🫁 Bab 7: Respirasi Sel</div>
+        <div class="book-spine book-purple" onclick="selectChapterAndScroll('bio-bab13')">💧 Bab 13: Homeostasis</div>
+      `;
+    }
   }
 }
 
@@ -318,6 +359,7 @@ function getActiveSubjectData() {
   if (currentSubject === "matematik") return MATEMATIK_DATA;
   if (currentSubject === "kimia") return KIMIA_DATA;
   if (currentSubject === "fizik") return FIZIK_DATA;
+  if (currentSubject === "biologi") return BIOLOGI_DATA;
   return SEJARAH_DATA;
 }
 
@@ -869,7 +911,7 @@ function renderComprehensiveExamUI() {
   const total = activeExamQuestions.length;
   const answeredCount = Object.keys(examQuizState.answered).length;
   const pct = total > 0 ? Math.round((examQuizState.score / total) * 100) : 0;
-  const subjectName = currentSubject === "fizik" ? "FIZIK" : (currentSubject === "kimia" ? "KIMIA" : (currentSubject === "matematik" ? "MATEMATIK" : (currentSubject === "sains" ? "SAINS" : "SEJARAH")));
+  const subjectName = currentSubject === "biologi" ? "BIOLOGI" : (currentSubject === "fizik" ? "FIZIK" : (currentSubject === "kimia" ? "KIMIA" : (currentSubject === "matematik" ? "MATEMATIK" : (currentSubject === "sains" ? "SAINS" : "SEJARAH"))));
 
   let html = `
     <div class="quiz-score-banner">
@@ -936,7 +978,7 @@ function answerExamQuestion(idx, chosenIdx) {
 
 function renderAllStrukturExam(container) {
   const data = getActiveSubjectData();
-  const subjectName = currentSubject === "fizik" ? "FIZIK" : (currentSubject === "kimia" ? "KIMIA" : (currentSubject === "matematik" ? "MATEMATIK" : (currentSubject === "sains" ? "SAINS" : "SEJARAH")));
+  const subjectName = currentSubject === "biologi" ? "BIOLOGI" : (currentSubject === "fizik" ? "FIZIK" : (currentSubject === "kimia" ? "KIMIA" : (currentSubject === "matematik" ? "MATEMATIK" : (currentSubject === "sains" ? "SAINS" : "SEJARAH"))));
 
   let html = `
     <div class="quiz-score-banner">
