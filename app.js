@@ -512,13 +512,14 @@ function handleQuickSearch(query) {
       }
     });
     // Check verbatim lines
-    bab.notes.forEach((n) => {
-      n.verbatim.forEach((line) => {
+    (bab.notes || []).forEach((n) => {
+      const vLines = n.verbatim || n.points || [];
+      vLines.forEach((line) => {
         if (line.toLowerCase().includes(trimmed)) {
           matches.push({
             babId: bab.id,
             view: "nota",
-            label: `${n.subtopic} (${bab.babNum})`,
+            label: `${n.subtopic || ""} (${bab.babNum})`,
             snippet: line
           });
         }
@@ -631,19 +632,22 @@ function renderNotesView(bab) {
   const container = document.getElementById("notes-cards-container");
   if (!container || !bab) return;
 
-  container.innerHTML = bab.notes
+  container.innerHTML = (bab.notes || [])
     .map(
-      (n) => `
+      (n) => {
+        const verbatimLines = n.verbatim || n.points || [];
+        const explanationText = n.explanation || n.summary || "";
+        return `
       <article class="note-card">
         <div class="note-card-header">
-          <h3 class="note-subtopic-title">${n.subtopic}</h3>
+          <h3 class="note-subtopic-title">${n.subtopic || ""}</h3>
           <span class="verbatim-tag">✓ Fakta Sukatan KSSM</span>
         </div>
 
         <div class="verbatim-box">
           <span class="verbatim-box-label">${currentSubject === "matematik" ? "📐 Kaedah & Jalan Kira Lengkap:" : "📌 Nota & Fakta Penting:"}</span>
           <ul class="verbatim-list">
-            ${n.verbatim
+            ${verbatimLines
               .map((line) => {
                 const trimmed = line.trim();
                 const isStep = trimmed.startsWith("Langkah") || trimmed.startsWith("CONTOH") || trimmed.startsWith("JALAN") || trimmed.startsWith("Jawapan:");
@@ -656,17 +660,18 @@ function renderNotesView(bab) {
         </div>
 
         ${
-          noteDisplayMode === "both"
+          noteDisplayMode === "both" && explanationText
             ? `
           <div class="explanation-box">
             <span class="explanation-label">💡 Penerangan Lengkap & Huraian Konsep:</span>
-            <p class="explanation-text">${n.explanation}</p>
+            <p class="explanation-text">${explanationText}</p>
           </div>
         `
             : ""
         }
       </article>
-    `
+    `;
+      }
     )
     .join("");
 }
@@ -678,7 +683,7 @@ function renderStepGuideView(bab) {
   const container = document.getElementById("step-guide-container");
   if (!container || !bab) return;
 
-  container.innerHTML = bab.steps
+  container.innerHTML = (bab.steps || [])
     .map(
       (s, idx) => `
       <div class="step-item-card" id="step-card-${idx}">
@@ -687,9 +692,9 @@ function renderStepGuideView(bab) {
           <span>0${idx + 1}</span>
         </div>
         <div class="step-content">
-          <h4>${s.step}: ${s.title}</h4>
-          <p>${s.detail}</p>
-          <span class="step-tip">🔑 Tip Ingatan Pantas: ${s.tip}</span>
+          <h4>${s.step || `Langkah ${idx + 1}`}: ${s.title || ""}</h4>
+          <p>${s.detail || s.guide || ""}</p>
+          <span class="step-tip">🔑 Tip Ingatan Pantas: ${s.tip || "Kuasai fakta biologi ini mengikut skema KSSM"}</span>
         </div>
       </div>
     `
@@ -727,13 +732,13 @@ function renderKeypointsView(bab) {
   const container = document.getElementById("keypoints-container");
   if (!container || !bab) return;
 
-  container.innerHTML = bab.keypoints
+  container.innerHTML = (bab.keypoints || [])
     .map(
       (kp) => `
       <div class="kp-card">
-        <span class="kp-badge">⚡ ${kp.badge}</span>
-        <h4 class="kp-term">${kp.term}</h4>
-        <p class="kp-meaning">${kp.meaning}</p>
+        <span class="kp-badge">⚡ ${kp.badge || "Konsep Kunci"}</span>
+        <h4 class="kp-term">${kp.term || ""}</h4>
+        <p class="kp-meaning">${kp.meaning || ""}</p>
       </div>
     `
     )
@@ -804,9 +809,15 @@ function renderTopicQuizView(bab) {
     .join("");
 
   // Structured Questions for Chapter
-  html += bab.struktur
+  html += (bab.struktur || [])
     .map(
-      (sObj, sIdx) => `
+      (sObj, sIdx) => {
+        const skemaLines = Array.isArray(sObj.skema)
+          ? sObj.skema
+          : (typeof sObj.skema === "string"
+             ? sObj.skema.split("\n").map((l) => l.trim()).filter(Boolean)
+             : []);
+        return `
       <div class="struktur-card">
         <span class="q-num-pill">✍️ Latihan Soalan Struktur ${bab.babNum}</span>
         <p class="q-text" style="margin-top:0.6rem;">${sObj.q}</p>
@@ -815,11 +826,12 @@ function renderTopicQuizView(bab) {
         <div class="skema-box" id="skema-${bab.id}-${sIdx}">
           <strong style="color:#4ade80; display:block; margin-bottom:0.4rem;">✓ Skema Jawapan 100% Silibus:</strong>
           <ul class="verbatim-list">
-            ${sObj.skema.map((line) => `<li>${line}</li>`).join("")}
+            ${skemaLines.map((line) => `<li>${line}</li>`).join("")}
           </ul>
         </div>
       </div>
-    `
+    `;
+      }
     )
     .join("");
 
@@ -990,7 +1002,12 @@ function renderAllStrukturExam(container) {
   `;
 
   data.forEach((bab) => {
-    bab.struktur.forEach((sObj, sIdx) => {
+    (bab.struktur || []).forEach((sObj, sIdx) => {
+      const skemaLines = Array.isArray(sObj.skema)
+        ? sObj.skema
+        : (typeof sObj.skema === "string"
+           ? sObj.skema.split("\n").map((l) => l.trim()).filter(Boolean)
+           : []);
       html += `
         <div class="struktur-card">
           <span class="q-num-pill">${bab.babNum}: ${bab.title}</span>
@@ -1000,7 +1017,7 @@ function renderAllStrukturExam(container) {
           <div class="skema-box" id="exam-skema-${bab.id}-${sIdx}">
             <strong style="color:#4ade80; display:block; margin-bottom:0.4rem;">✓ Skema Jawapan Rasmi:</strong>
             <ul class="verbatim-list">
-              ${sObj.skema.map((line) => `<li>${line}</li>`).join("")}
+              ${skemaLines.map((line) => `<li>${line}</li>`).join("")}
             </ul>
           </div>
         </div>
@@ -1024,10 +1041,12 @@ function renderVerbatimArchive(filterQuery = "") {
   const filteredBabs = data.filter((bab) => {
     if (!q) return true;
     if (bab.title.toLowerCase().includes(q) || bab.babNum.toLowerCase().includes(q)) return true;
-    return bab.notes.some(
-      (n) =>
-        n.subtopic.toLowerCase().includes(q) ||
-        n.verbatim.some((line) => line.toLowerCase().includes(q))
+    return (bab.notes || []).some(
+      (n) => {
+        const vLines = n.verbatim || n.points || [];
+        return (n.subtopic || "").toLowerCase().includes(q) ||
+          vLines.some((line) => line.toLowerCase().includes(q));
+      }
     );
   });
 
@@ -1042,16 +1061,19 @@ function renderVerbatimArchive(filterQuery = "") {
           <span class="ach-page-pill">📄 ${cleanPages || bab.anyflipPages}</span>
         </div>
         <div class="notes-grid">
-          ${bab.notes
+          ${(bab.notes || [])
             .map(
-              (n) => `
+              (n) => {
+                const vLines = n.verbatim || n.points || [];
+                return `
               <div class="verbatim-box">
-                <span class="verbatim-box-label">${n.subtopic}</span>
+                <span class="verbatim-box-label">${n.subtopic || ""}</span>
                 <ul class="verbatim-list">
-                  ${n.verbatim.map((line) => `<li>${line}</li>`).join("")}
+                  ${vLines.map((line) => `<li>${line}</li>`).join("")}
                 </ul>
               </div>
-            `
+            `;
+              }
             )
             .join("")}
         </div>
@@ -1073,10 +1095,10 @@ function openFlashcardModal() {
   const bab = getCurrentChapterObj();
   if (!bab) return;
 
-  flashcardList = bab.keypoints.map((kp) => ({
+  flashcardList = (bab.keypoints || []).map((kp) => ({
     front: kp.term,
     back: kp.meaning,
-    badge: `${bab.babNum} • ${kp.badge}`
+    badge: `${bab.babNum} • ${kp.badge || "Konsep Kunci"}`
   }));
   currentFlashcardIndex = 0;
 
