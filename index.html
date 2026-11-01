@@ -201,7 +201,7 @@
               <span class="shc-pill">🧫 Eksperimen & Fisiologi</span>
               <span class="shc-pill">🎯 75+ Kuiz & Kertas 2 Berskema</span>
             </div>
-            <button class="shc-btn btn-biology-enter">
+            <button class="shc-btn btn-biology-enter" onclick="selectSubjectAndEnter('biologi')">
               <span>Masuk Makmal Biologi</span>
               <span class="btn-arrow">➔</span>
             </button>
@@ -256,6 +256,9 @@
       </button>
       <button class="nav-tab" data-view="kuiz-keseluruhan" onclick="switchMainView('kuiz-keseluruhan')">
         <span class="tab-icon">🏆</span> Peperiksaan
+      </button>
+      <button class="nav-tab" data-view="chatbot" onclick="switchMainView('chatbot')">
+        <span class="tab-icon">🤖</span> Tutor AI
       </button>
       <button class="nav-tab" data-view="flipbook" onclick="switchMainView('flipbook')">
         <span class="tab-icon">📑</span> Arkib Teks
@@ -332,6 +335,7 @@
               <option value="keypoint">Key Point Penting & Kata Kunci</option>
               <option value="kuiz-topik">Latihan Soalan Mengikut Topik</option>
               <option value="kuiz-keseluruhan">Soalan Peperiksaan Keseluruhan</option>
+              <option value="chatbot">🤖 Tanya Tutor AI Bab Ini</option>
             </select>
           </div>
         </div>
@@ -579,6 +583,64 @@
         <!-- Populated dynamically -->
       </div>
     </section>
+
+    <!-- VIEW 7: TUTOR AI CHATBOT INTERAKTIF MENGIKUT TOPIK -->
+    <section id="view-chatbot" class="workspace-view">
+      <div class="chatbot-container">
+        <!-- Tutor Header Card -->
+        <div class="chatbot-header">
+          <div class="cb-tutor-profile">
+            <div class="cb-avatar-wrapper">
+              <img id="cb-tutor-img" src="assets/hero-tutor.png" alt="Tutor AI" class="cb-avatar-img" />
+              <span class="cb-online-badge" title="Tutor AI sentiasa aktif"></span>
+            </div>
+            <div class="cb-tutor-details">
+              <div class="cb-name-row">
+                <h3 id="cb-tutor-name">Tutor AI Sejarah</h3>
+                <span class="cb-subject-pill" id="cb-chapter-pill">Bab 1</span>
+              </div>
+              <p class="cb-status-text">🟢 Bersedia Membimbing • 100% Berpandukan Silibus Buku Teks KSSM</p>
+            </div>
+          </div>
+          <div class="cb-header-actions">
+            <button class="btn-clear-chat" onclick="resetTopicChat()" title="Padam dan mulakan semula perbualan untuk bab ini">🔄 Set Semula Sembang</button>
+          </div>
+        </div>
+
+        <!-- Quick Suggestions Chips Bar -->
+        <div class="chatbot-suggestions-wrapper">
+          <span class="cb-chips-label">💡 Cadangan Soalan Pantas Topik Ini:</span>
+          <div class="cb-chips-scroll" id="cb-chips-container">
+            <!-- Populated dynamically based on current bab -->
+          </div>
+        </div>
+
+        <!-- Messages Log Arena -->
+        <div class="chatbot-messages-area" id="cb-messages-area">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Chat Input Bar -->
+        <div class="chatbot-input-bar">
+          <div class="cb-input-wrapper">
+            <input 
+              type="text" 
+              id="cb-user-input" 
+              class="cb-text-input" 
+              placeholder="Tanya soalan tentang bab ini (cth: Terangkan konsep Waadat, apakah faktor perang...)"
+              onkeydown="if(event.key==='Enter') sendChatUserMessage()"
+            />
+            <button class="cb-send-btn" onclick="sendChatUserMessage()" title="Hantar Soalan">
+              <span>Tanya</span>
+              <span class="cb-send-icon">🚀</span>
+            </button>
+          </div>
+          <div class="cb-input-footnote">
+            <span>✨ Setiap soalan pembelajaran memberi <strong>+5 XP</strong> • Dijana mengikut fakta silibus KSSM terkini</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FLASHCARD MODAL -->
@@ -632,13 +694,25 @@
     </div>
   </footer>
 
+  <!-- FLOATING TUTOR AI FAB -->
+  <div class="floating-tutor-fab" id="floating-tutor-fab" onclick="toggleFloatingChatbot()" title="Tanya Tutor AI Mengenai Bab Ini">
+    <div class="fab-avatar-ring">
+      <img id="fab-tutor-img" src="assets/hero-tutor.png" alt="Tutor AI" class="fab-avatar-img" />
+      <span class="fab-online-dot"></span>
+    </div>
+    <div class="fab-label-pill">
+      <span class="fab-sparkle">✨</span>
+      <span class="fab-text">Tanya Tutor AI</span>
+    </div>
+  </div>
+
   <!-- Scripts: Data Sejarah, Data Sains, Data Matematik, Data Kimia, Data Fizik, Data Biologi & App Logic -->
-  <script src="data.js"></script>
+  <script src="data.js?v=2.3"></script>
   <script src="data-sains.js"></script>
   <script src="data-matematik.js"></script>
   <script src="data-kimia.js"></script>
   <script src="data-fizik.js"></script>
-  <script src="data-biologi.js"></script>
-  <script src="app.js"></script>
+  <script src="data-biologi.js?v=2.2"></script>
+  <script src="app.js?v=2.3"></script>
 </body>
 </html>

@@ -19,12 +19,29 @@ document.addEventListener("DOMContentLoaded", () => {
   initAmbientParticles();
 
   // Semak jika pengguna telah memilih subjek sebelum ini, jika belum buka portal
-  const savedSubject = localStorage.getItem("academiq_subject");
-  if (savedSubject && ["sejarah", "sains", "matematik", "kimia", "fizik", "biologi"].includes(savedSubject)) {
-    setSubject(savedSubject, false);
-    closeSubjectPortal();
-  } else {
+  try {
+    const savedSubject = localStorage.getItem("academiq_subject");
+    if (savedSubject && ["sejarah", "sains", "matematik", "kimia", "fizik", "biologi"].includes(savedSubject)) {
+      setSubject(savedSubject, false);
+      closeSubjectPortal();
+    } else {
+      openSubjectPortal();
+    }
+  } catch (e) {
     openSubjectPortal();
+  }
+
+  // Backup explicit click handlers for Biologi card & button
+  const bioCard = document.querySelector(".card-biologi");
+  if (bioCard) {
+    bioCard.addEventListener("click", () => selectSubjectAndEnter("biologi"));
+  }
+  const bioBtn = document.querySelector(".btn-biology-enter");
+  if (bioBtn) {
+    bioBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      selectSubjectAndEnter("biologi");
+    });
   }
 });
 
@@ -46,15 +63,22 @@ function closeSubjectPortal() {
 }
 
 function selectSubjectAndEnter(subject) {
-  setSubject(subject, true);
-  closeSubjectPortal();
-  addXP(25);
-  scrollToTop();
+  try {
+    setSubject(subject, true);
+  } catch (err) {
+    console.error("setSubject error:", err);
+  } finally {
+    closeSubjectPortal();
+    addXP(25);
+    scrollToTop();
+  }
 }
 
 function setSubject(subject, triggerAnimation = true) {
   currentSubject = subject;
-  localStorage.setItem("academiq_subject", subject);
+  try {
+    localStorage.setItem("academiq_subject", subject);
+  } catch (e) {}
 
   // Set default chapter for the selected subject
   if (currentSubject === "sejarah") {
@@ -101,18 +125,18 @@ function setSubject(subject, triggerAnimation = true) {
     if (switchLabel) switchLabel.textContent = "BIOLOGI TINGKATAN 4";
   }
 
-  // Update Hero Section
-  updateHeroSectionUI();
+  // Update Hero Section safely
+  try { updateHeroSectionUI(); } catch (e) { console.error("updateHeroSectionUI error:", e); }
 
-  // Populate Chapter Dropdown in Hero
-  populateChapterDropdown();
+  // Populate Chapter Dropdown in Hero safely
+  try { populateChapterDropdown(); } catch (e) { console.error("populateChapterDropdown error:", e); }
 
-  // Render Workspace Components
-  renderChapterPills();
-  renderActiveChapterContent();
-  initComprehensiveExam("all");
-  renderVerbatimArchive("");
-  updateUserStatsUI();
+  // Render Workspace Components safely
+  try { renderChapterPills(); } catch (e) { console.error("renderChapterPills error:", e); }
+  try { renderActiveChapterContent(); } catch (e) { console.error("renderActiveChapterContent error:", e); }
+  try { initComprehensiveExam("all"); } catch (e) { console.error("initComprehensiveExam error:", e); }
+  try { renderVerbatimArchive(""); } catch (e) { console.error("renderVerbatimArchive error:", e); }
+  try { updateUserStatsUI(); } catch (e) { console.error("updateUserStatsUI error:", e); }
 }
 
 function updateHeroSectionUI() {
@@ -455,7 +479,7 @@ function switchMainView(viewName, shouldScroll = true) {
 
   // Sync hero dropdown if applicable
   const modeSelect = document.getElementById("mode-select");
-  if (modeSelect && ["nota", "step", "keypoint", "kuiz-topik", "kuiz-keseluruhan"].includes(viewName)) {
+  if (modeSelect && ["nota", "step", "keypoint", "kuiz-topik", "kuiz-keseluruhan", "chatbot"].includes(viewName)) {
     modeSelect.value = viewName;
   }
 
@@ -466,6 +490,15 @@ function switchMainView(viewName, shouldScroll = true) {
   const targetSec = document.getElementById(`view-${viewName}`);
   if (targetSec) {
     targetSec.classList.add("active");
+  }
+
+  if (viewName === "chatbot") {
+    const bab = getCurrentChapterObj();
+    if (bab) renderTopicChatbot(bab);
+    setTimeout(() => {
+      const input = document.getElementById("cb-user-input");
+      if (input) input.focus();
+    }, 250);
   }
 
   if (shouldScroll) {
@@ -607,6 +640,7 @@ function renderActiveChapterContent() {
         <button class="btn-outline-cyan" onclick="switchMainView('step', false)">🧭 Step-by-Step</button>
         <button class="btn-outline-cyan" onclick="switchMainView('keypoint', false)">⚡ Key Point</button>
         <button class="btn-Cyan-sm" onclick="switchMainView('kuiz-topik', false)">🎯 Uji Topik Ini</button>
+        <button class="btn-tutor-glow" onclick="switchMainView('chatbot', true)">🤖 Tanya Tutor AI</button>
       </div>
     `;
   }
@@ -616,6 +650,7 @@ function renderActiveChapterContent() {
   renderStepGuideView(bab);
   renderKeypointsView(bab);
   renderTopicQuizView(bab);
+  renderTopicChatbot(bab);
 }
 
 /* ==========================================================================
@@ -1166,3 +1201,424 @@ function updateUserStatsUI() {
     masteryEl.textContent = `${pct}%`;
   }
 }
+
+/* ==========================================================================
+   15. TUTOR AI CHATBOT INTERAKTIF (PER-TOPIC & FLOATING FAB)
+   ========================================================================== */
+
+let topicChatHistory = {}; // Key: `${currentSubject}_${babId}`
+
+function getSubjectTutorInfo() {
+  const map = {
+    sejarah: {
+      name: "Tutor AI Sejarah",
+      avatar: "assets/hero-tutor.png",
+      subjectDisplayName: "Sejarah Tingkatan 4 KSSM"
+    },
+    sains: {
+      name: "Tutor AI Sains",
+      avatar: "assets/hero-science-tutor.png",
+      subjectDisplayName: "Sains Tingkatan 4 KSSM"
+    },
+    matematik: {
+      name: "Tutor AI Matematik",
+      avatar: "assets/hero-math-tutor.png",
+      subjectDisplayName: "Matematik Tingkatan 4 KSSM"
+    },
+    kimia: {
+      name: "Tutor AI Kimia",
+      avatar: "assets/hero-chemistry-tutor.png",
+      subjectDisplayName: "Kimia Tingkatan 4 KSSM"
+    },
+    fizik: {
+      name: "Tutor AI Fizik",
+      avatar: "assets/hero-physics-tutor.png",
+      subjectDisplayName: "Fizik Tingkatan 4 KSSM"
+    },
+    biologi: {
+      name: "Tutor AI Biologi",
+      avatar: "assets/hero-biology-tutor.png",
+      subjectDisplayName: "Biologi Tingkatan 4 KSSM"
+    }
+  };
+  return map[currentSubject] || map.sejarah;
+}
+
+function updateChatbotTutorUI() {
+  const tutor = getSubjectTutorInfo();
+  const fabImg = document.getElementById("fab-tutor-img");
+  if (fabImg) fabImg.src = tutor.avatar;
+  const cbImg = document.getElementById("cb-tutor-img");
+  if (cbImg) cbImg.src = tutor.avatar;
+  const cbName = document.getElementById("cb-tutor-name");
+  if (cbName) cbName.textContent = tutor.name;
+}
+
+function renderTopicChatbot(bab) {
+  if (!bab) bab = getCurrentChapterObj();
+  if (!bab) return;
+
+  const tutor = getSubjectTutorInfo();
+  updateChatbotTutorUI();
+
+  // 1. Update Chapter Badge
+  const pill = document.getElementById("cb-chapter-pill");
+  if (pill) {
+    pill.textContent = `${bab.babNum}: ${bab.title}`;
+  }
+
+  // 2. Dynamic Suggestion Chips
+  const chipsContainer = document.getElementById("cb-chips-container");
+  if (chipsContainer) {
+    const chipItems = [];
+
+    // Chip 1: Ringkasan Bab
+    chipItems.push({
+      icon: "📚",
+      text: `Ringkaskan konsep penting ${bab.babNum}`
+    });
+
+    // Subtopic chips (up to 3 subtopics)
+    if (bab.notes && Array.isArray(bab.notes)) {
+      bab.notes.slice(0, 3).forEach((n) => {
+        let label = n.subtopic;
+        if (label.includes(":")) {
+          label = label.split(":")[1].trim();
+        }
+        chipItems.push({
+          icon: "💡",
+          text: `Terangkan ${label}`
+        });
+      });
+    }
+
+    // Chip: Formula & Kata Kunci
+    chipItems.push({
+      icon: "⚡",
+      text: `Apakah kata kunci & formula penting ${bab.babNum}?`
+    });
+
+    // Chip: Contoh Soalan SPM
+    chipItems.push({
+      icon: "🎯",
+      text: `Beri 1 soalan SPM berserta skema markah penuh untuk ${bab.babNum}`
+    });
+
+    chipsContainer.innerHTML = chipItems
+      .map(
+        (c) => `
+        <button class="cb-chip" onclick="askSuggestedQuestion('${c.text.replace(/'/g, "\\'")}')">
+          <span>${c.icon}</span>
+          <span>${c.text}</span>
+        </button>
+      `
+      )
+      .join("");
+  }
+
+  // 3. Initialize Chat History if empty
+  const chatKey = `${currentSubject}_${bab.id}`;
+  if (!topicChatHistory[chatKey] || topicChatHistory[chatKey].length === 0) {
+    topicChatHistory[chatKey] = [
+      {
+        sender: "tutor",
+        text: `👋 **Hai! Saya ${tutor.name}!**\n\nSelamat datang ke modul interaktif **${bab.babNum}: ${bab.title}** (${tutor.subjectDisplayName}).\n\nSaya boleh bantu anda menerangkan konsep dengan mudah, menghafal fakta & eksperimen, memberikan kata kunci soalan struktur, atau menyediakan latihan SPM berserta skema pemarkahan penuh!\n\n💡 *Klik mana-mana cadangan soalan di atas atau taipkan soalan anda di bawah untuk mula bertanya.*`,
+        time: getCurrentChatTime()
+      }
+    ];
+  }
+
+  // 4. Render Messages
+  renderChatMessages(chatKey);
+}
+
+function getCurrentChatTime() {
+  const d = new Date();
+  let h = d.getHours();
+  let m = d.getMinutes();
+  if (m < 10) m = "0" + m;
+  return `${h}:${m}`;
+}
+
+function renderChatMessages(chatKey) {
+  const area = document.getElementById("cb-messages-area");
+  if (!area) return;
+
+  const messages = topicChatHistory[chatKey] || [];
+  const tutor = getSubjectTutorInfo();
+
+  area.innerHTML = messages
+    .map((msg) => {
+      if (msg.sender === "user") {
+        return `
+          <div class="cb-msg-row user-row">
+            <div class="cb-bubble">
+              <div class="cb-bubble-content">${escapeHTML(msg.text)}</div>
+            </div>
+          </div>
+        `;
+      } else {
+        const formatted = formatChatMarkdown(msg.text);
+        const xpBadge = msg.xp ? `<div class="cb-xp-awarded-pill">✨ +${msg.xp} XP Diperoleh!</div>` : "";
+        return `
+          <div class="cb-msg-row tutor-row">
+            <div class="cb-msg-avatar">
+              <img src="${tutor.avatar}" alt="Tutor AI" />
+            </div>
+            <div class="cb-bubble">
+              <div class="cb-bubble-content">${formatted}</div>
+              ${xpBadge}
+            </div>
+          </div>
+        `;
+      }
+    })
+    .join("");
+
+  area.scrollTop = area.scrollHeight;
+}
+
+function escapeHTML(str) {
+  if (!str) return "";
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function formatChatMarkdown(str) {
+  if (!str) return "";
+  let html = str;
+
+  // Escape HTML tags first
+  html = escapeHTML(html);
+
+  // Bold **text**
+  html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+  // Italic *text*
+  html = html.replace(/\*(.*?)\*/g, "<em>$1</em>");
+
+  // Format Formula Box: ```formula ... ``` or [FORMULA: ...]
+  html = html.replace(/\[FORMULA:\s*(.*?)\]/g, '<div class="cb-formula-box">📐 $1</div>');
+
+  // Format SPM Exam Tip Box: [TIP_SPM:\s*(.*?)]
+  html = html.replace(/\[TIP_SPM:\s*(.*?)\]/g, '<div class="cb-exam-tip">🎯 <strong>Tip Skor SPM:</strong> $1</div>');
+
+  // Replace newlines with <br> or paragraphs
+  const paragraphs = html.split(/\n\n+/);
+  html = paragraphs
+    .map((p) => {
+      // Check if it's a bulleted list
+      const lines = p.split("\n");
+      const isBullet = lines.every((l) => l.trim().startsWith("- ") || l.trim().startsWith("• ") || /^\d+\.\s/.test(l.trim()) || l.trim() === "");
+      if (isBullet && lines.length > 1) {
+        const listItems = lines
+          .filter((l) => l.trim() !== "")
+          .map((l) => {
+            const clean = l.replace(/^[-•]\s*/, "").replace(/^\d+\.\s*/, "");
+            return `<li>${clean}</li>`;
+          })
+          .join("");
+        return `<ul>${listItems}</ul>`;
+      }
+      return `<p>${lines.join("<br>")}</p>`;
+    })
+    .join("");
+
+  return html;
+}
+
+function askSuggestedQuestion(qText) {
+  sendChatUserMessage(qText);
+}
+
+function sendChatUserMessage(customText) {
+  const input = document.getElementById("cb-user-input");
+  const text = (customText || (input ? input.value : "")).trim();
+  if (!text) return;
+
+  if (input) input.value = "";
+
+  const bab = getCurrentChapterObj();
+  const chatKey = `${currentSubject}_${bab.id}`;
+  if (!topicChatHistory[chatKey]) topicChatHistory[chatKey] = [];
+
+  // Add User Message
+  topicChatHistory[chatKey].push({
+    sender: "user",
+    text: text,
+    time: getCurrentChatTime()
+  });
+
+  renderChatMessages(chatKey);
+
+  // Add Typing Indicator
+  const area = document.getElementById("cb-messages-area");
+  const tutor = getSubjectTutorInfo();
+  if (area) {
+    const typingDiv = document.createElement("div");
+    typingDiv.className = "cb-msg-row tutor-row";
+    typingDiv.id = "cb-typing-indicator-row";
+    typingDiv.innerHTML = `
+      <div class="cb-msg-avatar">
+        <img src="${tutor.avatar}" alt="Tutor" />
+      </div>
+      <div class="cb-bubble cb-typing-indicator">
+        <span></span><span></span><span></span>
+      </div>
+    `;
+    area.appendChild(typingDiv);
+    area.scrollTop = area.scrollHeight;
+  }
+
+  // Generate Answer with natural micro-delay
+  setTimeout(() => {
+    // Remove typing indicator
+    const typingRow = document.getElementById("cb-typing-indicator-row");
+    if (typingRow) typingRow.remove();
+
+    const tutorReply = generateTutorAnswer(text, bab, currentSubject);
+
+    topicChatHistory[chatKey].push({
+      sender: "tutor",
+      text: tutorReply,
+      time: getCurrentChatTime(),
+      xp: 5
+    });
+
+    addXP(5);
+    renderChatMessages(chatKey);
+  }, 450);
+}
+
+function generateTutorAnswer(query, bab, subject) {
+  const q = query.toLowerCase().trim();
+
+  // 1. Greetings & Courtesy
+  if (/^(hai|hello|salam|assalam|hi|selamat pagi|selamat petang|terima kasih|tq|thanks)/i.test(q)) {
+    return `Hai! Sama-sama! Saya amat berbesar hati membimbing anda menguasai **${bab.babNum}: ${bab.title}**. Jangan segan untuk bertanya sebarang konsep atau minta saya terangkan subtopik tertentu ya! 📚✨`;
+  }
+
+  // 2. Identity Query
+  if (q.includes("siapa awak") || q.includes("siapa anda") || q.includes("nama awak")) {
+    const tutor = getSubjectTutorInfo();
+    return `Saya adalah **${tutor.name}** dari **MasterAcademiq.ai**! Saya dilatih khusus menggunakan sukatan KSSM Tingkatan 4 untuk membimbing anda menguasai fakta, formula, eksperimen, dan teknik menjawab soalan SPM dengan cemerlang. 🤖🎓`;
+  }
+
+  // 3. Ringkasan Bab / Synopsis / Overview
+  if (q.includes("ringkas") || q.includes("sinopsis") || q.includes("overview") || q.includes("gambaran") || q.includes("tentang apa") || q.includes("terangkan bab ini")) {
+    let subtopicsList = "";
+    if (bab.notes && Array.isArray(bab.notes)) {
+      subtopicsList = bab.notes.map((n, i) => `\n- **${n.subtopic}**`).join("");
+    }
+    return `### 📘 Gambaran Keseluruhan ${bab.babNum}: ${bab.title}\n\n**Sinopsis Utama:**\n${bab.synopsis}\n\n**Subtopik yang dipelajari dalam bab ini:**${subtopicsList}\n\n[TIP_SPM: Pastikan anda menguasai setiap subtopik di atas kerana soalan SPM Kertas 1 (Objektif) dan Kertas 2 (Bahagian A/B) kerap menggabungkan konsep merentas subtopik!]`;
+  }
+
+  // 4. Minta Soalan SPM / Skema Jawapan / Latihan
+  if (q.includes("soalan") || q.includes("skema") || q.includes("struktur") || q.includes("latihan") || q.includes("spm") || q.includes("kuiz")) {
+    let response = "";
+    if (bab.struktur && bab.struktur.length > 0) {
+      const s = bab.struktur[0];
+      const skemaText = Array.isArray(s.skema) ? s.skema.map((sk, idx) => `${idx + 1}. ${sk}`).join("\n") : s.skema;
+      response = `### 🎯 Contoh Soalan Peperiksaan SPM (Format Kertas 2)\n\n**Soalan Struktur:**\n${s.q}\n\n**Skema Pemarkahan Penuh:**\n${skemaText}\n\n[TIP_SPM: Dalam soalan struktur atau esei, gunakan kata kunci tepat seperti dalam skema di atas untuk memastikan anda mendapat markah maksimum!]`;
+      return response;
+    } else if (bab.questions && bab.questions.length > 0) {
+      const mcq = bab.questions[0];
+      const optStr = mcq.options.map((opt, i) => `(${String.fromCharCode(65 + i)}) ${opt}`).join("\n");
+      const correctChar = String.fromCharCode(65 + mcq.answer);
+      return `### 🎯 Contoh Soalan Objektif SPM (${bab.babNum})\n\n**Soalan:**\n${mcq.q}\n\n${optStr}\n\n**Jawapan Tepat:** **${correctChar}**\n\n**Penerangan:** ${mcq.explanation}\n\n[TIP_SPM: Teliti kata kunci dalam soalan sebelum memilih jawapan untuk mengelakkan perangkap soalan!]`;
+    }
+  }
+
+  // 5. Formula & Key Points / Kata Kunci
+  if (q.includes("formula") || q.includes("kata kunci") || q.includes("key point") || q.includes("istilah") || q.includes("definisi") || q.includes("maksud")) {
+    if (bab.keypoints && bab.keypoints.length > 0) {
+      const pointsList = bab.keypoints
+        .map((kp) => `- **${kp.term}** (${kp.badge}): ${kp.meaning}`)
+        .join("\n\n");
+      return `### ⚡ Kata Kunci & Istilah Wajib Ingat (${bab.babNum})\n\nBerikut adalah senarai fakta kunci dan istilah penting bagi bab ini:\n\n${pointsList}\n\n[TIP_SPM: Hafal istilah dan definisi tepat ini kerana ia membawa markah terus dalam Bahagian A dan B!]`;
+    }
+  }
+
+  // 6. Langkah demi Langkah / Proses / Kronologi / Eksperimen
+  if (q.includes("langkah") || q.includes("step") || q.includes("proses") || q.includes("aliran") || q.includes("kronologi") || q.includes("eksperimen")) {
+    if (bab.steps && bab.steps.length > 0) {
+      const stepsList = bab.steps
+        .map((st) => `- **${st.step}: ${st.title}**\n  ${st.detail}\n  💡 *Tip: ${st.tip}*`)
+        .join("\n\n");
+      return `### 🧭 Aliran Langkah Demi Langkah (${bab.babNum})\n\n${stepsList}\n\n[TIP_SPM: Untuk soalan kronologi atau prosedur eksperimen, susun fakta mengikut urutan logik bermula dari langkah pertama hingga akhir!]`;
+    }
+  }
+
+  // 7. Subtopic Search inside Active Chapter (Exact or Keyword Matching)
+  if (bab.notes && Array.isArray(bab.notes)) {
+    // Check if query matches a subtopic number or title
+    for (let note of bab.notes) {
+      const subtopicLower = note.subtopic.toLowerCase();
+      const numMatch = note.subtopic.match(/(\d+\.\d+)/);
+      const subNum = numMatch ? numMatch[1] : "";
+
+      // Check subtopic match
+      const isSubtopicMatch = (subNum && q.includes(subNum)) ||
+        q.split(/\s+/).some((w) => w.length > 3 && subtopicLower.includes(w));
+
+      if (isSubtopicMatch) {
+        const verbatimPoints = Array.isArray(note.verbatim)
+          ? note.verbatim.map((v) => `- ${v}`).join("\n")
+          : `- ${note.verbatim}`;
+
+        return `### 📖 Penerangan Terperinci: ${note.subtopic}\n\n**Ringkasan:**\n${note.summary || ""}\n\n**Fakta Buku Teks:**\n${verbatimPoints}\n\n**Huraian Konsep:**\n${note.explanation || ""}\n\n[TIP_SPM: Soalan KBAT kerap mengaitkan subtopik ini dengan situasi semasa. Fahami 'sebab dan akibat' daripada fakta di atas!]`;
+      }
+    }
+
+    // Check query words against verbatim or explanation
+    for (let note of bab.notes) {
+      const textToSearch = (
+        (note.summary || "") + " " +
+        (Array.isArray(note.verbatim) ? note.verbatim.join(" ") : note.verbatim || "") + " " +
+        (note.explanation || "")
+      ).toLowerCase();
+
+      const matchedWords = q.split(/\s+/).filter((w) => w.length > 3 && textToSearch.includes(w));
+      if (matchedWords.length >= 1) {
+        const verbatimPoints = Array.isArray(note.verbatim)
+          ? note.verbatim.slice(0, 3).map((v) => `- ${v}`).join("\n")
+          : `- ${note.verbatim}`;
+
+        return `### 💡 Maklumat Berkaitan: ${note.subtopic}\n\nBerdasarkan soalan anda mengenai *"${matchedWords.join(', ')}"*, berikut adalah fakta silibus berkaitan:\n\n${verbatimPoints}\n\n**Huraian:**\n${note.explanation || note.summary || ""}\n\n[TIP_SPM: Pastikan anda menulis huraian lengkap bersama contoh atau bukti sejarah/sains untuk mendapat markah penuh!]`;
+      }
+    }
+  }
+
+  // 8. Cross-chapter lookup in same subject
+  const allSubjectData = getActiveSubjectData();
+  for (let otherBab of allSubjectData) {
+    if (otherBab.id !== bab.id && otherBab.notes) {
+      for (let note of otherBab.notes) {
+        const textToSearch = (note.subtopic + " " + (note.summary || "")).toLowerCase();
+        if (q.split(/\s+/).some((w) => w.length > 3 && textToSearch.includes(w))) {
+          return `Topik yang anda tanyakan (*${query}*) dipelajari dalam **${otherBab.babNum}: ${otherBab.title}** (Subtopik: **${note.subtopic}**).\n\n**Ringkasan Konsep:**\n${note.summary || note.explanation}\n\n💡 *Anda boleh menukar ke ${otherBab.babNum} di menu atas untuk membaca nota penuh, langkah eksperimen, dan menjawab soalan latih tubi bab tersebut!*`;
+        }
+      }
+    }
+  }
+
+  // 9. Intelligent General Fallback
+  return `Saya memahami soalan anda mengenai: **"${query}"**.\n\nDalam konteks **${bab.babNum}: ${bab.title}**, konsep ini berkait rapat dengan: **${bab.synopsis}**.\n\nUntuk maklumat lebih khusus, anda boleh:\n1. Klik butang subtopik di atas seperti **"${bab.notes && bab.notes[0] ? bab.notes[0].subtopic : 'Ringkasan Bab'}"**\n2. Tanya soalan seperti *"Apakah faktor peristiwa ini berlaku?"* atau *"Beri soalan struktur SPM"*.\n\nSaya sedia membimbing anda sehingga betul-betul faham! 🌟`;
+}
+
+function resetTopicChat() {
+  const bab = getCurrentChapterObj();
+  if (!bab) return;
+  const chatKey = `${currentSubject}_${bab.id}`;
+  delete topicChatHistory[chatKey];
+  renderTopicChatbot(bab);
+}
+
+function toggleFloatingChatbot() {
+  switchMainView("chatbot", true);
+}
+
