@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MasterAcademiq.ai — Platform Pembelajaran Lengkap Tingkatan 4 (Sejarah, Sains, Matematik & Kimia)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-sejarah">
+  <!-- Background Ambient Glows & Floating Symbols -->
+  <div class="ambient-bg">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="particles" id="particles-container"></div>
+  </div>
+
+  <!-- ==========================================================================
+       PORTAL PEMILIHAN AWAL SUBJEK (SUBJECT SELECTION HUB)
+       ========================================================================== -->
+  <div id="subject-selection-portal" class="portal-overlay">
+    <div class="portal-container">
+      <div class="portal-header">
+        <div class="portal-brand">
+          <div class="brand-logo pulse-anim">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4L4 34H14L20 22L26 34H36L20 4Z" fill="url(#logoGradPortal)" stroke="#00f2fe" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M15 26L20 15L25 26H15Z" fill="#00f2fe" opacity="0.85"/>
+              <defs>
+                <linearGradient id="logoGradPortal" x1="4" y1="4" x2="36" y2="34" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0f2042"/>
+                  <stop offset="1" stop-color="#00d2ff"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <span class="portal-brand-title">MasterAcademiq<span class="brand-accent">.ai</span></span>
+        </div>
+        <span class="portal-tagline">✨ Hab Pembelajaran Digital Interaktif KSSM Tingkatan 4</span>
+        <h1 class="portal-title">Pilih Subjek Pembelajaran Anda</h1>
+        <p class="portal-desc">Pilih subjek kegemaran anda untuk membuka nota komprehensif, animasi step-by-step, key points, dan bank soalan beranimasi 3D!</p>
+      </div>
+
+      <!-- Tiga Kad Pilihan Subjek 3D -->
+      <div class="subject-cards-grid">
+        <!-- KAD 1: SEJARAH TINGKATAN 4 -->
+        <div class="subject-hero-card card-sejarah" onclick="selectSubjectAndEnter('sejarah')">
+          <div class="shc-glow"></div>
+          <div class="shc-badge badge-history">📘 SILIBUS KSSM TINGKATAN 4</div>
+          <div class="shc-avatar-wrap">
+            <img src="assets/hero-tutor.png" alt="Tutor Sejarah 3D" class="shc-avatar-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><text y=\'50\' font-size=\'40\'>👑📖</text></svg>'" />
+            <div class="shc-mini-floats">
+              <span class="sm-float sf-1">👑</span>
+              <span class="sm-float sf-2">📜</span>
+              <span class="sm-float sf-3">1957</span>
+            </div>
+          </div>
+          <div class="shc-body">
+            <h2 class="shc-title">SEJARAH TINGKATAN 4</h2>
+            <p class="shc-summary">Warisan Negara Bangsa, Kebangkitan Nasionalisme, Era Pendudukan Jepun, Malayan Union, PTM 1948, Darurat hingga Pemasyhuran Kemerdekaan 1957.</p>
+            <div class="shc-features">
+              <span class="shc-pill">📚 10 Bab Lengkap KSSM</span>
+              <span class="shc-pill">⚡ Key Points & Flashcards</span>
+              <span class="shc-pill">🎯 50+ Kuiz & Soalan SPM</span>
+            </div>
+            <button class="shc-btn btn-history-enter">
+              <span>Masuk Kelas Sejarah</span>
+              <span class="btn-arrow">➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- KAD 2: SAINS TINGKATAN 4 -->
+        <div class="subject-hero-card card-sains" onclick="selectSubjectAndEnter('sains')">
+          <div class="shc-glow"></div>
+          <div class="shc-badge badge-science">🔬 SILIBUS KSSM TINGKATAN 4</div>
+          <div class="shc-avatar-wrap">
+            <img src="assets/hero-science-tutor.png" alt="Tutor Sains 3D" class="shc-avatar-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><text y=\'50\' font-size=\'40\'>🧪⚛️</text></svg>'" />
+            <div class="shc-mini-floats">
+              <span class="sm-float sf-1">⚛️</span>
+              <span class="sm-float sf-2">🧬</span>
+              <span class="sm-float sf-3">🌱</span>
+            </div>
+          </div>
+          <div class="shc-body">
+            <h2 class="shc-title">SAINS TINGKATAN 4</h2>
+            <p class="shc-summary">Keselamatan Makmal, CPR & Heimlich, Parameter Kesihatan, Teknologi Hijau, Genetik Sel, Rangka & Pergerakan, Endokrin, Jadual Berkala, Aloi, Perubatan, Inersia & Nuklear.</p>
+            <div class="shc-features">
+              <span class="shc-pill">🧪 12 Bab Lengkap KSSM</span>
+              <span class="shc-pill">💡 Eksperimen & PASS Kaedah</span>
+              <span class="shc-pill">🎯 60+ Kuiz & Kertas 2 Berskema</span>
+            </div>
+            <button class="shc-btn btn-science-enter">
+              <span>Masuk Makmal Sains</span>
+              <span class="btn-arrow">➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- KAD 3: MATEMATIK TINGKATAN 4 -->
+        <div class="subject-hero-card card-matematik" onclick="selectSubjectAndEnter('matematik')">
+          <div class="shc-glow"></div>
+          <div class="shc-badge badge-math">📐 SILIBUS KSSM TINGKATAN 4</div>
+          <div class="shc-avatar-wrap">
+            <img src="assets/hero-math-tutor.png" alt="Tutor Matematik 3D" class="shc-avatar-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><text y=\'50\' font-size=\'40\'>📐🔢</text></svg>'" />
+            <div class="shc-mini-floats">
+              <span class="sm-float sf-1">√3</span>
+              <span class="sm-float sf-2">π</span>
+              <span class="sm-float sf-3">∑</span>
+            </div>
+          </div>
+          <div class="shc-body">
+            <h2 class="shc-title">MATEMATIK TINGKATAN 4</h2>
+            <p class="shc-summary">Fungsi & Persamaan Kuadratik, Asas Nombor, Penaakulan Logik, Operasi Set, Rangkaian Teori Graf, Ketaksamaan Linear, Graf Gerakan, Sukatan Serakan, Kebarangkalian & Kewangan.</p>
+            <div class="shc-features">
+              <span class="shc-pill">📐 10 Bab Lengkap KSSM</span>
+              <span class="shc-pill">📝 Jalan Kira Langkah Demi Langkah</span>
+              <span class="shc-pill">🎯 50+ Kuiz & Kertas 2 Berskema</span>
+            </div>
+            <button class="shc-btn btn-math-enter">
+              <span>Masuk Kelas Matematik</span>
+              <span class="btn-arrow">➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- KAD 4: KIMIA TINGKATAN 4 -->
+        <div class="subject-hero-card card-kimia" onclick="selectSubjectAndEnter('kimia')">
+          <div class="shc-glow"></div>
+          <div class="shc-badge badge-chemistry">⚗️ SILIBUS KSSM TINGKATAN 4</div>
+          <div class="shc-avatar-wrap">
+            <img src="assets/hero-chemistry-tutor.png" alt="Tutor Kimia 3D" class="shc-avatar-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><text y=\'50\' font-size=\'40\'>⚗️🧪</text></svg>'" />
+            <div class="shc-mini-floats">
+              <span class="sm-float sf-1">⚗️</span>
+              <span class="sm-float sf-2">H₂O</span>
+              <span class="sm-float sf-3">pH</span>
+            </div>
+          </div>
+          <div class="shc-body">
+            <h2 class="shc-title">KIMIA TINGKATAN 4</h2>
+            <p class="shc-summary">Pengenalan Kimia, Jirim & Struktur Atom, Konsep Mol & Formula Kimia, Jadual Berkala, Ikatan Kimia, Asid Bes & Garam, Kadar Tindak Balas, dan Bahan Buatan Industri.</p>
+            <div class="shc-features">
+              <span class="shc-pill">⚗️ 8 Bab Lengkap KSSM</span>
+              <span class="shc-pill">🧪 Stoikiometri & Eksperimen</span>
+              <span class="shc-pill">🎯 40+ Kuiz & Kertas 2 Berskema</span>
+            </div>
+            <button class="shc-btn btn-chemistry-enter">
+              <span>Masuk Makmal Kimia</span>
+              <span class="btn-arrow">➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- KAD 5: FIZIK TINGKATAN 4 -->
+        <div class="subject-hero-card card-fizik" onclick="selectSubjectAndEnter('fizik')">
+          <div class="shc-glow"></div>
+          <div class="shc-badge badge-physics">🔭 SILIBUS KSSM TINGKATAN 4</div>
+          <div class="shc-avatar-wrap">
+            <img src="assets/hero-physics-tutor.png" alt="Tutor Fizik 3D" class="shc-avatar-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><text y=\'50\' font-size=\'40\'>🔭⚡</text></svg>'" />
+            <div class="shc-mini-floats">
+              <span class="sm-float sf-1">F=ma</span>
+              <span class="sm-float sf-2">λ</span>
+              <span class="sm-float sf-3">v=fλ</span>
+            </div>
+          </div>
+          <div class="shc-body">
+            <h2 class="shc-title">FIZIK TINGKATAN 4</h2>
+            <p class="shc-summary">Pengukuran & Kuantiti Fizik, Daya & Gerakan I, Kegravitian Newton & Kepler, Teori Haba & Gas, Fenomena Gelombang & Spektrum EM, serta Cahaya & Optik Geometri.</p>
+            <div class="shc-features">
+              <span class="shc-pill">🔭 6 Bab Lengkap KSSM</span>
+              <span class="shc-pill">⚡ Formula & Jalan Kira Lengkap</span>
+              <span class="shc-pill">🎯 35+ Kuiz & Kertas 2 Berskema</span>
+            </div>
+            <button class="shc-btn btn-physics-enter">
+              <span>Masuk Makmal Fizik</span>
+              <span class="btn-arrow">➔</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Navigation Header -->
+  <header class="top-nav">
+    <div class="top-nav-left">
+      <div class="brand" onclick="scrollToTop()">
+        <div class="brand-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4L4 34H14L20 22L26 34H36L20 4Z" fill="url(#logoGrad)" stroke="#00f2fe" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M15 26L20 15L25 26H15Z" fill="#00f2fe" opacity="0.85"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="4" y1="4" x2="36" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0f2042"/>
+                <stop offset="1" stop-color="#00d2ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-text">MasterAcademiq<span class="brand-accent">.ai</span></span>
+      </div>
+
+      <!-- Active Subject Switcher Pill on Top Bar -->
+      <div class="subject-switcher-wrap">
+        <button class="btn-switch-subject" onclick="openSubjectPortal()" title="Klik untuk menukar subjek Tingkatan 4">
+          <span class="btn-switch-icon" id="switch-icon-indicator">📘</span>
+          <span id="active-subject-label" class="subject-label-text">SEJARAH TINGKATAN 4</span>
+          <span class="switch-badge">⇄ Tukar</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Center Navigation Tabs: Guaranteed single row, neatly spaced -->
+    <nav class="nav-tabs" id="main-nav-tabs">
+      <button class="nav-tab active" data-view="nota" onclick="switchMainView('nota')">
+        <span class="tab-icon">📖</span> Nota
+      </button>
+      <button class="nav-tab" data-view="step" onclick="switchMainView('step')">
+        <span class="tab-icon">🧭</span> Step-by-Step
+      </button>
+      <button class="nav-tab" data-view="keypoint" onclick="switchMainView('keypoint')">
+        <span class="tab-icon">⚡</span> Key Point
+      </button>
+      <button class="nav-tab" data-view="kuiz-topik" onclick="switchMainView('kuiz-topik')">
+        <span class="tab-icon">🎯</span> Soalan Topik
+      </button>
+      <button class="nav-tab" data-view="kuiz-keseluruhan" onclick="switchMainView('kuiz-keseluruhan')">
+        <span class="tab-icon">🏆</span> Peperiksaan
+      </button>
+      <button class="nav-tab" data-view="flipbook" onclick="switchMainView('flipbook')">
+        <span class="tab-icon">📑</span> Arkib Teks
+      </button>
+    </nav>
+
+    <!-- Right Side: User XP & Mastery -->
+    <div class="user-stats">
+      <div class="stat-pill xp-pill" title="Jumlah Mata Penguasaan (XP)">
+        <span class="stat-icon">✨</span>
+        <span id="xp-count">0</span> XP
+      </div>
+      <div class="stat-pill progress-pill" title="Kemajuan Bab Selesai">
+        <span class="stat-icon">🔥</span>
+        <span id="mastery-percent">0%</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (Exact Concept & Color Theme from Reference Image) -->
+  <section class="hero-stage" id="hero-section">
+    <!-- Top Floating Magnifying Glass Icon -->
+    <div class="hero-top-badge">
+      <div class="neon-magnifier">
+        <svg viewBox="0 0 64 64" fill="none">
+          <circle cx="28" cy="28" r="18" stroke="#00f2fe" stroke-width="4" filter="url(#neonGlow)"/>
+          <path d="M41 41L55 55" stroke="#00f2fe" stroke-width="6" stroke-linecap="round" filter="url(#neonGlow)"/>
+          <text x="28" y="35" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="800" font-family="Plus Jakarta Sans">?</text>
+          <defs>
+            <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <h1 class="hero-title" id="hero-main-title">Your <span class="cyan-glow-text" id="hero-subject-span">Sejarah</span> Tutor</h1>
+      <p class="hero-subtitle" id="hero-main-subtitle">Kuasai Semua 10 Bab Sejarah Tingkatan 4 KSSM</p>
+    </div>
+
+    <!-- 3-Column Interactive Tutor Arena -->
+    <div class="hero-arena">
+      <!-- LEFT GLASS PANEL: Topic, Bab & Answer Type Selector -->
+      <div class="glass-control-panel">
+        <div class="control-group">
+          <label class="control-label">
+            <span class="label-icon">📖</span> Cari Topik / Kata Kunci
+          </label>
+          <div class="input-wrapper">
+            <input type="text" id="topic-search-input" class="hero-input" placeholder="Cth: Waadat, CPR, Mitosis, Nuklear..." oninput="handleQuickSearch(this.value)" />
+            <div id="search-suggestions" class="search-dropdown hidden"></div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" id="label-select-chapter">
+            <span class="label-icon">🎓</span> Pilih Bab (Tingkatan 4)
+          </label>
+          <div class="select-wrapper">
+            <select id="chapter-select" class="hero-select" onchange="handleChapterChange(this.value)">
+              <!-- Populated dynamically based on active subject -->
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">
+            <span class="label-icon">❓</span> Mod Pembelajaran (Answer Type)
+          </label>
+          <div class="select-wrapper">
+            <select id="mode-select" class="hero-select" onchange="handleModeSelectChange(this.value)">
+              <option value="nota">Nota & Penerangan Lengkap</option>
+              <option value="step">Panduan Step-by-Step</option>
+              <option value="keypoint">Key Point Penting & Kata Kunci</option>
+              <option value="kuiz-topik">Latihan Soalan Mengikut Topik</option>
+              <option value="kuiz-keseluruhan">Soalan Peperiksaan Keseluruhan</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn-generate" onclick="triggerGenerateAction()">
+          <span>Generate</span>
+          <span class="sparkle-icon">✨</span>
+        </button>
+
+        <!-- 3D Book Stack Visual Indicator -->
+        <div class="mini-book-stack" id="mini-book-stack">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- CENTER STAGE: 3D Student Illustration & Floating Neon Symbols -->
+      <div class="center-character-stage">
+        <div id="floating-symbols-container">
+          <!-- Populated dynamically -->
+        </div>
+
+        <div class="character-frame">
+          <img src="assets/hero-tutor.png" alt="Tutor 3D" id="hero-character-img" class="character-img" onerror="this.style.display='none'; document.getElementById('fallback-svg-tutor').style.display='flex';" />
+          <!-- High-detail Fallback 3D-styled SVG Illustration while image loads -->
+          <div id="fallback-svg-tutor" class="fallback-tutor" style="display:none;">
+            <div class="tutor-avatar-glow"></div>
+            <div class="tutor-illustration-box">
+              <span class="big-tutor-emoji" id="fallback-emoji">🧑‍🎓📖✨</span>
+              <p class="tutor-caption" id="fallback-caption">Mod Interaktif Tingkatan 4 Aktif</p>
+            </div>
+          </div>
+
+          <!-- Interactive Active Chapter Overlay Badge on Desk -->
+          <div class="desk-active-banner" id="desk-banner">
+            <span class="pulse-dot"></span>
+            <span id="desk-banner-text">Sedang Dipelajari: <strong>BAB 1</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL: Step-by-Step Guide Cards (Blue, Indigo, Purple, Green) -->
+      <div class="step-guide-column">
+        <h3 class="step-guide-heading">Step-by-Step Guide</h3>
+
+        <div class="guide-card card-step-1" onclick="focusChapterSelect()">
+          <div class="guide-card-icon">🔍</div>
+          <div class="guide-card-body">
+            <h4>1. Pilih Bab & Topik</h4>
+            <p id="guide-step-1-p">Pilih daripada bab sukatan Tingkatan 4 mengikut nota asal</p>
+          </div>
+        </div>
+
+        <div class="guide-card card-step-2" onclick="switchMainView('nota')">
+          <div class="guide-card-icon">📚</div>
+          <div class="guide-card-body">
+            <h4>2. Nota & Penerangan</h4>
+            <p>Fahami teks verbatim nota rasmi & huraian mendalam konsep</p>
+          </div>
+        </div>
+
+        <div class="guide-card card-step-3" onclick="switchMainView('step')">
+          <div class="guide-card-icon">📋</div>
+          <div class="guide-card-body">
+            <h4>3. Step-by-Step & Key Point</h4>
+            <p>Hafal aliran eksperimen / proses & kata kunci markah penuh</p>
+          </div>
+        </div>
+
+        <div class="guide-card card-step-4" onclick="switchMainView('kuiz-topik')">
+          <div class="guide-card-icon">🪄</div>
+          <div class="guide-card-body">
+            <h4>4. Generate & Uji Diri!</h4>
+            <p>Jawab soalan mengikut topik & peperiksaan keseluruhan serta-merta!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM PILL BAR: Understand Better | Practice Smarter | Improve Faster | Achieve More -->
+    <div class="bottom-feature-pill">
+      <div class="feature-item" onclick="switchMainView('nota')">
+        <div class="feature-icon">🧠</div>
+        <div class="feature-text">
+          <strong>Understand</strong>
+          <span>Better (Nota & Huraian)</span>
+        </div>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-item" onclick="switchMainView('step')">
+        <div class="feature-icon">🎯</div>
+        <div class="feature-text">
+          <strong>Practice</strong>
+          <span>Smarter (Step-by-Step)</span>
+        </div>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-item" onclick="switchMainView('keypoint')">
+        <div class="feature-icon">📈</div>
+        <div class="feature-text">
+          <strong>Improve</strong>
+          <span>Faster (Key Points)</span>
+        </div>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-item" onclick="switchMainView('kuiz-keseluruhan')">
+        <div class="feature-icon">🏆</div>
+        <div class="feature-text">
+          <strong>Achieve</strong>
+          <span>More (Kuiz & Skor)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER QUICK-SWITCHER RIBBON -->
+  <section class="chapter-ribbon-wrap" id="workspace-anchor">
+    <div class="section-container">
+      <div class="ribbon-header">
+        <div>
+          <span class="eyebrow-tag" id="ribbon-eyebrow">SILIBUS LENGKAP TINGKATAN 4 KSSM</span>
+          <h2 class="section-title" id="ribbon-title">Pilih Bab Pembelajaran Anda</h2>
+        </div>
+        <div class="ribbon-actions">
+          <button class="btn-outline-cyan" onclick="openFlashcardModal()">🃏 Mod Kad Imbasan (Flashcards)</button>
+        </div>
+      </div>
+
+      <div class="chapter-pills-grid" id="chapter-pills-container">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN INTERACTIVE LEARNING WORKSPACE -->
+  <main class="learning-workspace section-container">
+    <!-- Active Chapter Banner -->
+    <div class="active-chapter-header" id="active-chapter-banner">
+      <!-- Populated dynamically -->
+    </div>
+
+    <!-- VIEW 1: NOTA ASAL & PENERANGAN LENGKAP -->
+    <section id="view-nota" class="workspace-view active">
+      <div class="view-toolbar">
+        <div class="toolbar-left">
+          <span class="view-badge">📖 MODUL 1: NOTA LENGKAP & HURAIAN KONSEP</span>
+          <p class="view-desc" id="view-nota-desc">Setiap nota di bawah disusun mengikut sukatan rasmi KSSM berserta penerangan kontekstual yang mendalam.</p>
+        </div>
+        <div class="toolbar-right">
+          <button class="toggle-btn active" id="btn-show-both" onclick="setNoteDisplayMode('both')">Paparan Penuh (Nota + Penerangan)</button>
+          <button class="toggle-btn" id="btn-show-verbatim" onclick="setNoteDisplayMode('verbatim')">Hanya Teks Asal 100%</button>
+        </div>
+      </div>
+
+      <div id="notes-cards-container" class="notes-grid">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- VIEW 2: PANDUAN STEP-BY-STEP (KRONOLOGI & ALIRAN PROSES) -->
+    <section id="view-step" class="workspace-view">
+      <div class="view-toolbar">
+        <div class="toolbar-left">
+          <span class="view-badge">🧭 MODUL 2: PANDUAN STEP-BY-STEP & ALIRAN PROSES</span>
+          <p class="view-desc">Ikuti langkah demi langkah bagaimana sesuatu proses sains atau peristiwa sejarah berlaku berdasarkan silibus.</p>
+        </div>
+        <div class="toolbar-right">
+          <button class="btn-Cyan-sm" onclick="animateStepWalkthrough()">▶️ Mainkan Animasi Langkah Demi Langkah</button>
+        </div>
+      </div>
+
+      <div id="step-guide-container" class="step-timeline-wrapper">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- VIEW 3: KEY POINT PENTING & FORMULA INGATAN -->
+    <section id="view-keypoint" class="workspace-view">
+      <div class="view-toolbar">
+        <div class="toolbar-left">
+          <span class="view-badge">⚡ MODUL 3: KEY POINT PENTING & KATA KUNCI</span>
+          <p class="view-desc">Senarai fakta teras, formula, istilah wajib ingat, dan kata kunci utama untuk rujukan pantas sebelum ujian.</p>
+        </div>
+        <div class="toolbar-right">
+          <button class="btn-Cyan-sm" onclick="openFlashcardModal()">🃏 Latih Tubi Kad Imbasan Bab Ini</button>
+        </div>
+      </div>
+
+      <div id="keypoints-container" class="keypoints-layout">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- VIEW 4: SOALAN MENGIKUT TOPIK (BAB SEMASA) -->
+    <section id="view-kuiz-topik" class="workspace-view">
+      <div class="view-toolbar">
+        <div class="toolbar-left">
+          <span class="view-badge">🎯 MODUL 4: SOALAN MENGIKUT TOPIK (OBJEKTIF & STRUKTUR)</span>
+          <p class="view-desc">Uji kefahaman anda khusus untuk bab ini! Semua soalan dan skema jawapan adalah berpandukan sukatan pelajaran KSSM terkini.</p>
+        </div>
+        <div class="toolbar-right">
+          <button class="btn-outline-cyan" onclick="resetTopicQuiz()">🔄 Set Semula Kuiz Bab Ini</button>
+        </div>
+      </div>
+
+      <div id="topic-quiz-container" class="quiz-arena">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- VIEW 5: SOALAN KESELURUHAN (PEPERIKSAAN LENGKAP SEMUA BAB) -->
+    <section id="view-kuiz-keseluruhan" class="workspace-view">
+      <div class="view-toolbar">
+        <div class="toolbar-left">
+          <span class="view-badge" id="exam-view-badge">🏆 MODUL 5: SOALAN PEPERIKSAAN KESELURUHAN TINGKATAN 4</span>
+          <p class="view-desc">Simulasi Peperiksaan Merentas Semua Bab Tingkatan 4 (Kertas 1 Objektif & Kertas 2 Struktur) berserta analisis penguasaan.</p>
+        </div>
+        <div class="toolbar-right">
+          <select id="exam-filter-select" class="hero-select sm-select" onchange="initComprehensiveExam(this.value)">
+            <option value="all">Semua Soalan Keseluruhan Subjek Ini</option>
+            <option value="random15">Cabaran Pantas 15 Soalan Rawak</option>
+            <option value="struktur">Bahagian B: Soalan Struktur & Esei Ringkas</option>
+          </select>
+          <button class="btn-Cyan-sm" onclick="initComprehensiveExam(document.getElementById('exam-filter-select').value)">🔄 Jana Set Baru</button>
+        </div>
+      </div>
+
+      <div id="comprehensive-exam-container" class="exam-wrapper">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- VIEW 6: SEMAKAN TEKS ASAL 100% -->
+    <section id="view-flipbook" class="workspace-view">
+      <div class="view-toolbar">
+        <div class="toolbar-left">
+          <span class="view-badge" id="archive-view-badge">📑 MODUL 6: ARKIB TEKS ASAL LENGKAP</span>
+          <p class="view-desc" id="archive-view-desc">Paparan rujukan terus halaman demi halaman teks digital rasmi.</p>
+        </div>
+        <div class="toolbar-right">
+          <input type="text" class="hero-input sm-input" placeholder="Tapis teks asal..." oninput="filterVerbatimArchive(this.value)" />
+        </div>
+      </div>
+
+      <div id="verbatim-archive-container" class="verbatim-archive-grid">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FLASHCARD MODAL -->
+  <div id="flashcard-modal" class="modal-backdrop hidden">
+    <div class="modal-glass-card">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow-tag">MOD IMBASAN PANTAS</span>
+          <h3 id="flashcard-modal-title">Kad Imbasan Interaktif</h3>
+        </div>
+        <button class="modal-close" onclick="closeFlashcardModal()">✕</button>
+      </div>
+      <div class="flashcard-stage">
+        <div class="flashcard-3d" id="flashcard-element" onclick="flipCurrentCard()">
+          <div class="flashcard-face flashcard-front">
+            <span class="fc-hint">SOALAN / KATA KUNCI (Klik untuk terbalikkan)</span>
+            <h4 id="fc-front-text">Apakah soalan?</h4>
+            <span class="fc-bab-tag" id="fc-bab-label">Bab 1</span>
+          </div>
+          <div class="flashcard-face flashcard-back">
+            <span class="fc-hint">JAWAPAN TEPAT NOTA ASAL</span>
+            <p id="fc-back-text">Jawapan</p>
+            <div class="fc-extra" id="fc-extra-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="flashcard-controls">
+        <button class="btn-outline-cyan" onclick="prevFlashcard()">⬅️ Sebelum</button>
+        <span id="fc-counter" class="fc-counter-text">1 / 10</span>
+        <button class="btn-Cyan-sm" onclick="nextFlashcard()">Seterusnya ➡️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="section-container footer-inner">
+      <div class="footer-brand">
+        <strong>MasterAcademiq.ai — Platform Pembelajaran Lengkap Tingkatan 4</strong>
+        <p id="footer-source-desc">Menyediakan platform pembelajaran interaktif lengkap untuk subjek <strong>Sejarah Tingkatan 4</strong>, <strong>Sains Tingkatan 4</strong>, <strong>Matematik Tingkatan 4</strong>, <strong>Kimia Tingkatan 4</strong>, dan <strong>Fizik Tingkatan 4</strong> berserta jalan kira, formula, dan eksperimen lengkap mengikut sukatan KSSM terkini.</p>
+      </div>
+      <div class="footer-badges">
+        <span class="f-badge">🏛️ Sejarah: 10 Bab</span>
+        <span class="f-badge">🧪 Sains: 12 Bab</span>
+        <span class="f-badge">📐 Matematik: 10 Bab</span>
+        <span class="f-badge">⚗️ Kimia: 8 Bab</span>
+        <span class="f-badge">🔭 Fizik: 6 Bab</span>
+        <span class="f-badge">🏆 240+ Kuiz & Skema Lengkap</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Data Sejarah, Data Sains, Data Matematik, Data Kimia, Data Fizik & App Logic -->
+  <script src="data.js"></script>
+  <script src="data-sains.js"></script>
+  <script src="data-matematik.js"></script>
+  <script src="data-kimia.js"></script>
+  <script src="data-fizik.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
