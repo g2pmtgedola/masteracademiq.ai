@@ -39,13 +39,23 @@
           </div>
           <span class="portal-brand-title">MasterAcademiq<span class="brand-accent">.ai</span></span>
         </div>
-        <span class="portal-tagline">✨ Hab Pembelajaran Digital Interaktif KSSM Tingkatan 4</span>
+        <span class="portal-tagline">✨ Hab Pembelajaran Digital Interaktif KSSM Tingkatan 4 & 5</span>
         <h1 class="portal-title">Pilih Subjek Pembelajaran Anda</h1>
         <p class="portal-desc">Pilih subjek kegemaran anda untuk membuka nota komprehensif, animasi step-by-step, key points, dan bank soalan beranimasi 3D!</p>
       </div>
 
-      <!-- Tiga Kad Pilihan Subjek 3D -->
-      <div class="subject-cards-grid">
+      <!-- Tingkatan 4 vs Tingkatan 5 Portal Switcher -->
+      <div class="portal-form-switcher">
+        <button class="p-form-btn active" id="p-form-4" onclick="switchPortalForm(4)">
+          <span class="p-icon">📘</span> Tingkatan 4
+        </button>
+        <button class="p-form-btn" id="p-form-5" onclick="switchPortalForm(5)">
+          <span class="p-icon">🎓</span> Tingkatan 5 (SPM)
+        </button>
+      </div>
+
+      <!-- Kad Pilihan Subjek 3D -->
+      <div class="subject-cards-grid" id="subject-cards-grid">
         <!-- KAD 1: SEJARAH TINGKATAN 4 -->
         <div class="subject-hero-card card-sejarah" onclick="selectSubjectAndEnter('sejarah')">
           <div class="shc-glow"></div>
@@ -232,11 +242,17 @@
 
       <!-- Active Subject Switcher Pill on Top Bar -->
       <div class="subject-switcher-wrap">
-        <button class="btn-switch-subject" onclick="openSubjectPortal()" title="Klik untuk menukar subjek Tingkatan 4">
+        <button class="btn-switch-subject" onclick="openSubjectPortal()" title="Klik untuk menukar subjek">
           <span class="btn-switch-icon" id="switch-icon-indicator">📘</span>
           <span id="active-subject-label" class="subject-label-text">SEJARAH TINGKATAN 4</span>
           <span class="switch-badge">⇄ Tukar</span>
         </button>
+      </div>
+
+      <!-- Quick Form Toggle Pill in Header -->
+      <div class="form-toggle-pill" id="header-form-toggle">
+        <button class="btn-form-pill active" id="header-form-4" onclick="setForm(4)" title="Tingkatan 4">T4</button>
+        <button class="btn-form-pill" id="header-form-5" onclick="setForm(5)" title="Tingkatan 5 (SPM)">T5</button>
       </div>
     </div>
 
@@ -679,17 +695,17 @@
   <footer class="site-footer">
     <div class="section-container footer-inner">
       <div class="footer-brand">
-        <strong>MasterAcademiq.ai — Platform Pembelajaran Lengkap Tingkatan 4</strong>
-        <p id="footer-source-desc">Menyediakan platform pembelajaran interaktif lengkap untuk subjek <strong>Sejarah Tingkatan 4</strong>, <strong>Sains Tingkatan 4</strong>, <strong>Matematik Tingkatan 4</strong>, <strong>Kimia Tingkatan 4</strong>, <strong>Fizik Tingkatan 4</strong>, dan <strong>Biologi Tingkatan 4</strong> berserta jalan kira, formula, dan eksperimen lengkap mengikut sukatan KSSM terkini.</p>
+        <strong id="footer-brand-title">MasterAcademiq.ai — Platform Pembelajaran Lengkap Tingkatan 4 & 5 (SPM)</strong>
+        <p id="footer-source-desc">Menyediakan platform pembelajaran interaktif lengkap untuk subjek <strong>Sejarah</strong>, <strong>Sains</strong>, <strong>Matematik</strong>, <strong>Kimia</strong>, <strong>Fizik</strong>, dan <strong>Biologi</strong> Tingkatan 4 & 5 berserta jalan kira, formula, dan eksperimen lengkap 100% mengikut sukatan buku teks KSSM terkini.</p>
       </div>
-      <div class="footer-badges">
-        <span class="f-badge">🏛️ Sejarah: 10 Bab</span>
-        <span class="f-badge">🧪 Sains: 12 Bab</span>
-        <span class="f-badge">📐 Matematik: 10 Bab</span>
-        <span class="f-badge">⚗️ Kimia: 8 Bab</span>
-        <span class="f-badge">🔭 Fizik: 6 Bab</span>
-        <span class="f-badge">🧬 Biologi: 15 Bab</span>
-        <span class="f-badge">🏆 315+ Kuiz & Skema Lengkap</span>
+      <div class="footer-badges" id="footer-badges-container">
+        <span class="f-badge">🏛️ Sejarah: T4 & T5 (20 Bab)</span>
+        <span class="f-badge">🧪 Sains: T4 & T5 (21 Bab)</span>
+        <span class="f-badge">📐 Matematik: T4 & T5 (18 Bab)</span>
+        <span class="f-badge">⚗️ Kimia: T4 & T5 (13 Bab)</span>
+        <span class="f-badge">🔭 Fizik: T4 & T5 (13 Bab)</span>
+        <span class="f-badge">🧬 Biologi: T4 & T5 (28 Bab)</span>
+        <span class="f-badge">🏆 500+ Kuiz & Skema SPM</span>
       </div>
     </div>
   </footer>
@@ -706,13 +722,19 @@
     </div>
   </div>
 
-  <!-- Scripts: Data Sejarah, Data Sains, Data Matematik, Data Kimia, Data Fizik, Data Biologi & App Logic -->
+  <!-- Scripts: Data Tingkatan 4 & Tingkatan 5 (100% KSSM Rasmi) & App Logic -->
   <script src="data.js?v=2.3"></script>
   <script src="data-sains.js"></script>
   <script src="data-matematik.js"></script>
   <script src="data-kimia.js"></script>
   <script src="data-fizik.js"></script>
   <script src="data-biologi.js?v=2.2"></script>
-  <script src="app.js?v=2.3"></script>
+  <script src="data-sejarah-t5.js"></script>
+  <script src="data-sains-t5.js"></script>
+  <script src="data-matematik-t5.js"></script>
+  <script src="data-kimia-t5.js"></script>
+  <script src="data-fizik-t5.js"></script>
+  <script src="data-biologi-t5.js"></script>
+  <script src="app.js?v=2.5"></script>
 </body>
 </html>

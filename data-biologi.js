@@ -1,8 +1,7 @@
 /* ==========================================================================
-   DATA-BIOLOGI.JS — 100% BAHAN BUKU TEKS BIOLOGI TINGKATAN 4 KSSM
-   Sumber: https://online.anyflip.com/gzctj/nnvp/mobile/index.html
-   Tema 1: Asas Biologi (Bab 1 - 7)
-   Tema 2: Fisiologi Manusia dan Haiwan (Bab 8 - 15)
+   DATA-BIOLOGI.JS — 100% BAHAN LENGKAP BUKU TEKS BIOLOGI KSSM TINGKATAN 4
+   Sumber Rasmi: https://online.anyflip.com/gzctj/nnvp/mobile/index.html
+   Semua 15 Bab & 71 Subtopik Rasmi KSSM Lengkap Tanpa Sebarang Tertinggal
    ========================================================================== */
 
 const BIOLOGI_DATA = [
@@ -11,51 +10,51 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 1",
     "title": "PENGENALAN KEPADA BIOLOGI DAN PERATURAN MAKMAL",
     "icon": "🔬",
-    "anyflipPages": "Halaman 2 – 20 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Biologi merupakan kajian terperinci tentang organisma hidup, interaksi antara hidupan dengan persekitaran, serta sumbangannya dalam pelbagai bidang moden seperti bioteknologi, perubatan dan pertanian. Bab ini memupuk amalan keselamatan makmal yang ketat, pengurusan sisa biologi mengikut kategori SOP, kaedah komunikasi data saintifik, serta langkah-langkah penyiasatan saintifik berlandaskan disiplin sains.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 2 – 19)",
+    "synopsis": "Pengenalan kepada bidang kajian biologi, kerjaya profesional berkaitan, peraturan keselamatan dan etika pengurusan makmal sains, kaedah berkomunikasi dalam biologi melalui jadual, graf dan lukisan saintifik, serta langkah penyiasatan saintifik sistematik.",
     "notes": [
       {
         "subtopic": "1.1 Bidang Biologi dan Kerjaya",
-        "summary": "Biologi berasal daripada perkataan Yunani 'bios' (kehidupan) dan 'logos' (kajian). Merangkumi bidang zoologi, botani, mikrobiologi, fisiologi, genetik, dan ekologi.",
-        "points": [
-          "Biologi menghubungkan sains tulen dengan aplikasi harian: bioteknologi perubatan (cth: terapi gen dan penghasilan insulin rekombinan), bioteknologi pertanian (cth: tanaman rintang perosak), dan nanoteknologi biologi.",
-          "Kerjaya berkaitan biologi merangkumi doktor perubatan, ahli mikrobiologi, saintis bioperubatan, ahli genetik, pegawai pertanian, dan penyelidik marin."
-        ],
+        "summary": "Biologi ialah kajian terperinci tentang benda hidup dan interaksinya dengan persekitaran, merangkumi pelbagai cabang ilmu saintifik moden serta peluang kerjaya profesional.",
         "verbatim": [
-          "Biologi menghubungkan sains tulen dengan aplikasi harian: bioteknologi perubatan (cth: terapi gen dan penghasilan insulin rekombinan), bioteknologi pertanian (cth: tanaman rintang perosak), dan nanoteknologi biologi.",
-          "Kerjaya berkaitan biologi merangkumi doktor perubatan, ahli mikrobiologi, saintis bioperubatan, ahli genetik, pegawai pertanian, dan penyelidik marin."
+          "Maksud Biologi: Berasal daripada perkataan Yunani 'bios' (kehidupan) dan 'logos' (kajian) — kajian saintifik tentang hidupan dan persekitarannya.",
+          "Cabang Biologi: Botani (tumbuhan), Zoologi (haiwan), Fisiologi (fungsi dan proses badan hidupan), Genetik (pewarisan ciri dan variasi), Ekologi (interaksi hidupan dan persekitaran), Mikrobiologi (mikroorganisma seni).",
+          "Kemajuan Biologi & Sumbangan: Bioteknologi, Bioinformatik, Kejuruteraan Genetik, Nanoteknologi dalam pertanian, perubatan, industri farmaseutikal dan pemuliharaan alam sekitar.",
+          "Kerjaya Berkaitan: Ahli biologi, doktor perubatan, penyelidik genetik, ahli botani, jurutera bioperubatan, saintis forensik, pakar pemakanan."
         ],
-        "explanation": "Biologi berasal daripada perkataan Yunani 'bios' (kehidupan) dan 'logos' (kajian). Merangkumi bidang zoologi, botani, mikrobiologi, fisiologi, genetik, dan ekologi."
+        "explanation": "Perkembangan biologi moden menyumbang kepada jaminan sekuriti makanan dan rawatan penyakit genetik melalui terapi gen."
       },
       {
         "subtopic": "1.2 Keselamatan dan Peraturan dalam Makmal Biologi",
-        "summary": "Peralatan perlindungan diri (PPE) dan pengurusan sisa biologi secara sistematik mengikut Kategori A, B, C, dan D.",
-        "points": [
-          "Peralatan Perlindungan Diri (PPE): Kot makmal, sarung tangan nitril/lateks, cermin mata keselamatan (gogal), topeng muka, dan kasut bertutup penuh.",
-          "Stesen Keselamatan Makmal: Kebuk wasap (mengendalikan bahan meruap/beracun), kabinet aliran lamina (mengelakkan kontaminasi kultur mikroorganisma), pancuran kecemasan, dan pencuci mata.",
-          "Kategori Pengurusan Bahan Sisa Biologi:\n  • Kategori A (Sisa tajam: picagari, jarum, bilah skalpel) -> Dimasukkan ke dalam bekas sisa tajam khas tahan bocor, tidak diautoklaf.\n  • Kategori B (Sisa tidak tajam: sarung tangan, piring petri, kertas turas terpakai) -> Dibungkus dalam beg plastik biobahaya, diautoklaf pada suhu 121°C tekanan 15 psi selama 20 minit, dimasukkan ke dalam tong biobahaya.\n  • Kategori C (Bangkai haiwan uji kaji, organ, tisu) -> Dibungkus rapi dalam beg biobahaya, disejukbekukan sebelum dilupuskan oleh perkhidmatan berlesen.\n  • Kategori D (Bendalir biologi: darah, serum, kultur cecair) -> Dinyahkontaminasi secara autoklaf atau peluntur 10% sebelum dialirkan ke sistem pembetungan.",
-          "Pelan Tindakan Kemalangan: Tumpahan merkuri (tabur serbuk sulfur untuk mengikat wap toksik, laporkan kepada bomba), tumpahan asid/alkali pekat (hadang kawasan, neutralkan dengan serbuk penaik untuk asid atau asid borik untuk alkali, bilas air)."
-        ],
+        "summary": "Peraturan ketat, peralatan perlindungan diri (PPE), etika pengendalian radas serta pengurusan sisa biologi mengikut kategori SOP piawai.",
         "verbatim": [
-          "Peralatan Perlindungan Diri (PPE): Kot makmal, sarung tangan nitril/lateks, cermin mata keselamatan (gogal), topeng muka, dan kasut bertutup penuh.",
-          "Stesen Keselamatan Makmal: Kebuk wasap (mengendalikan bahan meruap/beracun), kabinet aliran lamina (mengelakkan kontaminasi kultur mikroorganisma), pancuran kecemasan, dan pencuci mata.",
-          "Kategori Pengurusan Bahan Sisa Biologi:\n  • Kategori A (Sisa tajam: picagari, jarum, bilah skalpel) -> Dimasukkan ke dalam bekas sisa tajam khas tahan bocor, tidak diautoklaf.\n  • Kategori B (Sisa tidak tajam: sarung tangan, piring petri, kertas turas terpakai) -> Dibungkus dalam beg plastik biobahaya, diautoklaf pada suhu 121°C tekanan 15 psi selama 20 minit, dimasukkan ke dalam tong biobahaya.\n  • Kategori C (Bangkai haiwan uji kaji, organ, tisu) -> Dibungkus rapi dalam beg biobahaya, disejukbekukan sebelum dilupuskan oleh perkhidmatan berlesen.\n  • Kategori D (Bendalir biologi: darah, serum, kultur cecair) -> Dinyahkontaminasi secara autoklaf atau peluntur 10% sebelum dialirkan ke sistem pembetungan.",
-          "Pelan Tindakan Kemalangan: Tumpahan merkuri (tabur serbuk sulfur untuk mengikat wap toksik, laporkan kepada bomba), tumpahan asid/alkali pekat (hadang kawasan, neutralkan dengan serbuk penaik untuk asid atau asid borik untuk alkali, bilas air)."
+          "Peralatan Perlindungan Diri (PPE): Kot makmal, cermin mata keselamatan (gogal), sarung tangan, topeng muka, kasut bertutup.",
+          "Peralatan Keselamatan Makmal: Kebuk wasap (mengendalikan bahan meruap/beracun), kabinet aliran lamina (mengelakkan kontaminasi kultur mikrob), stesen pencuci mata, pancuran keselamatan.",
+          "Pengurusan Bahan Sisa Biologi: Kategori A (Sisa tajam cth picagari, bilah skapel - masukkan bekas sisa tajam tanpa diautoklaf); Kategori B (Sisa tidak tajam cth sarung tangan, piring petri - bungkus beg plastik autoklaf biobahaya, diautoklaf pada 121 °C & 15 psi); Kategori C (Bangkai haiwan - dibungkus bahan penyerap & dibekukan); Kategori D (Cecair biologi cth darah - dinyahkontaminasi secara autoklaf sebelum dilupuskan).",
+          "Kemalangan & Tumpahan: Maklumkan kepada guru/pembantu makmal serta-merta; hadkan kawasan tumpahan merkuri menggunakan serbuk sulfur."
         ],
-        "explanation": "Peralatan perlindungan diri (PPE) dan pengurusan sisa biologi secara sistematik mengikut Kategori A, B, C, dan D."
+        "explanation": "Kepatuhan kepada SOP pengurusan sisa makmal mencegah penularan penyakit berjangkit dan pencemaran bahan toksik ke punca air awam."
       },
       {
-        "subtopic": "1.3 Berkomunikasi dalam Biologi & 1.4 Penyiasatan Saintifik",
-        "summary": "Prinsip melukis rajah biologi, membina graf garis lurus/histogram, dan 11 langkah penyiasatan saintifik.",
-        "points": [
-          "Ciri-ciri Lukisan Biologi: Garisan tidak putus-putus (solid lines), tidak berbayang (no shading), skala/pembesaran dinyatakan, label mendatar dengan garis penunjuk lurus tanpa bersilang.",
-          "11 Langkah Penyiasatan Saintifik: 1. Mengenal pasti masalah -> 2. Membina hipotesis -> 3. Mengenal pasti pemboleh ubah (manipulasi, bergerak balas, dimalarkan) -> 4. Merancang eksperimen -> 5. Menjalankan eksperimen -> 6. Mengumpul data -> 7. Menganalisis data -> 8. Mentafsir data -> 9. Membuat kesimpulan -> 10. Menulis laporan."
-        ],
+        "subtopic": "1.3 Berkomunikasi dalam Biologi",
+        "summary": "Kemahiran mempersembahkan data biologi secara saintifik melalui jadual berstruktur, graf tepat, satah keratan badan, dan lukisan biologi berlabel.",
         "verbatim": [
-          "Ciri-ciri Lukisan Biologi: Garisan tidak putus-putus (solid lines), tidak berbayang (no shading), skala/pembesaran dinyatakan, label mendatar dengan garis penunjuk lurus tanpa bersilang.",
-          "11 Langkah Penyiasatan Saintifik: 1. Mengenal pasti masalah -> 2. Membina hipotesis -> 3. Mengenal pasti pemboleh ubah (manipulasi, bergerak balas, dimalarkan) -> 4. Merancang eksperimen -> 5. Menjalankan eksperimen -> 6. Mengumpul data -> 7. Menganalisis data -> 8. Mentafsir data -> 9. Membuat kesimpulan -> 10. Menulis laporan."
+          "Jadual Data: Tajuk pemboleh ubah dimanipulasi di kolum kiri dan pemboleh ubah bergerak balas di kolum kanan berserta unit ukuran yang sah.",
+          "Graf Garis & Histogram: Garis lurus/lengkung melicinkan data; Histogram mewakili data selanjar; Carta bar mewakili data tak selanjar.",
+          "Satah Keratan Badan: Satah sagital (membahagi badan kiri & kanan), satah frontal (membahagi badan depan & belakang), satah melintang (membahagi badan atas & bawah).",
+          "Arah Kedudukan Tubuh: Anterior (bahagian depan), Posterior (bahagian belakang), Superior (bahagian atas), Inferior (bahagian bawah), Lateral (ke arah tepi), Medial (ke arah tengah).",
+          "Ciri Lukisan Biologi: Garis lurus jelas tanpa lakaran/bayang (tidak dihitamkan), saiz besar dan berkadaran, garis penunjuk lurus tanpa bersilang, tajuk dan faktor pembesaran disertakan."
         ],
-        "explanation": "Prinsip melukis rajah biologi, membina graf garis lurus/histogram, dan 11 langkah penyiasatan saintifik."
+        "explanation": "Garis label pada lukisan biologi mesti mengarah tepat ke struktur yang dinamakan tanpa anak panah di hujung garisan."
+      },
+      {
+        "subtopic": "1.4 Penyiasatan Saintifik dalam Biologi",
+        "summary": "Pendekatan sistematik dalam merancang, melaksanakan, menganalisis dan membuat kesimpulan daripada penyiasatan eksperimen saintifik.",
+        "verbatim": [
+          "Langkah Kaedah Saintifik: 1. Mengenal pasti masalah; 2. Membina hipotesis; 3. Mengenal pasti dan mengawal pemboleh ubah; 4. Merancang penyiasatan saintifik; 5. Menjalankan eksperimen; 6. Mengumpul data; 7. Menganalisis dan mentafsir data; 8. Membuat kesimpulan; 9. Menulis laporan saintifik yang lengkap.",
+          "Pengenalpastian Pemboleh Ubah: Pemboleh ubah dimanipulasi (faktor yang diubah secara sengaja), pemboleh ubah bergerak balas (faktor yang diukur/diperhatikan), pemboleh ubah dimalarkan (faktor yang dikekalkan sama sepanjang eksperimen)."
+        ],
+        "explanation": "Penyiasatan saintifik menuntut sikap jujur dan objektif dalam mencatat serta melaporkan data eksperimen sebenar."
       }
     ],
     "steps": [
@@ -179,71 +178,50 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 2",
     "title": "BIOLOGI SEL DAN ORGANISASI SEL",
     "icon": "🧫",
-    "anyflipPages": "Halaman 22 – 42 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Sel merupakan unit asas kehidupan bagi semua hidupan. Bab ini membincangkan struktur ultra sel haiwan dan sel tumbuhan, fungsi setiap organel bermembran dan tidak bermembran, proses hidup organisma unisel (Amoeba sp. dan Paramecium sp.), pengkhususan sel dalam organisma multisel, serta pembentukan aras organisasi daripada sel kepada sistem dan organisma lengkap.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 20 – 43)",
+    "synopsis": "Mengkaji struktur ultra sel haiwan dan sel tumbuhan, peranan organel selular, proses hidup organisma unisel (Amoeba sp. dan Paramecium sp.), proses hidup organisma multisel serta hierarki organisasi sel membentuk tisu, organ dan sistem organisma.",
     "notes": [
       {
-        "subtopic": "2.1 Struktur dan Fungsi Sel & Organel",
-        "summary": "Organel sel haiwan dan tumbuhan serta peranan biokimia masing-masing.",
-        "points": [
-          "Nukleus: Organel terbesar dilingkungi membran nukleus berlapis dua, mengandungi nukleoplasma, nukleolus (sintesis ribosom) dan kromatin (membawa DNA pengendali aktiviti sel).",
-          "Mitokondrion: Organel berbentuk rod dengan membran luar licin dan membran dalam berlipat-lipat (krista). Merupakan 'kilang tenaga sel' tempat berlakunya respirasi sel untuk menghasilkan ATP.",
-          "Kloroplas: Khusus dalam sel tumbuhan, mengandungi klorofil dalam tilakoid (grana) dan stroma untuk menyerap cahaya matahari bagi fotosintesis.",
-          "Jalinan Endoplasma Kasar (JEK): Mempunyai ribosom melekat pada permukaannya; mengangkut protein yang disintesis oleh ribosom.",
-          "Jalinan Endoplasma Licin (JEL): Tidak berbintil ribosom; mensintesis lipid, fosfolipid, steroid, dan detoksifikasi dadah/racun metabolik.",
-          "Jasad Golgi: Memproses, mengubah suai, membungkus, dan mengangkut protein/glikoprotein ke bahagian sel lain atau dirembes keluar melalui vesikel rembesan.",
-          "Lisosom: Kantung bermembran tunggal mengandungi enzim hidrolitik (lisozim) untuk mencernakan bahan asing, bakteria fagositosit, dan organel yang rosak (autofagi).",
-          "Ribosom: Organel seni tidak bermembran, tapak sintesis protein.",
-          "Vakuol: Vakuol pusat besar dalam tumbuhan diselaputi tonoplas mengandungi sap sel yang memberi kesegahan; vakuol mengecut dalam protozoa untuk pengosmoregulasian.",
-          "Sentriol: Hanya wujud dalam sel haiwan, membentuk gentian gelendong semasa pembahagian sel.",
-          "Dinding Sel: Lapisan selulosa tegar di luar membran plasma tumbuhan; memberi bentuk tetap dan sokongan mekanikal."
-        ],
+        "subtopic": "2.1 Struktur dan Fungsi Sel",
+        "summary": "Sel ialah unit asas hidupan yang mengandungi nukleus, sitoplasma, membran plasma dan pelbagai organel khusus dengan fungsi tertentu.",
         "verbatim": [
-          "Nukleus: Organel terbesar dilingkungi membran nukleus berlapis dua, mengandungi nukleoplasma, nukleolus (sintesis ribosom) dan kromatin (membawa DNA pengendali aktiviti sel).",
-          "Mitokondrion: Organel berbentuk rod dengan membran luar licin dan membran dalam berlipat-lipat (krista). Merupakan 'kilang tenaga sel' tempat berlakunya respirasi sel untuk menghasilkan ATP.",
-          "Kloroplas: Khusus dalam sel tumbuhan, mengandungi klorofil dalam tilakoid (grana) dan stroma untuk menyerap cahaya matahari bagi fotosintesis.",
-          "Jalinan Endoplasma Kasar (JEK): Mempunyai ribosom melekat pada permukaannya; mengangkut protein yang disintesis oleh ribosom.",
-          "Jalinan Endoplasma Licin (JEL): Tidak berbintil ribosom; mensintesis lipid, fosfolipid, steroid, dan detoksifikasi dadah/racun metabolik.",
-          "Jasad Golgi: Memproses, mengubah suai, membungkus, dan mengangkut protein/glikoprotein ke bahagian sel lain atau dirembes keluar melalui vesikel rembesan.",
-          "Lisosom: Kantung bermembran tunggal mengandungi enzim hidrolitik (lisozim) untuk mencernakan bahan asing, bakteria fagositosit, dan organel yang rosak (autofagi).",
-          "Ribosom: Organel seni tidak bermembran, tapak sintesis protein.",
-          "Vakuol: Vakuol pusat besar dalam tumbuhan diselaputi tonoplas mengandungi sap sel yang memberi kesegahan; vakuol mengecut dalam protozoa untuk pengosmoregulasian.",
-          "Sentriol: Hanya wujud dalam sel haiwan, membentuk gentian gelendong semasa pembahagian sel.",
-          "Dinding Sel: Lapisan selulosa tegar di luar membran plasma tumbuhan; memberi bentuk tetap dan sokongan mekanikal."
+          "Komponen Sel & Organel: Membran plasma (kawal atur pergerakan bahan masuk & keluar sel); Nukleus (mengawal semua aktiviti sel, mengandungi kromosom & DNA); Mitokondrion (tapak penjanaan tenaga ATP melalui respirasi sel); Ribosom (tapak sintesis protein); Jalinan Endoplasma Kasar / JEK (mengangkut protein yang disintesis oleh ribosom); Jalinan Endoplasma Licin / JEL (sintesis lipid, fosfolipid & detoksifikasi dadah/toksin); Jasad Golgi (memproses, mengubah suai, membungkus & mengangkut glikoprotein dan enzim); Lisosom (mengandungi enzim hidrolitik lisozim untuk mencernakan bakteria & organel rosak); Sentriol (membentuk gentian gelendong semasa pembahagian sel haiwan); Kloroplas (mengandungi klorofil untuk menyerap cahaya bagi fotosintesis dalam sel tumbuhan); Vakuol (mengandungi sap sel yang memberi sokongan segah); Dinding sel (selulosa tegar memberikan bentuk tetap kepada sel tumbuhan).",
+          "Perbezaan Sel Haiwan vs Sel Tumbuhan: Sel tumbuhan mempunyai dinding sel, kloroplas, vakuol besar dan bentuk tetap; Sel haiwan tiada dinding sel, tiada kloroplas, vakuol kecil/tiada, mempunyai sentriol dan bentuk tidak tetap."
         ],
-        "explanation": "Organel sel haiwan dan tumbuhan serta peranan biokimia masing-masing."
+        "explanation": "Kepadatan organel tertentu adalah tinggi mengikut keperluan tisu: mitokondrion padat dalam sel otot penerbangan dan sel sperma; kloroplas padat dalam sel mesofil palisad; Jasad Golgi padat dalam sel kelenjar merembes enzim."
       },
       {
         "subtopic": "2.2 Proses Hidup Organisma Unisel",
-        "summary": "Amoeba sp. dan Paramecium sp. menjalankan semua fungsi hidup dalam satu sel tunggal.",
-        "points": [
-          "Pergerakan: Amoeba sp. bergerak menggunakan pseudopodium (kaki palsu melalui aliran ameboid endoplasma); Paramecium sp. menggunakan pukulan silium beritma.",
-          "Pemakanan: Amoeba sp. makan secara fagositosis (pseudopodium mengepung zarah makanan -> membentuk vakuol makanan -> bercantum dengan lisosom -> dicerna enzim hidrolisis); Paramecium sp. mengalirkan makanan ke alur lisan menggunakan silium.",
-          "Pengosmoregulasian: Hidup dalam air tawar (larutan hipotonik), air meresap masuk secara osmosis. Vakuol mengecut mengumpul air berlebihan, mengembang ke saiz maksimum, dan mengecut untuk menyingkirkan air keluar sel bagi mengelakkan sel meletus.",
-          "Pembiakan: Keadaan sesuai secara aseks (belahan dedua); keadaan buruk secara pembentukan spora (Amoeba sp.) atau konjugasi seksual (Paramecium sp.)."
-        ],
+        "summary": "Organisma unisel seperti Amoeba sp. dan Paramecium sp. menjalankan semua proses hidup asas dalam satu sel tunggal.",
         "verbatim": [
-          "Pergerakan: Amoeba sp. bergerak menggunakan pseudopodium (kaki palsu melalui aliran ameboid endoplasma); Paramecium sp. menggunakan pukulan silium beritma.",
-          "Pemakanan: Amoeba sp. makan secara fagositosis (pseudopodium mengepung zarah makanan -> membentuk vakuol makanan -> bercantum dengan lisosom -> dicerna enzim hidrolisis); Paramecium sp. mengalirkan makanan ke alur lisan menggunakan silium.",
-          "Pengosmoregulasian: Hidup dalam air tawar (larutan hipotonik), air meresap masuk secara osmosis. Vakuol mengecut mengumpul air berlebihan, mengembang ke saiz maksimum, dan mengecut untuk menyingkirkan air keluar sel bagi mengelakkan sel meletus.",
-          "Pembiakan: Keadaan sesuai secara aseks (belahan dedua); keadaan buruk secara pembentukan spora (Amoeba sp.) atau konjugasi seksual (Paramecium sp.)."
+          "Pergerakan: Amoeba sp. bergerak dengan mengunjurkan pseudopodium (kaki palsu / aliran ameboid); Paramecium sp. bergerak melalui pukulan silium yang beritma.",
+          "Pemakanan: Fagositosis pada Amoeba sp. di mana pseudopodium mengepung zarah makanan membentuk vakuol makanan yang dicerna oleh enzim lisosom; Paramecium sp. menggunakan pukulan silium untuk menolak zarah makanan ke dalam alur lisan.",
+          "Respirasi: Pertukaran gas O₂ dan CO₂ berlaku secara resapan ringkas merentasi membran plasma kerana nisbah jumlah luas permukaan kepada isi padu (JLP/I) yang besar.",
+          "Pengosmokawalaturan: Vakuol mengecut mengembang apabila dipenuhi lebihan air daripada persekitaran hipotonik dan mengecut untuk menyingkirkan air secara berkala.",
+          "Pembiakan: Aseks melalui belahan dedakan dalam keadaan optimum; Pembentukan spora (Amoeba sp.) atau konjugasi seks (Paramecium sp.) dalam keadaan buruk."
         ],
-        "explanation": "Amoeba sp. dan Paramecium sp. menjalankan semua fungsi hidup dalam satu sel tunggal."
+        "explanation": "Sekiranya vakuol mengecut organisma unisel air tawar rosak, sel akan menyerap air berlebihan secara osmosis berterusan sehingga membengkak dan meletus."
       },
       {
-        "subtopic": "2.3 Pengkhususan Sel & 2.4 Aras Organisasi",
-        "summary": "Penyesuaian sel multisel dan hierarki: Sel -> Tisu -> Organ -> Sistem -> Organisma.",
-        "points": [
-          "Sel Khusus Haiwan: Sel darah merah (dwicekung, tiada nukleus untuk muatkan lebih hemoglobin), sel sperma (ekor flagelum berenang, banyak mitokondrion membekalkan tenaga), sel saraf (akson panjang menyalurkan impuls).",
-          "Sel Khusus Tumbuhan: Sel mesofil palisad (tersusun rapat menegak, padat kloroplas memaksimumkan penyerapan cahaya), sel rerambut akar (unjuran panjang luas permukaan serap air/garam mineral), salur xilem (tiub berongga berdinding lignin mengangkut air), tiub tapis floem (mengangkut sukrosa secara translokasi).",
-          "Aras Organisasi Haiwan: Tisu epitelium, tisu otot (licin, rangka, kardium), tisu saraf, dan tisu penghubung (darah, tulang, rawan, adipos)."
-        ],
+        "subtopic": "2.3 Proses Hidup Organisma Multisel",
+        "summary": "Organisma multisel terdiri daripada pelbagai jenis sel khusus yang mengalami pembezaan untuk menjalankan fungsi fisiologi yang kompleks.",
         "verbatim": [
-          "Sel Khusus Haiwan: Sel darah merah (dwicekung, tiada nukleus untuk muatkan lebih hemoglobin), sel sperma (ekor flagelum berenang, banyak mitokondrion membekalkan tenaga), sel saraf (akson panjang menyalurkan impuls).",
-          "Sel Khusus Tumbuhan: Sel mesofil palisad (tersusun rapat menegak, padat kloroplas memaksimumkan penyerapan cahaya), sel rerambut akar (unjuran panjang luas permukaan serap air/garam mineral), salur xilem (tiub berongga berdinding lignin mengangkut air), tiub tapis floem (mengangkut sukrosa secara translokasi).",
-          "Aras Organisasi Haiwan: Tisu epitelium, tisu otot (licin, rangka, kardium), tisu saraf, dan tisu penghubung (darah, tulang, rawan, adipos)."
+          "Pengkhususan Sel: Sel stem mengalami pembezaan untuk membentuk sel matang dengan struktur khas mengikut fungsinya.",
+          "Contoh Sel Haiwan: Sel darah merah (dwicekung, tiada nukleus untuk muatan hemoglobin tinggi); Sel saraf (akson panjang memancarkan impuls pantas); Sel sperma (ekor berflagelum & kepala kaya mitokondrion); Sel epitelium (melapisi salur dan organ).",
+          "Contoh Sel Tumbuhan: Salur xilem (berlignin, tiub berterusan mengangkut air); Tiub tapis floem (mengangkut sukrosa); Sel mesofil palisad (kaya kloroplas di permukaan atas daun); Sel rambut akar (unjuran panjang meningkatkan luas permukaan penyerapan air & mineral); Sel pengawal (mengawal pembukaan dan penutupan stoma)."
         ],
-        "explanation": "Penyesuaian sel multisel dan hierarki: Sel -> Tisu -> Organ -> Sistem -> Organisma."
+        "explanation": "Pengkhususan sel membolehkan proses fisiologi dijalankan dengan kecekapan maksimum dalam badan organisma kompleks."
+      },
+      {
+        "subtopic": "2.4 Organisasi Sel dalam Organisma Multisel",
+        "summary": "Hierarki organisasi biologi daripada sel, membentuk tisu, organ, sistem organ, hingga menghasilkan organisma yang lengkap dan berfungsi harmoni.",
+        "verbatim": [
+          "Aras Organisasi: Sel -> Tisu -> Organ -> Sistem -> Organisma.",
+          "Empat Tisu Utama Haiwan: Tisu Epitelium (perlindungan/rembesan), Tisu Otot (otot rangka, otot licin, otot kardium), Tisu Saraf (neuron deria, perantaraan, motor), Tisu Penghubung (darah, tulang, rawan, tisu adipos, tendon, ligamen).",
+          "Tisu Tumbuhan: Tisu Meristem (apeks & lateral - aktif membahagi) dan Tisu Kekal (Tisu epidermis, Tisu asas: parenkima, kolenkima, sklerenkima; Tisu vaskular: xilem dan floem).",
+          "Sistem dalam Manusia: Sistem peredaran, respirasi, pencernaan, perkumuhan, rangka, otot, integumen, endokrin, saraf, pembiakan, dan limfa berinteraksi secara bersepadu."
+        ],
+        "explanation": "Kegagalan mana-mana satu sistem organ dalam badan akan menjejaskan homeostasis keseluruhan organisma."
       }
     ],
     "steps": [
@@ -364,71 +342,55 @@ const BIOLOGI_DATA = [
     "id": "bio-bab3",
     "babNum": "BAB 3",
     "title": "PERGERAKAN BAHAN MERENTASI MEMBRAN PLASMA",
-    "icon": "💧",
-    "anyflipPages": "Halaman 44 – 66 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Membran plasma adalah struktur dinamik separa telap yang mengatur pertukaran bahan antara persekitaran dalaman sel dengan bendalir luar sel. Bab ini menghuraikan Model Mozek Bendalir, perbezaan antara pengangkutan pasif (resapan ringkas, osmosis, resapan berbantu) dengan pengangkutan aktif, kesan larutan hipotonik, hipertonik dan isotonik terhadap sel haiwan dan tumbuhan, serta aplikasi fenomena ini dalam teknologi perubatan dan pengawetan makanan.",
+    "icon": "🧱",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 44 – 67)",
+    "synopsis": "Mengkaji struktur membran plasma berasaskan Model Mozek Bendalir, mekanisme pengangkutan pasif dan pengangkutan aktif, kesan larutan hipotonik, hipertonik dan isotonik ke atas sel haiwan dan tumbuhan, serta aplikasi pengangkutan membran dalam biologi dan kehidupan harian.",
     "notes": [
       {
-        "subtopic": "3.1 Struktur Membran Plasma (Model Mozek Bendalir)",
-        "summary": "Dwilapisan fosfolipid berorientasi dengan protein terapung dan kolesterol.",
-        "points": [
-          "Dwilapisan Fosfolipid: Setiap molekul fosfolipid terdiri daripada kepala berkutub yang bersifat hidrofilik (tertarik kepada air) menghadap luar dan dalam sel, serta ekor tidak berkutub bersifat hidrofobik (menolak air) menghadap ke arah dalam dwilapisan.",
-          "Protein Membran: Protein liang (mempunyai liang hidrofilik terbuka membenarkan ion larut air melaluinya) dan Protein pembawa (mempunyai tapak pengikatan spesifik yang mengalami perubahan konformasi).",
-          "Komponen Lain: Kolesterol (menjadikan dwilapisan lebih stabil, anjal, dan kurang telap kepada bahan larut air pada suhu badan); Glikoprotein dan Glikolipid (rantai karbohidrat bertindak sebagai tapak reseptor hormon dan pengenalan sel).",
-          "Sifat Membran: Membran plasma bersifat separa telap (ketelapan memilih), hanya membenarkan molekul kecil tidak berkutub (seperti O₂, CO₂, asid lemak) dan air melaluinya secara bebas."
-        ],
+        "subtopic": "3.1 Struktur Membran Plasma",
+        "summary": "Membran plasma diterangkan melalui Model Mozek Bendalir yang terdiri daripada dwilapisan fosfolipid dengan pelbagai protein terapung secara dinamik.",
         "verbatim": [
-          "Dwilapisan Fosfolipid: Setiap molekul fosfolipid terdiri daripada kepala berkutub yang bersifat hidrofilik (tertarik kepada air) menghadap luar dan dalam sel, serta ekor tidak berkutub bersifat hidrofobik (menolak air) menghadap ke arah dalam dwilapisan.",
-          "Protein Membran: Protein liang (mempunyai liang hidrofilik terbuka membenarkan ion larut air melaluinya) dan Protein pembawa (mempunyai tapak pengikatan spesifik yang mengalami perubahan konformasi).",
-          "Komponen Lain: Kolesterol (menjadikan dwilapisan lebih stabil, anjal, dan kurang telap kepada bahan larut air pada suhu badan); Glikoprotein dan Glikolipid (rantai karbohidrat bertindak sebagai tapak reseptor hormon dan pengenalan sel).",
-          "Sifat Membran: Membran plasma bersifat separa telap (ketelapan memilih), hanya membenarkan molekul kecil tidak berkutub (seperti O₂, CO₂, asid lemak) dan air melaluinya secara bebas."
+          "Model Mozek Bendalir: Membran bersifat bendalir kerana molekul fosfolipid dan protein bergerak bebas secara lateral.",
+          "Dwilapisan Fosfolipid: Setiap fosfolipid terdiri daripada kepala berkutub hidrofilik (tertarik kepada air) menghadap ke luar/dalam sel dan ekor tidak berkutub hidrofobik (menolak air) di bahagian tengah.",
+          "Protein Membran: Protein liang (mempunyai terusan air untuk ion/molekul larut air kecil) dan Protein pembawa (mempunyai tapak pengikatan spesifik untuk molekul besar seperti glukosa dan asid amino).",
+          "Komponen Lain: Kolesterol (menstabilkan dan mengawal kebendaliran membran pada perubahan suhu); Glikoprotein & Glikolipid (rantai karbohidrat bertindak sebagai reseptor hormon dan tapak pengecaman sel).",
+          "Sifat Ketelapan Memilih: Membenarkan molekul kecil tanpa kutub (O₂, CO₂, asid lemak, gliserol) merentasi dwilapisan secara bebas, manakala molekul polar besar dan ion memerlukan bantuan protein."
         ],
-        "explanation": "Dwilapisan fosfolipid berorientasi dengan protein terapung dan kolesterol."
+        "explanation": "Kehadiran kolesterol menjadikan membran plasma tidak terlalu bendalir pada suhu tinggi dan tidak membeku pada suhu sejuk."
       },
       {
-        "subtopic": "3.2 Konsep Pergerakan Bahan Merentasi Membran",
-        "summary": "Pengangkutan Pasif (tanpa tenaga ATP) vs Pengangkutan Aktif (menggunakan tenaga ATP).",
-        "points": [
-          "Resapan Ringkas: Pergerakan molekul kecil larut lipid/gas dari kawasan berkepekatan tinggi ke kawasan berkepekatan rendah menuruni kecerunan kepekatan sehingga keseimbangan dinamik tercapai (cth: pertukaran O₂ dan CO₂ di alveolus).",
-          "Osmosis: Resapan bersih molekul air dari kawasan keupayaan air tinggi (larutan cair) ke kawasan keupayaan air rendah (larutan pekat) merentasi membran telap memilih.",
-          "Resapan Berbantu: Pergerakan molekul besar larut air (glukosa, asid amino) atau ion merentasi membran menuruni kecerunan kepekatan dengan bantuan protein pembawa atau protein liang tanpa tenaga metabolik.",
-          "Pengangkutan Aktif: Pergerakan bahan merentasi membran plasma menentang kecerunan kepekatan (dari kepekatan rendah ke tinggi), memerlukan tenaga ATP dan protein pembawa (cth: Pam Natrium-Kalium dalam sel saraf dan penyerapan glukosa dalam vilus usus)."
-        ],
+        "subtopic": "3.2 Konsep Pergerakan Bahan Merentasi Membran Plasma",
+        "summary": "Pengangkutan bahan dikelaskan kepada pengangkutan pasif (tidak memerlukan tenaga ATP) dan pengangkutan aktif (memerlukan tenaga ATP).",
         "verbatim": [
-          "Resapan Ringkas: Pergerakan molekul kecil larut lipid/gas dari kawasan berkepekatan tinggi ke kawasan berkepekatan rendah menuruni kecerunan kepekatan sehingga keseimbangan dinamik tercapai (cth: pertukaran O₂ dan CO₂ di alveolus).",
-          "Osmosis: Resapan bersih molekul air dari kawasan keupayaan air tinggi (larutan cair) ke kawasan keupayaan air rendah (larutan pekat) merentasi membran telap memilih.",
-          "Resapan Berbantu: Pergerakan molekul besar larut air (glukosa, asid amino) atau ion merentasi membran menuruni kecerunan kepekatan dengan bantuan protein pembawa atau protein liang tanpa tenaga metabolik.",
-          "Pengangkutan Aktif: Pergerakan bahan merentasi membran plasma menentang kecerunan kepekatan (dari kepekatan rendah ke tinggi), memerlukan tenaga ATP dan protein pembawa (cth: Pam Natrium-Kalium dalam sel saraf dan penyerapan glukosa dalam vilus usus)."
+          "Pengangkutan Pasif: Bergerak mengikut cerun kepekatan dari kepekatan tinggi ke rendah tanpa penggunaan tenaga ATP.",
+          "1. Resapan Ringkas: Pergerakan molekul kecil tidak berkutub (O₂, CO₂, lipid) terus melalui dwilapisan fosfolipid sehingga keseimbangan dinamik tercapai.",
+          "2. Osmosis: Resapan molekul air merentasi membran telap memilih dari kawasan keupayaan air tinggi (kepekatan bahan larut rendah) ke kawasan keupayaan air rendah (kepekatan bahan larut tinggi).",
+          "3. Resapan Berbantu: Pergerakan molekul polar besar (glukosa, asid amino) dan ion merentasi protein liang atau protein pembawa mengikut cerun kepekatan.",
+          "Pengangkutan Aktif: Pergerakan molekul atau ion merentasi membran melawan cerun kepekatan (dari kawasan kepekatan rendah ke tinggi) menggunakan tenaga ATP dan protein pembawa (cth: Pam Natrium-Kalium dalam neuron, penyerapan ion mineral oleh akar tumbuhan)."
         ],
-        "explanation": "Pengangkutan Pasif (tanpa tenaga ATP) vs Pengangkutan Aktif (menggunakan tenaga ATP)."
+        "explanation": "Resapan berbantu protein pembawa mengalami proses perubahan bentuk konformasi apabila molekul substrat melekat pada tapak aktifnya."
       },
       {
-        "subtopic": "3.3 Kesan Larutan terhadap Sel Haiwan dan Sel Tumbuhan",
-        "summary": "Tindak balas sel dalam larutan hipotonik, hipertonik, dan isotonik.",
-        "points": [
-          "Sel Haiwan (Eritrosit):\n  • Dalam larutan hipotonik (air suling): Air meresap masuk secara osmosis -> sel mengembang dan meletus (Hemolisis).\n  • Dalam larutan hipertonik (garam pekat): Air meresap keluar secara osmosis -> sel mengecut dan membentuk lekukan berkedut (Krenasi).\n  • Dalam larutan isotonik (0.9% NaCl): Pergerakan bersih air sifar, bentuk dwicekung normal kekal.",
-          "Sel Tumbuhan:\n  • Dalam larutan hipotonik: Air meresap masuk ke vakuol -> vakuol membesar menolak sitoplasma dan membran plasma ke dinding sel -> sel menjadi Segah (tekanan segah memberi sokongan mekanikal tumbuhan herba).\n  • Dalam larutan hipertonik: Air meresap keluar dari vakuol -> sitoplasma mengecut dan membran plasma tertarik menjauhi dinding sel -> Plasmolisis (pokok layu).\n  • Apabila sel yang terplasmolisis dipindahkan segera ke air suling: Air meresap masuk semula -> sel pulih kesegahan -> Deplasmolisis."
-        ],
+        "subtopic": "3.3 Pergerakan Bahan Merentasi Membran Plasma dalam Organisma Hidup",
+        "summary": "Kesan larutan isotonik, hipotonik dan hipertonik terhadap kelakuan osmotik sel haiwan dan sel tumbuhan.",
         "verbatim": [
-          "Sel Haiwan (Eritrosit):\n  • Dalam larutan hipotonik (air suling): Air meresap masuk secara osmosis -> sel mengembang dan meletus (Hemolisis).\n  • Dalam larutan hipertonik (garam pekat): Air meresap keluar secara osmosis -> sel mengecut dan membentuk lekukan berkedut (Krenasi).\n  • Dalam larutan isotonik (0.9% NaCl): Pergerakan bersih air sifar, bentuk dwicekung normal kekal.",
-          "Sel Tumbuhan:\n  • Dalam larutan hipotonik: Air meresap masuk ke vakuol -> vakuol membesar menolak sitoplasma dan membran plasma ke dinding sel -> sel menjadi Segah (tekanan segah memberi sokongan mekanikal tumbuhan herba).\n  • Dalam larutan hipertonik: Air meresap keluar dari vakuol -> sitoplasma mengecut dan membran plasma tertarik menjauhi dinding sel -> Plasmolisis (pokok layu).\n  • Apabila sel yang terplasmolisis dipindahkan segera ke air suling: Air meresap masuk semula -> sel pulih kesegahan -> Deplasmolisis."
+          "Larutan Hipotonik: Keupayaan air luar sel lebih tinggi daripada sitoplasma sel. Sel haiwan: Air meresap masuk secara osmosis, membengkak dan akhirnya pecah (lisis). Sel tumbuhan: Air meresap masuk ke dalam vakuol, vakuol mengembang menolak dinding sel menghasilkan tekanan segah (turgor), sel menjadi segah tanpa pecah kerana disokong dinding selulosa.",
+          "Larutan Hipertonik: Keupayaan air luar sel lebih rendah daripada sitoplasma sel. Sel haiwan: Air meresap keluar secara osmosis, sel mengecut dan berkedut (krenasi). Sel tumbuhan: Air meresap keluar dari vakuol, sitoplasma mengecut dan membran plasma tertarik menjauhi dinding sel (plasmolisis). Jika sel tumbuhan dipindahkan semula ke air suling, air masuk semula (deplasmolisis).",
+          "Larutan Isotonik: Keupayaan air luar sama dengan dalam sel. Tiada pergerakan bersih air, sel mengekalkan bentuk dan saiz normal (sel tumbuhan flasid)."
         ],
-        "explanation": "Tindak balas sel dalam larutan hipotonik, hipertonik, dan isotonik."
+        "explanation": "Keadaan segah pada sel tumbuhan memberikan sokongan mekanikal utama bagi tumbuhan herba yang tidak berkayu."
       },
       {
-        "subtopic": "3.4 Aplikasi dalam Kehidupan Harian",
-        "summary": "Tiub dialisis, minuman isotonik rehidrasi, dan pengawetan makanan berkepekatan tinggi.",
-        "points": [
-          "Pengawetan Makanan: Penggunaan kepekatan garam atau gula yang sangat tinggi (cth: ikan masin, jem buah). Larutan hipertonik menyebabkan air meresap keluar daripada sel bakteria/kulat secara osmosis -> bakteria terhidrasi dan mati, menghalang pereputan.",
-          "Mesin Hemodialisis: Menggunakan tiub selofan separa telap untuk menapis urea dan garam berlebihan daripada darah pesakit kegagalan ginjal.",
-          "Minuman Isotonik: Mengandungi kepekatan elektrolit dan gula sama dengan cecair badan bagi memulihkan bendalir dan elektrolit atlet dengan pantas."
-        ],
+        "subtopic": "3.4 Gerakan Bahan Merentasi Membran Plasma dalam Kehidupan Harian",
+        "summary": "Aplikasi prinsip osmosis, resapan dan ketelapan membran dalam industri makanan, perubatan dan teknologi hijau.",
         "verbatim": [
-          "Pengawetan Makanan: Penggunaan kepekatan garam atau gula yang sangat tinggi (cth: ikan masin, jem buah). Larutan hipertonik menyebabkan air meresap keluar daripada sel bakteria/kulat secara osmosis -> bakteria terhidrasi dan mati, menghalang pereputan.",
-          "Mesin Hemodialisis: Menggunakan tiub selofan separa telap untuk menapis urea dan garam berlebihan daripada darah pesakit kegagalan ginjal.",
-          "Minuman Isotonik: Mengandungi kepekatan elektrolit dan gula sama dengan cecair badan bagi memulihkan bendalir dan elektrolit atlet dengan pantas."
+          "Pengawetan Makanan: Penggunaan larutan gula atau garam berkepekatan tinggi (hipertonik) dalam jeruk buah dan ikan masin menyebabkan air meresap keluar dari sel mikroorganisma secara osmosis; mikroorganisma mengalami dehidrasi dan mati, menghalang pereputan.",
+          "Minuman Rehidrasi & Minuman Isotonik: Menggantikan kehilangan air dan elektrolit (Na⁺, K⁺) secara seimbang dalam kalangan atlet.",
+          "Mesin Hemodialisis: Tiub selofan separa telap membenarkan bahan kumuh urea meresap keluar dari darah ke cecair dialisis mengikut cerun kepekatan.",
+          "Liposom: Vesikel mikroskopik dwilapisan fosfolipid digunakan dalam industri farmaseutikal untuk membungkus dan menghantar ubat terus ke sel sasaran.",
+          "Osmosis Berbalik: Teknologi penyahgaraman air laut menggunakan tekanan tinggi menolak molekul air merentasi membran separa telap untuk menghasilkan air tawar bersih."
         ],
-        "explanation": "Tiub dialisis, minuman isotonik rehidrasi, dan pengawetan makanan berkepekatan tinggi."
+        "explanation": "Penggunaan baja berlebihan pada tanaman menyebabkan air tanah menjadi hipertonik berbanding sap sel akar, menyebabkan air meresap keluar dan tumbuhan layu."
       }
     ],
     "steps": [
@@ -556,72 +518,65 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 4",
     "title": "KOMPOSISI KIMIA DALAM SEL",
     "icon": "🧪",
-    "anyflipPages": "Halaman 68 – 82 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Semua hidupan terbina daripada sebatian organik dan tak organik yang memainkan peranan biokimia penting dalam sel. Bab ini merangkumi ciri keistimewaan air, struktur dan fungsi karbohidrat (monosakarida, disakarida, polisakarida), protein (asid amino, struktur primer hingga kuaterner), lipid (lemak tepu vs tak tepu), dan asid nukleik (DNA dan RNA) sebagai pembawa maklumat genetik sel.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 68 – 89)",
+    "synopsis": "Mengkaji sifat air dan kepentingannya dalam sel, struktur dan fungsi empat makromolekul organik biologi utama iaitu karbohidrat, protein, lipid, serta asid nukleik (DNA dan RNA).",
     "notes": [
       {
         "subtopic": "4.1 Air",
-        "summary": "Sifat unik molekul air yang membolehkannya bertindak sebagai medium biokimia utama hidupan.",
-        "points": [
-          "Kekutuban Air: Molekul air (H₂O) ialah molekul berkutub di mana atom oksigen lebih elektronegatif berbanding atom hidrogen, menghasilkan ikatan hidrogen antara molekul air.",
-          "Daya Lekitan dan Daya Lekapan: Daya lekitan (tarikan sesama molekul air) dan daya lekapan (tarikan molekul air ke dinding xilem) membolehkan air bergerak berterusan dalam tiub xilem (tindakan kapilari).",
-          "Muatan Haba Tentu Tinggi: Air memerlukan 4.2 kJ kg⁻¹ °C⁻¹ tenaga haba untuk menaikkan suhu 1 kg air sebanyak 1°C; bertindak sebagai penstabil suhu badan dan habitat akuatik.",
-          "Pelarut Semesta: Melarutkan bahan terlarut berkutub dan ionik bagi memudahkan tindak balas metabolik dan pengangkutan nutrien dalam darah."
-        ],
+        "summary": "Air ialah sebatian bukan organik polar yang membentuk kira-kira 70% komposisi sel dan merupakan pelarut semulajadi utama dalam biologi.",
         "verbatim": [
-          "Kekutuban Air: Molekul air (H₂O) ialah molekul berkutub di mana atom oksigen lebih elektronegatif berbanding atom hidrogen, menghasilkan ikatan hidrogen antara molekul air.",
-          "Daya Lekitan dan Daya Lekapan: Daya lekitan (tarikan sesama molekul air) dan daya lekapan (tarikan molekul air ke dinding xilem) membolehkan air bergerak berterusan dalam tiub xilem (tindakan kapilari).",
-          "Muatan Haba Tentu Tinggi: Air memerlukan 4.2 kJ kg⁻¹ °C⁻¹ tenaga haba untuk menaikkan suhu 1 kg air sebanyak 1°C; bertindak sebagai penstabil suhu badan dan habitat akuatik.",
-          "Pelarut Semesta: Melarutkan bahan terlarut berkutub dan ionik bagi memudahkan tindak balas metabolik dan pengangkutan nutrien dalam darah."
+          "Sifat Kekutuban Air: Molekul air terdiri daripada satu atom oksigen dan dua atom hidrogen yang membentuk ikatan kovalen berkutub dan ikatan hidrogen antara molekul.",
+          "Daya Lekatan dan Daya Jelekit: Daya jelekit (tarikan sesama molekul air) dan daya lekatan (tarikan molekul air dengan permukaan lain cth dinding xilem) membolehkan tindakan kapilari mengangkut air dari akar ke daun.",
+          "Muatan Haba Tentu Air Tinggi: Air menyerap banyak tenaga haba dengan kenaikan suhu yang kecil (4.2 kJ kg⁻¹ °C⁻¹), bertindak sebagai penimbal suhu dan menstabilkan suhu badan organisma.",
+          "Sifat Pelarut Universal: Membolehkan tindak balas biokimia berlaku dan mengangkut nutrien serta bahan kumuh dalam plasma darah."
         ],
-        "explanation": "Sifat unik molekul air yang membolehkannya bertindak sebagai medium biokimia utama hidupan."
+        "explanation": "Ketumpatan air adalah maksimum pada suhu 4 °C; ais kurang tumpat daripada air cecair dan terapung di permukaan, melindungi hidupan akuatik di bawah lapisan ais."
       },
       {
         "subtopic": "4.2 Karbohidrat",
-        "summary": "Sebatian organik mengandungi C, H, dan O dalam nisbah 1:2:1 (Cₙ(H₂O)ₙ).",
-        "points": [
-          "Monosakarida (Gula Ringkas): Glukosa (gula respirasi sel), Fruktosa (gula buah paling manis), Galaktosa (gula susu). Semuanya gula penurun.",
-          "Disakarida: Terbentuk melalui proses kondensasi dua monosakarida dengan penyingkiran satu molekul air (ikatan glikosidik):\n  • Maltosa = Glukosa + Glukosa (gula gandum)\n  • Sukrosa = Glukosa + Fruktosa (gula tebu bukan penurun)\n  • Laktosa = Glukosa + Galaktosa (gula susu mamalia)\n  Hidrolisis disakarida dengan penambahan air menguraikannya kembali kepada monosakarida.",
-          "Polisakarida: Polimer hasil kondensasi beratus-ratus glukosa:\n  • Kanji: Simpanan karbohidrat utama dalam tumbuhan (amilosa & amilopektin).\n  • Glikogen: Simpanan karbohidrat dalam hati dan otot haiwan ('kanji haiwan').\n  • Selulosa: Komponen gentian utama dinding sel tumbuhan, memberikan kekuatan struktur (tidak dapat dicerna manusia, bertindak sebagai serat)."
-        ],
+        "summary": "Sebatian organik yang mengandungi karbon, hidrogen dan oksigen dalam nisbah 1:2:1 (formula am C_n(H₂O)_n), bertindak sebagai punca tenaga utama sel.",
         "verbatim": [
-          "Monosakarida (Gula Ringkas): Glukosa (gula respirasi sel), Fruktosa (gula buah paling manis), Galaktosa (gula susu). Semuanya gula penurun.",
-          "Disakarida: Terbentuk melalui proses kondensasi dua monosakarida dengan penyingkiran satu molekul air (ikatan glikosidik):\n  • Maltosa = Glukosa + Glukosa (gula gandum)\n  • Sukrosa = Glukosa + Fruktosa (gula tebu bukan penurun)\n  • Laktosa = Glukosa + Galaktosa (gula susu mamalia)\n  Hidrolisis disakarida dengan penambahan air menguraikannya kembali kepada monosakarida.",
-          "Polisakarida: Polimer hasil kondensasi beratus-ratus glukosa:\n  • Kanji: Simpanan karbohidrat utama dalam tumbuhan (amilosa & amilopektin).\n  • Glikogen: Simpanan karbohidrat dalam hati dan otot haiwan ('kanji haiwan').\n  • Selulosa: Komponen gentian utama dinding sel tumbuhan, memberikan kekuatan struktur (tidak dapat dicerna manusia, bertindak sebagai serat)."
+          "Monosakarida (Gula Ringkas): Glukosa (gula utama dalam darah/respirasi), Fruktosa (gula manis dalam buah/madu), Galaktosa (gula dalam susu). Semua monosakarida ialah gula penurun yang memberi mendakan merah bata dengan ujian Benedict.",
+          "Disakarida: Dibentuk melalui kondensasi dua monosakarida dengan penyingkiran satu molekul air membentuk ikatan glikosida. Maltosa (Glukosa + Glukosa), Sukrosa (Glukosa + Fruktosa, gula bukan penurun), Laktosa (Glukosa + Galaktosa). Boleh diuraikan semula melalui hidrolisis.",
+          "Polisakarida: Polimer panjang terbentuk daripada ratusan unit glukosa. Kanji (simpanan karbohidrat dalam tumbuhan), Glikogen (simpanan karbohidrat dalam hati dan otot haiwan), Selulosa (komponen struktur dinding sel tumbuhan yang tidak boleh dicerna oleh manusia tetapi membentuk serat diet)."
         ],
-        "explanation": "Sebatian organik mengandungi C, H, dan O dalam nisbah 1:2:1 (Cₙ(H₂O)ₙ)."
+        "explanation": "Ujian Iodin digunakan untuk menguji kanji (menukar warna perang ke biru tua), manakala Ujian Benedict menguji gula penurun."
       },
       {
-        "subtopic": "4.3 Protein & 4.4 Lipid",
-        "summary": "Polimer asid amino dan sebatian hidrofobik trigliserida.",
-        "points": [
-          "Protein: Terbina daripada C, H, O, N (kadangkala S dan P). Monomer ialah asid amino yang dihubungkan oleh ikatan peptida melalui kondensasi.",
-          "Struktur Protein: Struktur Primer (urutan linear asid amino), Struktur Sekunder (heliks-α atau kepingan berlipat-β ikatan hidrogen), Struktur Tertier (lipatan 3D globular seperti enzim dan antibodi ikatan disulfida/hidrogen/ionik), Struktur Kuaterner (gabungan dua atau lebih rantai polipeptida seperti hemoglobin).",
-          "Lipid: Sebatian tak berkutub larut pelarut organik (alkohol/eter), mengandungi C, H, O. Lemak terbentuk daripada 1 gliserol + 3 asid lemak (ikatan ester).",
-          "Perbezaan Lemak Tepu vs Lemak Tak Tepu:\n  • Lemak Tepu: Rantai asid lemak hanya ikatan tunggal (C-C), bilangan atom H maksimum, takat lebur tinggi, pepejal pada suhu bilik (cth: mentega, lemak daging).\n  • Lemak Tak Tepu: Mempunyai sekurang-kurangnya satu ikatan ganda dua (C=C), takat lebur rendah, cecair pada suhu bilik (cth: minyak zaitun, minyak ikan omega-3)."
-        ],
+        "subtopic": "4.3 Protein",
+        "summary": "Makromolekul kompleks yang dibina daripada monomer asid amino yang dihubungkan oleh ikatan peptida melalui proses kondensasi.",
         "verbatim": [
-          "Protein: Terbina daripada C, H, O, N (kadangkala S dan P). Monomer ialah asid amino yang dihubungkan oleh ikatan peptida melalui kondensasi.",
-          "Struktur Protein: Struktur Primer (urutan linear asid amino), Struktur Sekunder (heliks-α atau kepingan berlipat-β ikatan hidrogen), Struktur Tertier (lipatan 3D globular seperti enzim dan antibodi ikatan disulfida/hidrogen/ionik), Struktur Kuaterner (gabungan dua atau lebih rantai polipeptida seperti hemoglobin).",
-          "Lipid: Sebatian tak berkutub larut pelarut organik (alkohol/eter), mengandungi C, H, O. Lemak terbentuk daripada 1 gliserol + 3 asid lemak (ikatan ester).",
-          "Perbezaan Lemak Tepu vs Lemak Tak Tepu:\n  • Lemak Tepu: Rantai asid lemak hanya ikatan tunggal (C-C), bilangan atom H maksimum, takat lebur tinggi, pepejal pada suhu bilik (cth: mentega, lemak daging).\n  • Lemak Tak Tepu: Mempunyai sekurang-kurangnya satu ikatan ganda dua (C=C), takat lebur rendah, cecair pada suhu bilik (cth: minyak zaitun, minyak ikan omega-3)."
+          "Unsur Kimia: Karbon (C), Hidrogen (H), Oksigen (O), Nitrogen (N), dan kadangkala Sulfur (S) serta Fosforus (P).",
+          "Asid Amino: Terdiri daripada kumpulan amino (-NH₂), kumpulan karboksil (-COOH), dan kumpulan R yang berbeza. Terdapat 20 jenis asid amino (Asid amino perlu: tidak dapat disintesis oleh badan, mesti diperoleh daripada gizi; Asid amino tak perlu: dapat disintesis oleh badan).",
+          "Pembentukan Dipeptida & Polipeptida: Dua asid amino bergabung melalui kondensasi membentuk ikatan peptida. Polimer polipeptida membentuk protein berfungsi.",
+          "Empat Aras Struktur Protein: Primer (urutan rantai linear asid amino), Sekunder (heliks-α atau kepingan beralur-β disokong ikatan hidrogen), Tertiari (struktur 3D padat disokong ikatan hidrogen, ionik, disulfida), Kuaterner (gabungan dua atau lebih rantai polipeptida cth hemoglobin).",
+          "Fungsi Protein: Enzim, hormon, antibodi, hemoglobin, keratin kuku/rambut, kolagen kulit, pembaikan tisu rosak."
         ],
-        "explanation": "Polimer asid amino dan sebatian hidrofobik trigliserida."
+        "explanation": "Pendedahan kepada suhu melampau atau pH ekstrem memusnahkan ikatan hidrogen dan disulfida, menyebabkan denaturasi protein."
       },
       {
-        "subtopic": "4.5 Asid Nukleik (DNA dan RNA)",
-        "summary": "Polimer nukleotida penyimpan kod genetik hidupan.",
-        "points": [
-          "Struktur Nukleotida: Mengandungi gula pentosa (deoksiribosa dalam DNA, ribosa dalam RNA), kumpulan fosfat, dan bes bernitrogen.",
-          "Bes Bernitrogen DNA: Adenina (A), Guanina (G), Sitosina (C), Timina (T). Pasangan bes berpadanan: A berpasangan dengan T (2 ikatan hidrogen), C berpasangan dengan G (3 ikatan hidrogen).",
-          "DNA vs RNA:\n  • DNA: Heliks ganda dua bebenang antiselari, gula deoksiribosa, bes A, T, C, G; terletak di dalam nukleus, kloroplas, dan mitokondrion.\n  • RNA: Bebenang tunggal lebih pendek, gula ribosa, bes A, Urasil (U), C, G; terlibat dalam penterjemahan kod genetik kepada protein di sitoplasma (mRNA, tRNA, rRNA)."
-        ],
+        "subtopic": "4.4 Lipid",
+        "summary": "Sebatian organik hidrofobik yang tidak larut dalam air tetapi larut dalam pelarut organik seperti alkohol, kloroform dan eter.",
         "verbatim": [
-          "Struktur Nukleotida: Mengandungi gula pentosa (deoksiribosa dalam DNA, ribosa dalam RNA), kumpulan fosfat, dan bes bernitrogen.",
-          "Bes Bernitrogen DNA: Adenina (A), Guanina (G), Sitosina (C), Timina (T). Pasangan bes berpadanan: A berpasangan dengan T (2 ikatan hidrogen), C berpasangan dengan G (3 ikatan hidrogen).",
-          "DNA vs RNA:\n  • DNA: Heliks ganda dua bebenang antiselari, gula deoksiribosa, bes A, T, C, G; terletak di dalam nukleus, kloroplas, dan mitokondrion.\n  • RNA: Bebenang tunggal lebih pendek, gula ribosa, bes A, Urasil (U), C, G; terlibat dalam penterjemahan kod genetik kepada protein di sitoplasma (mRNA, tRNA, rRNA)."
+          "Jenis Lipid Utama: Lemak, Minyak, Lilin, Fosfolipid, dan Steroid.",
+          "Trigliserida: Terdiri daripada satu molekul gliserol yang terkondensasi dengan tiga molekul asid lemak membentuk ikatan ester.",
+          "Lemak Tepu vs Lemak Tak Tepu: Lemak tepu (hanya mempunyai ikatan tunggal C-C, takat lebur tinggi, pepejal pada suhu bilik, biasanya daripada sumber haiwan cth mentega); Lemak tak tepu (mempunyai sekurang-kurangnya satu ikatan ganda dua C=C, takat lebur rendah, cecair pada suhu bilik, daripada sumber tumbuhan cth minyak zaitun).",
+          "Fosfolipid: Komponen utama membran plasma (satu gliserol, dua asid lemak, dan satu kumpulan fosfat).",
+          "Steroid: Struktur empat gelang karbon bersepadu tanpa asid lemak (cth: kolesterol, hormon testosteron, estrogen, progesteron).",
+          "Fungsi Lipid: Simpanan tenaga jangka panjang (membekalkan dua kali ganda tenaga berbanding karbohidrat), penebat haba di bawah kulit (tisu adipos), pelindung organ dalaman, dan pelarut vitamin larut lemak (A, D, E, K)."
         ],
-        "explanation": "Polimer nukleotida penyimpan kod genetik hidupan."
+        "explanation": "Ujian emulsi etanol digunakan untuk menguji kehadiran lipid, menghasilkan emulsi putih keruh."
+      },
+      {
+        "subtopic": "4.5 Asid Nukleik",
+        "summary": "Polimer pembawa maklumat genetik yang dibina daripada unit berulang nukleotida, terdiri daripada DNA dan RNA.",
+        "verbatim": [
+          "Struktur Nukleotida: Setiap nukleotida mengandungi 3 komponen: Gula pentosa (deoksiribosa dalam DNA, ribosa dalam RNA), Kumpulan fosfat, dan Bes bernitrogen.",
+          "Asid Deoksiribonukleik (DNA): Struktur heliks ganda dua berpilin. Bes bernitrogen: Adenina (A), Guanina (G), Sitosina (C), Timina (T). Pasangan bes pelengkap: Adenina berpasangan dengan Timina (A = T melalui 2 ikatan hidrogen), Guanina berpasangan dengan Sitosina (G ≡ C melalui 3 ikatan hidrogen). Berada dalam nukleus, mitokondria, dan kloroplas.",
+          "Asid Ribonukleik (RNA): Struktur bebenang tunggal yang lebih pendek. Bes bernitrogen: Adenina (A), Guanina (G), Sitosina (C), Urasil (U) [menggantikan Timina]. Gula ialah ribosa. Terbahagi kepada mRNA, tRNA, rRNA.",
+          "Fungsi Asid Nukleik: Menyimpan maklumat genetik bagi pewarisan sifat dan mengarahkan sintesis protein dalam ribosom sel."
+        ],
+        "explanation": "Kod genetik pada DNA terdiri daripada kodon triplet yang menentukan urutan asid amino bagi sintesis rantai polipeptida."
       }
     ],
     "steps": [
@@ -743,61 +698,39 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 5",
     "title": "METABOLISME DAN ENZIM",
     "icon": "⚡",
-    "anyflipPages": "Halaman 84 – 96 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Metabolisme merangkumi kesemua tindak balas biokimia dalam sel hidup. Enzim merupakan mangkin biologi protein yang mempercepatkan tindak balas metabolik dengan merendahkan tenaga pengaktifan. Bab ini menerangkan mekanisme tindakan enzim berpandukan hipotesis 'Mangga dan Kunci', faktor-faktor fiziko-kimia yang mempengaruhi kadar tindak balas enzim (suhu, pH, kepekatan substrat, kepekatan enzim), serta aplikasi enzim dalam industri moden.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 90 – 107)",
+    "synopsis": "Mengkaji metabolisme anabolisme dan katabolisme, sifat umum mangkin biologi enzim, mekanisme tindakan enzim berasaskan hipotesis 'mangga dan kunci', empat faktor yang mempengaruhi kadar tindak balas enzim, serta aplikasi enzim tersekat gerak dalam pelbagai bidang industri.",
     "notes": [
       {
-        "subtopic": "5.1 Metabolisme dan Ciri Umum Enzim",
-        "summary": "Anabolisme vs Katabolisme, sifat protein enzim dan tenaga pengaktifan (Eₐ).",
-        "points": [
-          "Metabolisme: Terbahagi kepada Anabolisme (tindak balas membina molekul kompleks daripada molekul ringkas, memerlukan tenaga, cth: fotosintesis) dan Katabolisme (tindak balas mengurai molekul kompleks kepada molekul ringkas, membebaskan tenaga, cth: respirasi sel).",
-          "Tenaga Pengaktifan (Eₐ): Tenaga minimum yang diperlukan untuk memulakan tindak balas kimia. Enzim merendahkan tenaga pengaktifan, membolehkan tindak balas berlaku dengan cepat pada suhu badan 37°C.",
-          "Ciri Umum Enzim: Enzim ialah protein yang bertindak sebagai mangkin organik; bertindak secara spesifik (satu enzim satu substrat); tidak musnah pada akhir tindak balas dan boleh digunakan semula; tindak balasnya berbalik (A + B ⇌ C + D); diperlukan dalam kuantiti kecil sahaja."
-        ],
+        "subtopic": "5.1 Metabolisme",
+        "summary": "Keseluruhan tindak balas biokimia yang berlaku dalam organisma hidup untuk mengekalkan kehidupan, terbahagi kepada anabolisme dan katabolisme.",
         "verbatim": [
-          "Metabolisme: Terbahagi kepada Anabolisme (tindak balas membina molekul kompleks daripada molekul ringkas, memerlukan tenaga, cth: fotosintesis) dan Katabolisme (tindak balas mengurai molekul kompleks kepada molekul ringkas, membebaskan tenaga, cth: respirasi sel).",
-          "Tenaga Pengaktifan (Eₐ): Tenaga minimum yang diperlukan untuk memulakan tindak balas kimia. Enzim merendahkan tenaga pengaktifan, membolehkan tindak balas berlaku dengan cepat pada suhu badan 37°C.",
-          "Ciri Umum Enzim: Enzim ialah protein yang bertindak sebagai mangkin organik; bertindak secara spesifik (satu enzim satu substrat); tidak musnah pada akhir tindak balas dan boleh digunakan semula; tindak balasnya berbalik (A + B ⇌ C + D); diperlukan dalam kuantiti kecil sahaja."
+          "Maksud Metabolisme: Rangkaian tindak balas kimia berteraskan enzim yang menukarkan nutrien kepada tenaga dan komponen binaan sel.",
+          "Anabolisme: Proses sintesis molekul kompleks daripada molekul ringkas yang memerlukan tenaga (reaksi endergonik). Contoh: Fotosintesis mensintesis glukosa daripada CO₂ dan air; Sintesis protein daripada asid amino.",
+          "Katabolisme: Proses penguraian molekul kompleks kepada molekul ringkas yang membebaskan tenaga (reaksi eksergonik). Contoh: Respirasi sel menguraikan glukosa untuk menghasilkan ATP, CO₂ dan air."
         ],
-        "explanation": "Anabolisme vs Katabolisme, sifat protein enzim dan tenaga pengaktifan (Eₐ)."
+        "explanation": "Keseimbangan antara proses anabolisme dan katabolisme menentukan pertumbuhan dan kestabilan fisiologi sesuatu organisma."
       },
       {
-        "subtopic": "5.2 Mekanisme 'Mangga dan Kunci' & Faktor Mempengaruhi Enzim",
-        "summary": "Tapak aktif spesifik enzim dan pengaruh suhu, pH, kepekatan substrat dan kepekatan enzim.",
-        "points": [
-          "Hipotesis 'Mangga dan Kunci': Substrat diumpamakan sebagai anak kunci manakala tapak aktif enzim sebagai mangga. Substrat berpadu dengan tapak aktif membentuk kompleks enzim-substrat -> tindak balas berlaku -> hasil tindak balas terbebas, meninggalkan enzim dalam bentuk asal.",
-          "Kesan Suhu: Suhu meningkat -> tenaga kinetik molekul bertambah -> frekuensi perlanggaran berkesan meningkat -> kadar tindak balas meningkat sehingga suhu optimum (37°C). Melebihi 40°C-60°C, ikatan hidrogen dan disulfida terputus -> tapak aktif berubah bentuk -> Enzim ternyahasli (kehilangan fungsi mangkin secara kekal).",
-          "Kesan pH: Setiap enzim mempunyai pH optimum (cth: Pepsin pH 1.5–2.0 dalam perut asid, Saliva amilase pH 6.8–7.0 dalam mulut, Tripsin pH 8.0–8.5 dalam usus beralkali). Perubahan drastik nilai pH mengubah cas ionik pada tapak aktif dan menyebabkan penyahaslian.",
-          "Kesan Kepekatan Substrat: Kepekatan substrat meningkat -> kadar tindak balas meningkat sehingga mencapai kadar maksimum (V_max). Selepas takat tepu, kadar menjadi malar kerana semua tapak aktif enzim telah tepu dengan substrat (enzim menjadi faktor pengehad).",
-          "Kesan Kepekatan Enzim: Kadar meningkat berkadaran terus selagi terdapat lebihan molekul substrat."
-        ],
+        "subtopic": "5.2 Enzim",
+        "summary": "Mangkin biologi organik (biasanya protein) yang mempercepatkan kadar tindak balas kimia biokimia dengan merendahkan tenaga pengaktifan.",
         "verbatim": [
-          "Hipotesis 'Mangga dan Kunci': Substrat diumpamakan sebagai anak kunci manakala tapak aktif enzim sebagai mangga. Substrat berpadu dengan tapak aktif membentuk kompleks enzim-substrat -> tindak balas berlaku -> hasil tindak balas terbebas, meninggalkan enzim dalam bentuk asal.",
-          "Kesan Suhu: Suhu meningkat -> tenaga kinetik molekul bertambah -> frekuensi perlanggaran berkesan meningkat -> kadar tindak balas meningkat sehingga suhu optimum (37°C). Melebihi 40°C-60°C, ikatan hidrogen dan disulfida terputus -> tapak aktif berubah bentuk -> Enzim ternyahasli (kehilangan fungsi mangkin secara kekal).",
-          "Kesan pH: Setiap enzim mempunyai pH optimum (cth: Pepsin pH 1.5–2.0 dalam perut asid, Saliva amilase pH 6.8–7.0 dalam mulut, Tripsin pH 8.0–8.5 dalam usus beralkali). Perubahan drastik nilai pH mengubah cas ionik pada tapak aktif dan menyebabkan penyahaslian.",
-          "Kesan Kepekatan Substrat: Kepekatan substrat meningkat -> kadar tindak balas meningkat sehingga mencapai kadar maksimum (V_max). Selepas takat tepu, kadar menjadi malar kerana semua tapak aktif enzim telah tepu dengan substrat (enzim menjadi faktor pengehad).",
-          "Kesan Kepekatan Enzim: Kadar meningkat berkadaran terus selagi terdapat lebihan molekul substrat."
+          "Ciri Umum Enzim: Merupakan protein dengan bentuk 3D yang unik; Bertindak secara spesifik (satu enzim untuk satu substrat sahaja); Diperlukan dalam kuantiti kecil; Struktur enzim tidak dimusnahkan atau berubah pada akhir tindak balas; Boleh bertindak secara berbalik.",
+          "Mekanisme 'Mangga dan Kunci': Substrat bertindak sebagai 'kunci' yang mempunyai bentuk pelengkap dengan tapak aktif enzim yang bertindak sebagai 'mangga'. Pengikatan membentuk kompleks enzim-substrat untuk menghasilkan produk.",
+          "Faktor Mempengaruhi Kadar Tindak Balas Enzim: (1) Suhu: Kadar meningkat sehingga suhu optimum (37 °C - 40 °C), melebihi suhu optimum enzim ternyahasli kerana ikatan kimia terputus; (2) pH: Kebanyakan enzim berfungsi optimum pada pH 6-8 (Kecuali Pepsin pada pH 1.5 - 2 di perut, Tripsin pada pH 8 di duodenum); (3) Kepekatan Substrat: Kadar meningkat secara berkadar terus sehingga mencapai tahap tepu di mana semua tapak aktif enzim telah diduduki (Vmax); (4) Kepekatan Enzim: Kadar meningkat selagi terdapat substrat berlebihan."
         ],
-        "explanation": "Tapak aktif spesifik enzim dan pengaruh suhu, pH, kepekatan substrat dan kepekatan enzim."
+        "explanation": "Apabila enzim ternyahasli akibat haba tinggi, bentuk tapak aktifnya berubah secara kekal sehingga substrat tidak lagi dapat memasukinya."
       },
       {
-        "subtopic": "5.3 Aplikasi Enzim dalam Industri Harian",
-        "summary": "Penggunaan bioteknologi enzim dalam industri pemakanan, fabrik dan perubatan.",
-        "points": [
-          "Protease: Digunakan dalam serbuk pencuci pakaian biologi untuk menanggalkan kotoran protein darah/telur, dan melembutkan daging dalam industri makanan.",
-          "Pektinase dan Selulase: Mengekstrak dan menjernihkan jus buah-buahan secara komersial serta biobatu mencuci kain seluar jeans.",
-          "Laktase: Menghasilkan susu bebas laktosa bagi individu yang mengalami intoleransi laktosa.",
-          "Zimase (daripada yis): Menapai gula menjadi etanol dalam pembuatan bir dan wain.",
-          "Lipase: Menghasilkan keju dan mencerna gris lemak dalam industri penapisan minyak."
-        ],
+        "subtopic": "5.3 Aplikasi Enzim dalam Kehidupan Harian",
+        "summary": "Pemanfaatan enzim semula jadi dan teknologi enzim tersekat gerak dalam industri makanan, perubatan, bioteknologi dan pembersihan.",
         "verbatim": [
-          "Protease: Digunakan dalam serbuk pencuci pakaian biologi untuk menanggalkan kotoran protein darah/telur, dan melembutkan daging dalam industri makanan.",
-          "Pektinase dan Selulase: Mengekstrak dan menjernihkan jus buah-buahan secara komersial serta biobatu mencuci kain seluar jeans.",
-          "Laktase: Menghasilkan susu bebas laktosa bagi individu yang mengalami intoleransi laktosa.",
-          "Zimase (daripada yis): Menapai gula menjadi etanol dalam pembuatan bir dan wain.",
-          "Lipase: Menghasilkan keju dan mencerna gris lemak dalam industri penapisan minyak."
+          "Enzim Tersekat Gerak (Immobilized Enzymes): Enzim yang dilekatkan secara fizikal pada bahan lengai (inert) yang tidak larut (cth: kalsium alginat) untuk meningkatkan kestabilan terhadap suhu/pH dan boleh diguna semula secara berulang kali.",
+          "Aplikasi Industri Makanan: Pektinase & Selulase (mengekstrak jus buah dan menjernihkan jus); Protease (melembutkan daging, menanggalkan kulit ikan); Laktase (menghasilkan susu bebas laktosa untuk individu intolerans laktosa); Zimase (menapai alkohol dalam yis).",
+          "Industri Bahan Pencuci: Enzim biologi dalam serbuk pencuci (Protease menyingkirkan kotoran protein cth darah; Lipase menyingkirkan kesan minyak dan lemak; Amilase menyingkirkan kotoran kanji).",
+          "Industri Perubatan & Diagnostik: Glukosa oksidase pada jalur ujian darah untuk memantau paras glukosa pesakit kencing manis."
         ],
-        "explanation": "Penggunaan bioteknologi enzim dalam industri pemakanan, fabrik dan perubatan."
+        "explanation": "Teknologi enzim tersekat gerak menjimatkan kos pengeluaran industri kerana produk akhir bebas daripada kontaminasi enzim dan enzim boleh digunakan berulang kali."
       }
     ],
     "steps": [
@@ -918,75 +851,52 @@ const BIOLOGI_DATA = [
     "id": "bio-bab6",
     "babNum": "BAB 6",
     "title": "PEMBAHAGIAN SEL",
-    "icon": "🧬",
-    "anyflipPages": "Halaman 98 – 118 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Pembahagian sel memastikan pewarisan bahan genetik dan kelangsungan hidup organisma. Bab ini membincangkan Kitar Sel (Fasa Interfasa G1, S, G2 dan Fasa M), peringkat-peringkat Mitosis (Profasa, Metafasa, Anafasa, Telofasa) dan Sitokinesis, proses Meiosis I dan Meiosis II dalam menghasilkan gamet haploid berserta pindah silang yang menjana variasi, serta implikasi kegagalan kawalan pembahagian sel (kanser dan keabnormalan kromosom seperti Sindrom Down).",
+    "icon": "➗",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 108 – 131)",
+    "synopsis": "Mengkaji konsep pembahagian sel (kariokinesis dan sitokinesis), fasa kitar sel (Interfasa G1, S, G2 dan Fasa M), proses Mitosis untuk pertumbuhan dan pembaikan tisu, proses Meiosis untuk pembentukan sel gamet haploid dengan variasi genetik, serta isu kegagalan pembahagian sel (kanser dan mutasi kromosom).",
     "notes": [
       {
-        "subtopic": "6.1 Kitar Sel dan Fasa Interfasa",
-        "summary": "Kitaran sel eukariot merangkumi Interfasa (90% tempoh masa) dan Fasa M.",
-        "points": [
-          "Fasa G₁ (Pertumbuhan Pertama): Sel membesar secara aktif, mensintesis protein dan organel baharu (seperti mitokondrion dan jasad Golgi), kadar metabolisme tinggi.",
-          "Fasa S (Sintesis DNA): Replikasi DNA berlaku. Setiap kromosom mengganda menghasilkan dua kromatid kembar seiras yang terikat pada sentromer.",
-          "Fasa G₂ (Pertumbuhan Kedua): Sel terus membesar, mengumpul tenaga ATP dan mensintesis mikrotubul/gentian gelendong sebagai persediaan pembahagian fasa M.",
-          "Fasa M: Melibatkan Mitosis (pembahagian nukleus) diikuti oleh Sitokinesis (pembahagian sitoplasma)."
-        ],
+        "subtopic": "6.1 Pembahagian Sel",
+        "summary": "Proses pembahagian sel melibatkan kariokinesis (pembahagian nukleus) diikuti oleh sitokinesis (pembahagian sitoplasma) dalam sel soma dan sel pembiakan.",
         "verbatim": [
-          "Fasa G₁ (Pertumbuhan Pertama): Sel membesar secara aktif, mensintesis protein dan organel baharu (seperti mitokondrion dan jasad Golgi), kadar metabolisme tinggi.",
-          "Fasa S (Sintesis DNA): Replikasi DNA berlaku. Setiap kromosom mengganda menghasilkan dua kromatid kembar seiras yang terikat pada sentromer.",
-          "Fasa G₂ (Pertumbuhan Kedua): Sel terus membesar, mengumpul tenaga ATP dan mensintesis mikrotubul/gentian gelendong sebagai persediaan pembahagian fasa M.",
-          "Fasa M: Melibatkan Mitosis (pembahagian nukleus) diikuti oleh Sitokinesis (pembahagian sitoplasma)."
+          "Jenis Sel dalam Organisma: Sel Soma (sel badan selain sel gamet, mempunyai bilangan kromosom diploid 2n, membahagi secara mitosis); Sel Gamet (sel pembiakan seks cth sperma dan ovum, mempunyai bilangan kromosom haploid n, dihasilkan melalui meiosis dalam organ pembiakan gonad).",
+          "Kromosom Homolog: Pasangan kromosom yang mempunyai saiz, bentuk dan kedudukan lokus gen yang sama, satu diwarisi daripada bapa (paternal) dan satu daripada ibu (maternal).",
+          "Kariokinesis: Proses pembahagian bahan genetik di dalam nukleus sel.",
+          "Sitokinesis: Proses pembahagian sitoplasma sel sejurus selepas kariokinesis selesai."
         ],
-        "explanation": "Kitaran sel eukariot merangkumi Interfasa (90% tempoh masa) dan Fasa M."
+        "explanation": "Bilangan kromosom diploid manusia ialah 2n = 46 (23 pasang homolog), manakala sel gamet mengandungi n = 23 kromosom."
       },
       {
-        "subtopic": "6.2 Mitosis dan Sitokinesis",
-        "summary": "Pembahagian nukleus sel soma menghasilkan 2 sel anak seiras secara genetik (2n → 2n).",
-        "points": [
-          "Profasa: Kromatin menebal dan memendek menjadi kromosom kelihatan jelas; sentriol bergerak ke kutub bertentangan; gentian gelendong mula terbentuk; nukleolus dan membran nukleus terurai.",
-          "Metafasa: Kromosom tersusun sebaris pada satah khatulistiwa; gentian gelendong melekat pada sentromer setiap kromatid kembar.",
-          "Anafasa: Sentromer membahagi dua; gentian gelendong memendek menarik kromatid kembar berpisah ke kutub bertentangan; kromatid kini dikenali sebagai kromosom anak.",
-          "Telofasa: Kromosom anak sampai ke kutub sel; kromosom menyahkondensasi menjadi benang kromatin halus; membran nukleus dan nukleolus terbentuk semula; gentian gelendong lenyap.",
-          "Sitokinesis:\n  • Sel Haiwan: Membran plasma mencerut ke dalam di bahagian tengah membentuk alur pembahagian sehingga sel terputus dua.\n  • Sel Tumbuhan: Vesikel daripada jasad Golgi bergabung membentuk plat sel di satah khatulistiwa, membesar ke luar membentuk dinding sel baharu.",
-          "Kepentingan Mitosis: Tumbesaran organisma multisel, penggantian sel rosak/mati (cth: sel kulit, eritrosit), penyembuhan luka, dan pembiakan aseks (cth: pertunasan yis, pembiakan vegetatif)."
-        ],
+        "subtopic": "6.2 Kitar Sel dan Mitosis",
+        "summary": "Kitar sel terdiri daripada Interfasa (fasa persediaan terpanjang) dan Fasa M (Mitosis dan Sitokinesis) yang menghasilkan dua sel anak seiras secara genetik.",
         "verbatim": [
-          "Profasa: Kromatin menebal dan memendek menjadi kromosom kelihatan jelas; sentriol bergerak ke kutub bertentangan; gentian gelendong mula terbentuk; nukleolus dan membran nukleus terurai.",
-          "Metafasa: Kromosom tersusun sebaris pada satah khatulistiwa; gentian gelendong melekat pada sentromer setiap kromatid kembar.",
-          "Anafasa: Sentromer membahagi dua; gentian gelendong memendek menarik kromatid kembar berpisah ke kutub bertentangan; kromatid kini dikenali sebagai kromosom anak.",
-          "Telofasa: Kromosom anak sampai ke kutub sel; kromosom menyahkondensasi menjadi benang kromatin halus; membran nukleus dan nukleolus terbentuk semula; gentian gelendong lenyap.",
-          "Sitokinesis:\n  • Sel Haiwan: Membran plasma mencerut ke dalam di bahagian tengah membentuk alur pembahagian sehingga sel terputus dua.\n  • Sel Tumbuhan: Vesikel daripada jasad Golgi bergabung membentuk plat sel di satah khatulistiwa, membesar ke luar membentuk dinding sel baharu.",
-          "Kepentingan Mitosis: Tumbesaran organisma multisel, penggantian sel rosak/mati (cth: sel kulit, eritrosit), penyembuhan luka, dan pembiakan aseks (cth: pertunasan yis, pembiakan vegetatif)."
+          "Fasa Interfasa: Fasa G1 (sel membesar, sintesis protein dan organel baharu); Fasa S (replikasi DNA berlaku di mana setiap kromosom membentuk kromatid kembar terikat di sentromer); Fasa G2 (sel terus membesar, tenaga ATP dikumpul untuk pembahagian sel).",
+          "Empat Peringkat Mitosis (Fasa M): (1) Profasa (kromatin memendek dan menebal menjadi kromosom jelas, gentian gelendong terbentuk, membran nukleus dan nukleolus terurai); (2) Metafasa (kromosom tersusun sebaris di satah khatulistiwa, sentromer terikat pada gentian gelendong); (3) Anafasa (sentromer membelah dua, kromatid kembar berpisah ditarik ke kutub sel bertentangan menjadi kromosom anak); (4) Telofasa (kromosom sampai di kutub sel bertentangan, membran nukleus dan nukleolus terbentuk semula, gentian gelendong lenyap).",
+          "Sitokinesis Sel Haiwan vs Tumbuhan: Sel haiwan: Mikrofilamen mengecut membentuk alur pembahagian di bahagian tengah sel sehingga sitoplasma terputus dua; Sel tumbuhan: Vesikel bergabung membentuk plat sel di satah khatulistiwa yang berkembang menjadi dinding sel baharu.",
+          "Kepentingan Mitosis: Pertumbuhan organisma, pembaikan tisu rosak, penggantian sel mati, dan pembiakan aseks (cth: pertunasan yis, belahan dedakan Amoeba sp.)."
         ],
-        "explanation": "Pembahagian nukleus sel soma menghasilkan 2 sel anak seiras secara genetik (2n → 2n)."
+        "explanation": "Mitosis mengekalkan bilangan kromosom dan kandungan genetik yang sama antara sel induk dan kedua-dua sel anak (2n -> 2n)."
       },
       {
-        "subtopic": "6.3 Meiosis dan Pembentukan Gamet",
-        "summary": "Pembahagian sel pembiakan menghasilkan 4 sel gamet haploid tak seiras (2n → n).",
-        "points": [
-          "Meiosis I (Pengurangan bilangan kromosom dari diploid 2n ke haploid n):\n  • Profasa I: Kromosom homolog berpasangan (sinapsis) membentuk bivalen/tetrad. Pindah silang berlaku pada kiasma di mana pertukaran segmen bahan genetik berlaku (sumber variasi genetik!).\n  • Metafasa I: Pasangan kromosom homolog tersusun di satah khatulistiwa secara rawak (penyusunan bebas).\n  • Anafasa I: Kromosom homolog berpisah dan ditarik ke kutub bertentangan (kromatid kembar masih terikat pada sentromer).\n  • Telofasa I: Terbentuk dua sel anak haploid (n).",
-          "Meiosis II (Menyerupai mitosis tetapi bermula dengan sel haploid):\n  • Profasa II, Metafasa II, Anafasa II (kromatid kembar berpisah), Telofasa II.\n  • Menghasilkan 4 sel anak gamet haploid (n) yang berbeza secara genetik antara satu sama lain dan berbeza daripada sel induk.",
-          "Perbezaan Mitosis vs Meiosis:\n  • Mitosis berlaku dalam sel soma, 1 kali pembahagian, tiada pindah silang, hasilkan 2 sel diploid (2n) seiras genetik.\n  • Meiosis berlaku dalam sel gonad (testis/ovari/anter), 2 kali pembahagian, ada pindah silang, hasilkan 4 sel haploid (n) bervariasi."
-        ],
+        "subtopic": "6.3 Meiosis",
+        "summary": "Proses pembahagian sel khusus yang berlaku dalam organ pembiakan untuk menghasilkan empat sel anak haploid (n) dengan kombinasi genetik yang berbeza.",
         "verbatim": [
-          "Meiosis I (Pengurangan bilangan kromosom dari diploid 2n ke haploid n):\n  • Profasa I: Kromosom homolog berpasangan (sinapsis) membentuk bivalen/tetrad. Pindah silang berlaku pada kiasma di mana pertukaran segmen bahan genetik berlaku (sumber variasi genetik!).\n  • Metafasa I: Pasangan kromosom homolog tersusun di satah khatulistiwa secara rawak (penyusunan bebas).\n  • Anafasa I: Kromosom homolog berpisah dan ditarik ke kutub bertentangan (kromatid kembar masih terikat pada sentromer).\n  • Telofasa I: Terbentuk dua sel anak haploid (n).",
-          "Meiosis II (Menyerupai mitosis tetapi bermula dengan sel haploid):\n  • Profasa II, Metafasa II, Anafasa II (kromatid kembar berpisah), Telofasa II.\n  • Menghasilkan 4 sel anak gamet haploid (n) yang berbeza secara genetik antara satu sama lain dan berbeza daripada sel induk.",
-          "Perbezaan Mitosis vs Meiosis:\n  • Mitosis berlaku dalam sel soma, 1 kali pembahagian, tiada pindah silang, hasilkan 2 sel diploid (2n) seiras genetik.\n  • Meiosis berlaku dalam sel gonad (testis/ovari/anter), 2 kali pembahagian, ada pindah silang, hasilkan 4 sel haploid (n) bervariasi."
+          "Peringkat Meiosis: Meiosis I (memisahkan kromosom homolog) dan Meiosis II (memisahkan kromatid kembar).",
+          "Meiosis I: Profasa I (sinapsis berlaku di mana kromosom homolog berpasangan membentuk bivalen/tetrad; pindah silang berlaku di kiasma menghasilkan kombinasi genetik baharu / rekombinasi); Metafasa I (pasangan kromosom homolog tersusun di satah khatulistiwa secara penyusunan bebas); Anafasa I (kromosom homolog berpisah dan bergerak ke kutub sel bertentangan); Telofasa I (terbentuk dua sel anak haploid n).",
+          "Meiosis II: Sama seperti mitosis tetapi bermula dengan sel haploid. Anafasa II memisahkan kromatid kembar. Menghasilkan 4 sel anak haploid (n) yang berbeza secara genetik.",
+          "Kepentingan Meiosis: Memastikan bilangan kromosom diploid spesies (2n) dikekalkan daripada generasi ke generasi selepas persenyawaan; Menghasilkan variasi genetik melalui pindah silang dan penyusunan bebas kromosom homolog."
         ],
-        "explanation": "Pembahagian sel pembiakan menghasilkan 4 sel gamet haploid tak seiras (2n → n)."
+        "explanation": "Pindah silang semasa Profasa I menukar segmen DNA antara kromatid bukan seiras, menjadi punca utama variasi genetik dalam kalangan adik-beradik."
       },
       {
-        "subtopic": "6.4 Isu Pembahagian Sel terhadap Kesihatan Manusia",
-        "summary": "Kanser akibat mitosis tak terkawal dan keabnormalan kromosom akibat tak disjungsi.",
-        "points": [
-          "Kanser: Mutasi pada gen pengawal kitar sel (onkogen) akibat pendedahan karsinogen (asap rokok, sinaran UV, sinar-X) menyebabkan sel membahagi secara mitosis berterusan tanpa kawalan membentuk tumor. Tumor malignan merebak ke tisu lain melalui salur darah/limfa (metastasis).",
-          "Tak Disjungsi (Nondisjunction): Kegagalan kromosom homolog atau kromatid kembar berpisah semasa Anafasa I atau Anafasa II.\n  • Sindrom Down (Trisomi 21): Gamet mempunyai 24 kromosom (ekstra kromosom 21) disenyawakan menghasilkan zigot dengan 47 kromosom (45 + XY atau 45 + XX). Ciri: mata sepet, batang hidung lepek, lidah terjelir, kerencatan mental.\n  • Sindrom Turner (44 + XO = 45 kromosom, perempuan mandul ketiadaan satu kromosom X).\n  • Sindrom Klinefelter (44 + XXY = 47 kromosom, lelaki dengan ciri kewanitaan dan mandul)."
-        ],
+        "subtopic": "6.4 Isu Pembahagian Sel Terhadap Kesihatan Manusia",
+        "summary": "Gangguan kawalan kitar sel boleh mengakibatkan pertumbuhan sel tidak terkawal membentuk tumor/kanser, manakala ketakceraian meiosis menyebabkan keabnormalan kromosom.",
         "verbatim": [
-          "Kanser: Mutasi pada gen pengawal kitar sel (onkogen) akibat pendedahan karsinogen (asap rokok, sinaran UV, sinar-X) menyebabkan sel membahagi secara mitosis berterusan tanpa kawalan membentuk tumor. Tumor malignan merebak ke tisu lain melalui salur darah/limfa (metastasis).",
-          "Tak Disjungsi (Nondisjunction): Kegagalan kromosom homolog atau kromatid kembar berpisah semasa Anafasa I atau Anafasa II.\n  • Sindrom Down (Trisomi 21): Gamet mempunyai 24 kromosom (ekstra kromosom 21) disenyawakan menghasilkan zigot dengan 47 kromosom (45 + XY atau 45 + XX). Ciri: mata sepet, batang hidung lepek, lidah terjelir, kerencatan mental.\n  • Sindrom Turner (44 + XO = 45 kromosom, perempuan mandul ketiadaan satu kromosom X).\n  • Sindrom Klinefelter (44 + XXY = 47 kromosom, lelaki dengan ciri kewanitaan dan mandul)."
+          "Pembentukan Kanser: Mutasi pada DNA akibat karsinogen (sinaran UV, asap rokok, bahan kimia toksik) merosakkan gen pengawal kitar sel; Sel membahagi secara mitosis berterusan tanpa kawalan membentuk jisim sel luar biasa (tumor). Tumor malignan boleh merebak ke bahagian badan lain melalui aliran darah (metastasis).",
+          "Ketakceraian (Nondisjunction) Meiosis: Kegagalan kromosom homolog atau kromatid kembar berpisah dengan sempurna semasa Anafasa I atau Anafasa II, menghasilkan gamet dengan bilangan kromosom abnormal (n+1 atau n-1).",
+          "Sindrom Down (Trisomi 21): Persenyawaan gamet abnormal (24 kromosom / lebih satu kromosom ke-21) dengan gamet normal (23 kromosom) menghasilkan zigot dengan 47 kromosom (mempunyai tiga salinan kromosom ke-21). Individu menunjukkan ciri fizikal khas dan kerencatan mental ringan hingga sederhana."
         ],
-        "explanation": "Kanser akibat mitosis tak terkawal dan keabnormalan kromosom akibat tak disjungsi."
+        "explanation": "Faktor umur ibu hamil yang lanjut (>35 tahun) meningkatkan risiko berlakunya ketakceraian kromosom semasa oogenesis."
       }
     ],
     "steps": [
@@ -1114,51 +1024,38 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 7",
     "title": "RESPIRASI SEL",
     "icon": "🫁",
-    "anyflipPages": "Halaman 120 – 134 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Respirasi sel membekalkan tenaga ATP untuk mengekalkan semua aktiviti biokimia organisma hidup. Bab ini memperincikan respirasi aerob (glikolisis dan pengoksidaan piruvat dalam mitokondrion), serta fermentasi alkohol (pada yis dan tumbuhan) dan fermentasi asid laktik (pada sel otot manusia dan bakteria Lactobacillus), berserta konsep hutang oksigen semasa senaman cergas.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 132 – 149)",
+    "synopsis": "Mengkaji penghasilan tenaga ATP melalui respirasi sel, mekanisme lengkap Respirasi Aerob (glikolisis dan pengoksidaan piruvat dalam mitokondria), serta Fermentasi alkohol dan fermentasi asid laktik (hutang oksigen dalam sel otot).",
     "notes": [
       {
-        "subtopic": "7.1 Penghasilan Tenaga & Respirasi Aerob",
-        "summary": "Penguraian lengkap glukosa dengan kehadiran oksigen menghasilkan 2898 kJ (38 ATP).",
-        "points": [
-          "Peranan ATP: Adenosina trifosfat (ATP) ialah pembawa tenaga segera sel. Apabila ikatan fosfat terminal dihidrolisiskan: ATP → ADP + Pᵢ + 30.5 kJ mol⁻¹.",
-          "Respirasi Aerob: Penguraian glukosa secara lengkap dengan kehadiran oksigen:\n  C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 2898 kJ (38 ATP)",
-          "Peringkat Respirasi Aerob:\n  • Glikolisis: Berlaku dalam sitoplasma tanpa oksigen. 1 molekul glukosa (6C) dipecahkan kepada 2 molekul piruvat (3C), menghasilkan 2 ATP bersih dan 2 NADH.\n  • Pengoksidaan Piruvat & Kitar Krebs: Berlaku di dalam matriks mitokondrion. Piruvat dioksidakan sepenuhnya membebaskan CO₂, H₂O, dan menjana tenaga melalui rantai pengangkutan elektron (krista mitokondrion) menghasilkan 36 ATP lagi."
-        ],
+        "subtopic": "7.1 Penghasilan Tenaga melalui Respirasi Sel",
+        "summary": "Proses penguraian glukosa secara biokimia di dalam sel untuk membebaskan tenaga yang disimpan dalam bentuk molekul ATP (Adenosina Trifosfat).",
         "verbatim": [
-          "Peranan ATP: Adenosina trifosfat (ATP) ialah pembawa tenaga segera sel. Apabila ikatan fosfat terminal dihidrolisiskan: ATP → ADP + Pᵢ + 30.5 kJ mol⁻¹.",
-          "Respirasi Aerob: Penguraian glukosa secara lengkap dengan kehadiran oksigen:\n  C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 2898 kJ (38 ATP)",
-          "Peringkat Respirasi Aerob:\n  • Glikolisis: Berlaku dalam sitoplasma tanpa oksigen. 1 molekul glukosa (6C) dipecahkan kepada 2 molekul piruvat (3C), menghasilkan 2 ATP bersih dan 2 NADH.\n  • Pengoksidaan Piruvat & Kitar Krebs: Berlaku di dalam matriks mitokondrion. Piruvat dioksidakan sepenuhnya membebaskan CO₂, H₂O, dan menjana tenaga melalui rantai pengangkutan elektron (krista mitokondrion) menghasilkan 36 ATP lagi."
+          "Maksud Respirasi Sel: Proses pengoksidaan molekul organik (utamanya glukosa) melalui siri tindak balas berperingkat untuk membebaskan tenaga kimia.",
+          "Peranan ATP: Molekul pembawa tenaga universal dalam sel; Terdiri daripada satu bes adenina, satu gula ribosa dan tiga kumpulan fosfat; Pemecahan ikatan fosfat terminal menghasilkan ADP + Pi serta membebaskan tenaga pantas untuk aktiviti metabolisme sel, pengecutan otot dan pembahagian sel.",
+          "Substrat Respirasi: Glukosa ialah substrat utama, diikuti oleh lipid dan asid amino apabila bekalan glukosa terhad."
         ],
-        "explanation": "Penguraian lengkap glukosa dengan kehadiran oksigen menghasilkan 2898 kJ (38 ATP)."
+        "explanation": "Tenaga yang dibebaskan semasa respirasi sel bukan sahaja menghasilkan ATP, tetapi sebahagiannya hilang sebagai haba untuk mengekalkan suhu badan."
       },
       {
-        "subtopic": "7.2 Fermentasi (Respirasi Anaerob)",
-        "summary": "Penguraian glukosa tak lengkap tanpa oksigen atau oksigen terhad menghasilkan sedikit tenaga (2 ATP).",
-        "points": [
-          "Fermentasi Alkohol (Yis & Tumbuhan Banjir):\n  • Glukosa diuraikan kepada etanol, karbon dioksida dan 210 kJ (2 ATP):\n    C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + 210 kJ (2 ATP)\n  • Aplikasi: Yis Saccharomyces cerevisiae dalam pembuatan roti (gas CO₂ menaikkan adunan doh, etanol meruap semasa membakar) dan pembuatan minuman beralkohol/wain.",
-          "Fermentasi Asid Laktik (Sel Otot Manusia & Bakteria Lactobacillus):\n  • Glukosa diuraikan kepada asid laktik dan 150 kJ (2 ATP) tanpa pembebasan CO₂:\n    C₆H₁₂O₆ → 2 Asid Laktik (C₃H₆O₃) + 150 kJ (2 ATP)\n  • Aplikasi Industri: Bakteria Lactobacillus memfermentasikan laktosa susu menghasilkan asid laktik yang menggumpalkan kasein susu untuk membuat dadih (yogurt) dan keju."
-        ],
+        "subtopic": "7.2 Respirasi Aerob",
+        "summary": "Penguraian lengkap glukosa dengan kehadiran oksigen untuk menghasilkan karbon dioksida, air dan sejumlah besar tenaga ATP (2898 kJ / 36-38 ATP).",
         "verbatim": [
-          "Fermentasi Alkohol (Yis & Tumbuhan Banjir):\n  • Glukosa diuraikan kepada etanol, karbon dioksida dan 210 kJ (2 ATP):\n    C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + 210 kJ (2 ATP)\n  • Aplikasi: Yis Saccharomyces cerevisiae dalam pembuatan roti (gas CO₂ menaikkan adunan doh, etanol meruap semasa membakar) dan pembuatan minuman beralkohol/wain.",
-          "Fermentasi Asid Laktik (Sel Otot Manusia & Bakteria Lactobacillus):\n  • Glukosa diuraikan kepada asid laktik dan 150 kJ (2 ATP) tanpa pembebasan CO₂:\n    C₆H₁₂O₆ → 2 Asid Laktik (C₃H₆O₃) + 150 kJ (2 ATP)\n  • Aplikasi Industri: Bakteria Lactobacillus memfermentasikan laktosa susu menghasilkan asid laktik yang menggumpalkan kasein susu untuk membuat dadih (yogurt) dan keju."
+          "Persamaan Kimia: C₆H₁₂O₆ + 6O₂ -> 6CO₂ + 6H₂O + Tenaga (2898 kJ / ~36-38 ATP).",
+          "Dua Peringkat Utama: (1) Glikolisis: Berlaku dalam sitoplasma tanpa memerlukan oksigen; Glukosa (6C) diuraikan kepada 2 molekul piruvat (3C), menghasilkan 2 ATP bersih; (2) Pengoksidaan Piruvat (Kitar Krebs): Berlaku di dalam matriks mitokondria dengan kehadiran oksigen; Piruvat dioksidakan sepenuhnya kepada CO₂ dan H₂O serta menghasilkan 34-36 ATP melalui rantai pengangkutan elektron.",
+          "Keperluan Mitokondrion: Organel dwimembran dengan membran dalam berlipat-lipat (krista) yang menyediakan luas permukaan besar untuk enzim sintesis ATP."
         ],
-        "explanation": "Penguraian glukosa tak lengkap tanpa oksigen atau oksigen terhad menghasilkan sedikit tenaga (2 ATP)."
+        "explanation": "Kehadiran oksigen bertindak sebagai penerima elektron terakhir dalam rantai pernafasan mitokondria untuk membentuk molekul air."
       },
       {
-        "subtopic": "7.3 Hutang Oksigen dalam Otot Manusia",
-        "summary": "Mekanisme keletihan otot semasa larian pecut 100 meter dan pemulihan oksigen.",
-        "points": [
-          "Semasa Senaman Cergas (Cth: Lari Pecut 100m): Permintaan oksigen oleh sel otot rangka melebihi bekalan oksigen yang dapat dihantar oleh sistem peredaran darah. Otot berada dalam keadaan kekurangan oksigen.",
-          "Pembentukan Hutang Oksigen: Sel otot beralih kepada fermentasi asid laktik untuk membekalkan ATP segera. Pengumpulan asid laktik dalam tisu otot menyebabkan kekejangan otot (kram) dan kelesuan otot.",
-          "Pembayaran Hutang Oksigen: Selepas larian berhenti, atlet bernafas secara dalam dan tercungap-cungap untuk menyedut lebih banyak oksigen. Oksigen berlebihan ini digunakan untuk mengoksidakan asid laktik di dalam hati:\n  • Kira-kira 1/6 asid laktik dioksidakan menjadi CO₂, H₂O dan tenaga.\n  • Baki 5/6 asid laktik ditukarkan semula menjadi glukosa dan disimpan sebagai glikogen di hati. Apabila semua asid laktik disingkirkan, hutang oksigen telah dibayar penuh."
-        ],
+        "subtopic": "7.3 Fermentasi",
+        "summary": "Penguraian tidak lengkap glukosa dalam keadaan oksigen terhad atau tanpa oksigen, membebaskan tenaga yang sedikit (2 ATP / 210 kJ).",
         "verbatim": [
-          "Semasa Senaman Cergas (Cth: Lari Pecut 100m): Permintaan oksigen oleh sel otot rangka melebihi bekalan oksigen yang dapat dihantar oleh sistem peredaran darah. Otot berada dalam keadaan kekurangan oksigen.",
-          "Pembentukan Hutang Oksigen: Sel otot beralih kepada fermentasi asid laktik untuk membekalkan ATP segera. Pengumpulan asid laktik dalam tisu otot menyebabkan kekejangan otot (kram) dan kelesuan otot.",
-          "Pembayaran Hutang Oksigen: Selepas larian berhenti, atlet bernafas secara dalam dan tercungap-cungap untuk menyedut lebih banyak oksigen. Oksigen berlebihan ini digunakan untuk mengoksidakan asid laktik di dalam hati:\n  • Kira-kira 1/6 asid laktik dioksidakan menjadi CO₂, H₂O dan tenaga.\n  • Baki 5/6 asid laktik ditukarkan semula menjadi glukosa dan disimpan sebagai glikogen di hati. Apabila semua asid laktik disingkirkan, hutang oksigen telah dibayar penuh."
+          "Fermentasi Alkohol (dalam Yis & Pokok Padi): Glukosa -> Etanol + Karbon dioksida + Tenaga (210 kJ / 2 ATP). Aplikasi: Yis dalam penaikan adunan roti (CO₂ mengembangkan doh) dan pembuatan bir/wain (etanol). Pokok padi berakar di air bertakung menghasilkan enzim alkohol dehidrogenase untuk bertoleransi terhadap etanol toksik.",
+          "Fermentasi Asid Laktik (dalam Bakteria Lactobacillus & Sel Otot Manusia): Glukosa -> Asid laktik + Tenaga (150 kJ / 2 ATP). Aplikasi industri: Pembuatan yogurt dan keju oleh bakteria Lactobacillus.",
+          "Hutang Oksigen dalam Otot Manusia: Semasa senaman cergas, kadar penggunaan O₂ melebihi bekalan O₂ darah; Otot menjalankan fermentasi asid laktik untuk membekalkan ATP pantas; Pengumpulan asid laktik menyebabkan kekejangan dan kelesuan otot; Selepas senaman, pernafasan tercungap-cungap menyedut lebihan O₂ (membayar hutang oksigen) untuk mengoksidakan asid laktik di hati kembali kepada glukosa atau CO₂ dan H₂O."
         ],
-        "explanation": "Mekanisme keletihan otot semasa larian pecut 100 meter dan pemulihan oksigen."
+        "explanation": "Kira-kira 1/6 daripada asid laktik dioksidakan kepada CO₂ dan H₂O dalam hati, manakala baki 5/6 ditukar semula kepada glukosa dan disimpan sebagai glikogen."
       }
     ],
     "steps": [
@@ -1286,53 +1183,51 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 8",
     "title": "SISTEM RESPIRASI DALAM MANUSIA DAN HAIWAN",
     "icon": "🫁",
-    "anyflipPages": "Halaman 136 – 152 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Sistem respirasi memastikan pertukaran gas oksigen dan karbon dioksida berlaku secara efisien antara organisma dengan persekitarannya. Bab ini membandingkan penyesuaian struktur respirasi serangga (sistem trakea), ikan (insang dengan pertukaran arus bertentangan), katak (kulit luar lembap dan peparu), serta manusia (alveolus peparu), mekanisme pernafasan berdasarkan tekanan dan isi padu toraks, pertukaran dan pengangkutan gas dalam darah, serta penyakit sistem pernafasan manusia.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 150 – 171)",
+    "synopsis": "Membandingkan penyesuaian struktur respirasi pelbagai organisma (serangga, ikan, amfibia, manusia), mekanisme pernafasan, proses pertukaran dan pengangkutan gas respirasi dalam darah manusia, serta isu kesihatan sistem respirasi.",
     "notes": [
       {
-        "subtopic": "8.1 Sistem Respirasi Haiwan dan Manusia",
-        "summary": "Penyesuaian permukaan respirasi: nisbah luas permukaan/isi padu (J/I) besar, nipis setebal satu sel, sentiasa lembap, jaringan kapilari darah padat.",
-        "points": [
-          "Serangga: Sistem trakea terdiri daripada liang spirakel berinjap di toraks/abdomen -> trakea bercabang ke trakeol halus sentiasa berisi cecair respirasi -> gas O₂ meresap terus ke dalam sel tisu badan tanpa sistem peredaran darah.",
-          "Ikan: Insang dilindungi operkulum. Setiap insang terdiri daripada lengkung insang, filamen insang dengan unjuran lamela nipis yang banyak. Sistem Pertukaran Arus Bertentangan (Countercurrent exchange): Aliran darah dalam kapilari lamela mengalir dalam arah bertentangan dengan aliran air, mengekalkan kecerunan kepekatan O₂ sepanjang lamela dan membolehkan lebih 80% O₂ terlarut diserap.",
-          "Katak (Amfibia): Kulit luar sentiasa lembap diselaputi lendir (respirasi kulit) kaya jaring kapilari darah semasa berehat; peparu ringkas berdinding nipis dan berlipat-lipat semasa aktif.",
-          "Manusia: Alveolus berbilang juta dalam peparu menyediakan luas permukaan resapan yang sangat besar, dinding setebal satu sel epitelium skuamosa, lapisan lembap melarutkan gas, dikelilingi jaring kapilari darah padat."
-        ],
+        "subtopic": "8.1 Jenis Sistem Respirasi",
+        "summary": "Organisma berlainan mempunyai struktur respirasi khusus yang disesuaikan dengan saiz badan, nisbah JLP/I dan habitat hidup masing-masing.",
         "verbatim": [
-          "Serangga: Sistem trakea terdiri daripada liang spirakel berinjap di toraks/abdomen -> trakea bercabang ke trakeol halus sentiasa berisi cecair respirasi -> gas O₂ meresap terus ke dalam sel tisu badan tanpa sistem peredaran darah.",
-          "Ikan: Insang dilindungi operkulum. Setiap insang terdiri daripada lengkung insang, filamen insang dengan unjuran lamela nipis yang banyak. Sistem Pertukaran Arus Bertentangan (Countercurrent exchange): Aliran darah dalam kapilari lamela mengalir dalam arah bertentangan dengan aliran air, mengekalkan kecerunan kepekatan O₂ sepanjang lamela dan membolehkan lebih 80% O₂ terlarut diserap.",
-          "Katak (Amfibia): Kulit luar sentiasa lembap diselaputi lendir (respirasi kulit) kaya jaring kapilari darah semasa berehat; peparu ringkas berdinding nipis dan berlipat-lipat semasa aktif.",
-          "Manusia: Alveolus berbilang juta dalam peparu menyediakan luas permukaan resapan yang sangat besar, dinding setebal satu sel epitelium skuamosa, lapisan lembap melarutkan gas, dikelilingi jaring kapilari darah padat."
+          "Ciri Penyesuaian Permukaan Respirasi Cekap: Nisbah jumlah luas permukaan kepada isi padu (JLP/I) yang besar; Lapisan sel yang sangat nipis (setebal satu sel) untuk mempercepatkan resapan gas; Permukaan yang sentiasa lembap membolehkan gas melarut; Jaringan kapilari darah yang padat (kecuali serangga).",
+          "Serangga: Sistem trakea yang terdiri daripada liang spirakel, salur trakea berlilin disokong gelang kitin, dan trakeol halus yang bersentuhan terus dengan sel badan (oksigen meresap terus ke sel tanpa melalui darah).",
+          "Ikan: Insang yang dilindungi oleh operkulum; Terdiri daripada lengkung insang dengan filamen insang yang mempunyai banyak unjuran halus lamela; Aliran darah dan aliran air adalah bertentangan (mekanisme pertukaran arus bertentangan) untuk memaksimumkan penyerapan oksigen sehingga 80%.",
+          "Katak (Amfibia): Kulit nipis, lembap diselaputi mukus dan kaya jaringan kapilari darah (respirasi kulit); Dilengkapi paru-paru ringkas berdinding lipatan untuk pernafasan aktif.",
+          "Manusia: Paru-paru yang mengandungi berjuta-juta pundi alveolus mikroskopik yang nipis, basah dan dikelilingi jalinan kapilari darah."
         ],
-        "explanation": "Penyesuaian permukaan respirasi: nisbah luas permukaan/isi padu (J/I) besar, nipis setebal satu sel, sentiasa lembap, jaringan kapilari darah padat."
+        "explanation": "Mekanisme arus bertentangan pada insang ikan mengekalkan kecerunan kepekatan oksigen yang berterusan di sepanjang lamela."
       },
       {
-        "subtopic": "8.2 Mekanisme Pernafasan Manusia",
-        "summary": "Tindakan otot interkosta dan diafragma mengikut Hukum Boyle (Isi padu berkadar songsang dengan tekanan).",
-        "points": [
-          "Tarikan Nafas (Inhalasi):\n  • Otot interkosta luar mengecut, otot interkosta dalam mengendur -> Sangkar rusuk bergerak ke atas dan ke luar.\n  • Otot diafragma mengecut -> Diafragma mendatar dan bergerak ke bawah.\n  • Isi padu rongga toraks bertambah -> Tekanan udara dalam alveolus menurun (di bawah tekanan atmosfera).\n  • Udara atmosfera dipaksa masuk ke dalam peparu.",
-          "Hembusan Nafas (Ekshalasi):\n  • Otot interkosta luar mengendur, otot interkosta dalam mengecut -> Sangkar rusuk bergerak ke bawah dan ke dalam.\n  • Otot diafragma mengendur -> Diafragma melengkung ke atas berbentuk kubah.\n  • Isi padu rongga toraks berkurang -> Tekanan udara dalam alveolus meningkat (melebihi tekanan atmosfera).\n  • Udara dipaksa keluar dari peparu."
-        ],
+        "subtopic": "8.2 Mekanisme Pernafasan",
+        "summary": "Perbandingan mekanisme tarikan dan hembusan nafas yang melibatkan perubahan isi padu dan tekanan dalam badan organisma.",
         "verbatim": [
-          "Tarikan Nafas (Inhalasi):\n  • Otot interkosta luar mengecut, otot interkosta dalam mengendur -> Sangkar rusuk bergerak ke atas dan ke luar.\n  • Otot diafragma mengecut -> Diafragma mendatar dan bergerak ke bawah.\n  • Isi padu rongga toraks bertambah -> Tekanan udara dalam alveolus menurun (di bawah tekanan atmosfera).\n  • Udara atmosfera dipaksa masuk ke dalam peparu.",
-          "Hembusan Nafas (Ekshalasi):\n  • Otot interkosta luar mengendur, otot interkosta dalam mengecut -> Sangkar rusuk bergerak ke bawah dan ke dalam.\n  • Otot diafragma mengendur -> Diafragma melengkung ke atas berbentuk kubah.\n  • Isi padu rongga toraks berkurang -> Tekanan udara dalam alveolus meningkat (melebihi tekanan atmosfera).\n  • Udara dipaksa keluar dari peparu."
+          "Mekanisme Pernafasan Serangga: Otot abdomen mengecut -> isi padu abdomen berkurang, tekanan meningkat -> udara dihembus keluar melalui spirakel; Otot abdomen mengendur -> isi padu bertambah, tekanan berkurang -> udara ditarik masuk.",
+          "Mekanisme Pernafasan Ikan: Tarikan nafas (mulut terbuka, lantai mulut diturunkan, operkulum tertutup -> isi padu mulut naik, tekanan turun -> air masuk); Hembusan nafas (mulut tertutup, lantai mulut dinaikkan, operkulum terbuka -> air dipaksa keluar melalui insang).",
+          "Mekanisme Pernafasan Manusia: Tarikan Nafas (Inhalasi): Otot interkosta luar mengecut, otot interkosta dalam mengendur -> sangkar rusuk bergerak ke atas dan ke luar; Diafragma mengecut dan mendatar; Isi padu rongga toraks bertambah, tekanan udara berkurang di bawah tekanan atmosfera -> udara disedut masuk ke dalam alveolus; Hembusan Nafas (Ekshalasi): Otot interkosta luar mengendur, dalam mengecut -> sangkar rusuk turun ke bawah dan ke dalam; Diafragma mengendur melengkung ke atas berbentuk kubah; Isi padu berkurang, tekanan meningkat melebihi tekanan atmosfera -> udara dipaksa keluar."
         ],
-        "explanation": "Tindakan otot interkosta dan diafragma mengikut Hukum Boyle (Isi padu berkadar songsang dengan tekanan)."
+        "explanation": "Pernafasan manusia didorong oleh hukum fizik di mana udara sentiasa mengalir dari kawasan tekanan tinggi ke kawasan tekanan rendah."
       },
       {
-        "subtopic": "8.3 Pengangkutan Gas dalam Darah & 8.4 Isu Kesihatan",
-        "summary": "Pengangkutan O₂ sebagai oksihemoglobin, pengangkutan CO₂ sebagai ion bikarbonat, dan patologi peparu.",
-        "points": [
-          "Pengangkutan Oksigen: Dalam kapilari alveolus dengan tekanan separa O₂ tinggi, oksigen bergabung dengan hemoglobin membentuk Oksihemoglobin:\n  Hb + 4O₂ ⇌ Hb(O₂)₄. Di tisu respirasi dengan pO₂ rendah, oksihemoglobin terurai membebaskan O₂ ke sel tisu.",
-          "Pengangkutan Karbon Dioksida: CO₂ diangkut melalui 3 cara:\n  • 70% sebagai ion bikarbonat (HCO₃⁻) dalam plasma darah (dibantu oleh enzim karbonik anhidrase dalam eritrosit).\n  • 23% terikat pada hemoglobin sebagai Karbaminohemoglobin (HbCO₂).\n  • 7% terlarut dalam plasma darah sebagai asid karbonik (H₂CO₃).",
-          "Penyakit Respirasi:\n  • Emfisema: Dinding alveolus rosak dan hilang keanjalan akibat asap rokok, mengurangkan luas permukaan pertukaran gas.\n  • Bronkitis Kronik: Keradangan pada bronkus dengan penghasilan mukus berlebihan dan silium rosak.\n  • Asma: Kekejangan otot dinding bronkiol dan keradangan mukosa menyempitkan laluan udara."
-        ],
+        "subtopic": "8.3 Pertukaran Gas dalam Manusia",
+        "summary": "Resapan gas oksigen dan karbon dioksida di alveolus dan pengangkutannya dalam sistem peredaran darah manusia.",
         "verbatim": [
-          "Pengangkutan Oksigen: Dalam kapilari alveolus dengan tekanan separa O₂ tinggi, oksigen bergabung dengan hemoglobin membentuk Oksihemoglobin:\n  Hb + 4O₂ ⇌ Hb(O₂)₄. Di tisu respirasi dengan pO₂ rendah, oksihemoglobin terurai membebaskan O₂ ke sel tisu.",
-          "Pengangkutan Karbon Dioksida: CO₂ diangkut melalui 3 cara:\n  • 70% sebagai ion bikarbonat (HCO₃⁻) dalam plasma darah (dibantu oleh enzim karbonik anhidrase dalam eritrosit).\n  • 23% terikat pada hemoglobin sebagai Karbaminohemoglobin (HbCO₂).\n  • 7% terlarut dalam plasma darah sebagai asid karbonik (H₂CO₃).",
-          "Penyakit Respirasi:\n  • Emfisema: Dinding alveolus rosak dan hilang keanjalan akibat asap rokok, mengurangkan luas permukaan pertukaran gas.\n  • Bronkitis Kronik: Keradangan pada bronkus dengan penghasilan mukus berlebihan dan silium rosak.\n  • Asma: Kekejangan otot dinding bronkiol dan keradangan mukosa menyempitkan laluan udara."
+          "Pertukaran Gas di Alveolus: Tekanan separa oksigen (pO₂) di alveolus lebih tinggi daripada kapilari darah -> oksigen meresap masuk ke darah; Tekanan separa CO₂ (pCO₂) dalam darah lebih tinggi -> CO₂ meresap ke alveolus untuk dihembus.",
+          "Pengangkutan Oksigen: Oksigen berpadu dengan hemoglobin dalam eritrosit membentuk oksihemoglobin (Hb + 4O₂ ⇌ Hb(O₂)₄); Di tisu beroksigen rendah, oksihemoglobin terurai membebaskan oksigen ke sel badan.",
+          "Pengangkutan Karbon Dioksida: Diangkut dalam 3 bentuk: (1) 70% sebagai ion bikarbonat (HCO₃⁻) dalam plasma darah dibantu oleh enzim karbonik anhidrase dalam eritrosit; (2) 23% sebagai karbaminohemoglobin bergabung dengan hemoglobin; (3) 7% sebagai asid karbonik terlarut dalam plasma darah."
         ],
-        "explanation": "Pengangkutan O₂ sebagai oksihemoglobin, pengangkutan CO₂ sebagai ion bikarbonat, dan patologi peparu."
+        "explanation": "Tindak balas enzim karbonik anhidrase: CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻."
+      },
+      {
+        "subtopic": "8.4 Isu Kesihatan Berkaitan Sistem Respirasi Manusia",
+        "summary": "Penyakit kronik sistem pernafasan yang berpunca daripada pencemaran udara, tabiat merokok dan tindak balas alergi.",
+        "verbatim": [
+          "Asma: Keradangan, bengkak dan penyempitan pada dinding bronkiol serta rembesan mukus berlebihan akibat alergen (habuk, asap, bulu haiwan); Menyebabkan kesukaran bernafas dan bunyi berdehit.",
+          "Bronkitis Kronik: Keradangan salur bronkus berterusan disebabkan tar rokok dan bahan pencemar; Silium rosak dan mukus terkumpul menyebabkan batuk berterusan.",
+          "Emfisema: Pemusnahan dan kehilangan kekenyalan dinding alveolus (alveolus membesar dan pecah) akibat asap rokok; Jumlah luas permukaan pertukaran gas berkurang drastik menyebabkan pesakit sentiasa sesak nafas.",
+          "Kanser Paru-paru: Karsinogen dalam asap rokok (seperti benzopirena dan tar) merangsang pembahagian sel epitelium bronkus secara abnormal tanpa kawalan."
+        ],
+        "explanation": "Gas karbon monoksida (CO) dalam asap rokok mengikat hemoglobin 200 kali lebih kuat daripada oksigen membentuk karboksihemoglobin, mengurangkan bekalan oksigen ke otak."
       }
     ],
     "steps": [
@@ -1459,56 +1354,80 @@ const BIOLOGI_DATA = [
     "id": "bio-bab9",
     "babNum": "BAB 9",
     "title": "NUTRISI DAN SISTEM PENCERNAAN MANUSIA",
-    "icon": "🥗",
-    "anyflipPages": "Halaman 154 – 176 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Sistem pencernaan memecahkan molekul makanan kompleks kepada unit ringkas yang boleh diserap dan diasimilasikan oleh sel badan. Bab ini membincangkan pencernaan fizikal dan kimia di mulut, perut, duodenum dan ileum, peranan jus pencernaan dan enzim, penyesuaian vilus usus kecil untuk penyerapan nutrien, peranan hati dalam asimilasi dan detoksifikasi, serta penyahtinjaan dan isu kesihatan berkaitan nutrisi.",
+    "icon": "🍎",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 172 – 199)",
+    "synopsis": "Mengkaji struktur sistem pencernaan manusia, proses pencernaan fizikal dan kimia, penyerapan nutrien di ileum, asimilasi dalam sel badan dan peranan hati, penyahtinjaan di usus besar, konsep gizi seimbang, serta isu kesihatan pemakanan.",
     "notes": [
       {
-        "subtopic": "9.1 Sistem Pencernaan & 9.2 Proses Pencernaan",
-        "summary": "Pencernaan fizikal (kunyahan & peristalsis) dan pencernaan kimia oleh enzim.",
-        "points": [
-          "Mulut: Gigi mengunyah makanan (pencernaan fizikal), kelenjar liur merembeskan amilase liur (pH 6.5–7.5) yang mencernakan Kanji kepada Maltosa. Makanan dibentuk menjadi bolus.",
-          "Perut: Kelenjar gastrik merembeskan Jus Gastrik mengandungi:\n  • Asid hidroklorik (HCl, pH 1.5–2.0): Membunuh bakteria, menyediakan medium asid optimum untuk enzim pepsin, dan menghentikan tindakan amilase liur.\n  • Enzim Pepsin: Menghidrolisis Protein kepada Polipeptida.\n  • Enzim Renin: Menggumpalkan kaseinogen susu menjadi kasein tak larut untuk dicerna pepsin.\n  Bolus bercampur asid membentuk kim separa cecair melalui tindakan peristalsis otot perut.",
-          "Duodenum: Menerima hempedu daripada pundi hempedu dan jus pankreas daripada pankreas:\n  • Hempedu (dihasilkan hati): Meneutralkan asid kim (pH 7.6–8.6) dan mengemulsikan lipid menjadi titisan halus (menambah luas permukaan).\n  • Jus Pankreas: Amilase pankreas (Kanji -> Maltosa), Tripsin (Polipeptida -> Peptida), Lipase (Lipid -> Asid lemak + Gliserol).",
-          "Ileum (Usus Kecil): Kelenjar usus merembeskan enzim:\n  • Maltase (Maltosa -> 2 Glukosa), Sukrase (Sukrosa -> Glukosa + Fruktosa), Laktase (Laktosa -> Glukosa + Galaktosa), Peptidase/Erepsin (Peptida -> Asid amino)."
-        ],
+        "subtopic": "9.1 Sistem Pencernaan",
+        "summary": "Organisasi anatomi salur alimentari manusia dan kelenjar aksesori yang terlibat dalam proses penghadaman makanan.",
         "verbatim": [
-          "Mulut: Gigi mengunyah makanan (pencernaan fizikal), kelenjar liur merembeskan amilase liur (pH 6.5–7.5) yang mencernakan Kanji kepada Maltosa. Makanan dibentuk menjadi bolus.",
-          "Perut: Kelenjar gastrik merembeskan Jus Gastrik mengandungi:\n  • Asid hidroklorik (HCl, pH 1.5–2.0): Membunuh bakteria, menyediakan medium asid optimum untuk enzim pepsin, dan menghentikan tindakan amilase liur.\n  • Enzim Pepsin: Menghidrolisis Protein kepada Polipeptida.\n  • Enzim Renin: Menggumpalkan kaseinogen susu menjadi kasein tak larut untuk dicerna pepsin.\n  Bolus bercampur asid membentuk kim separa cecair melalui tindakan peristalsis otot perut.",
-          "Duodenum: Menerima hempedu daripada pundi hempedu dan jus pankreas daripada pankreas:\n  • Hempedu (dihasilkan hati): Meneutralkan asid kim (pH 7.6–8.6) dan mengemulsikan lipid menjadi titisan halus (menambah luas permukaan).\n  • Jus Pankreas: Amilase pankreas (Kanji -> Maltosa), Tripsin (Polipeptida -> Peptida), Lipase (Lipid -> Asid lemak + Gliserol).",
-          "Ileum (Usus Kecil): Kelenjar usus merembeskan enzim:\n  • Maltase (Maltosa -> 2 Glukosa), Sukrase (Sukrosa -> Glukosa + Fruktosa), Laktase (Laktosa -> Glukosa + Galaktosa), Peptidase/Erepsin (Peptida -> Asid amino)."
+          "Salur Alimentari: Mulut -> Farinks -> Esofagus -> Perut -> Usus Kecil (Duodenum, Jejunum, Ileum) -> Usus Besar (Sekum, Kolon, Rektum) -> Dubur.",
+          "Organ & Kelenjar Aksesori: Kelenjar liur (rembes air liur mengandungi amilase liur); Hati (menghasilkan hempedu yang disimpan di pundi hempedu); Pankreas (merembes jus pankreas mengandungi amilase, tripsin, dan lipase ke duodenum)."
         ],
-        "explanation": "Pencernaan fizikal (kunyahan & peristalsis) dan pencernaan kimia oleh enzim."
+        "explanation": "Pencernaan fizikal memecahkan makanan secara mekanikal untuk menambah luas permukaan bagi tindakan enzim pencernaan kimia."
       },
       {
-        "subtopic": "9.3 Penyerapan & 9.4 Asimilasi Nutrien",
-        "summary": "Struktur vilus untuk penyerapan dan laluan nutrien ke hati melalui vena porta hepar.",
-        "points": [
-          "Penyesuaian Vilus Ileum: Lipatan berjuta vilus dan mikrovilus menghasilkan luas permukaan penyerapan yang amat besar, dinding epitelium setebal satu sel, jaringan kapilari darah menyerap nutrien larut air, dan salur lakteal di tengah menyerap nutrien larut lipid.",
-          "Laluan Penyerapan Nutrien:\n  • Ke dalam Kapilari Darah: Glukosa, fruktosa, galaktosa, asid amino, vitamin B & C, serta air -> diangkut oleh Vena Porta Hepar terus ke Hati.\n  • Ke dalam Lakteal: Asid lemak, gliserol, dan vitamin larut lemak (A, D, E, K) bergabung membentuk titisan kilomikron -> diangkut oleh Sistem Limfa melalui duktus toraks ke Vena Subklavia Kiri masuk ke aliran darah.",
-          "Peranan Hati dalam Asimilasi:\n  • Metabolisme Glukosa: Menukarkan glukosa berlebihan kepada glikogen untuk disimpan (dirangsang oleh hormon insulin).\n  • Penyahaminaan: Menguraikan asid amino berlebihan menjadi urea (disingkirkan oleh ginjal) dan asid keto (ditukarkan kepada glukosa).\n  • Detoksifikasi: Menyahtoksik racun, dadah dan alkohol dalam darah."
-        ],
+        "subtopic": "9.2 Pencernaan",
+        "summary": "Pencernaan mekanikal (pengunyahan dan peristalsis) serta pencernaan kimia oleh enzim hidrolisis sepanjang salur alimentari.",
         "verbatim": [
-          "Penyesuaian Vilus Ileum: Lipatan berjuta vilus dan mikrovilus menghasilkan luas permukaan penyerapan yang amat besar, dinding epitelium setebal satu sel, jaringan kapilari darah menyerap nutrien larut air, dan salur lakteal di tengah menyerap nutrien larut lipid.",
-          "Laluan Penyerapan Nutrien:\n  • Ke dalam Kapilari Darah: Glukosa, fruktosa, galaktosa, asid amino, vitamin B & C, serta air -> diangkut oleh Vena Porta Hepar terus ke Hati.\n  • Ke dalam Lakteal: Asid lemak, gliserol, dan vitamin larut lemak (A, D, E, K) bergabung membentuk titisan kilomikron -> diangkut oleh Sistem Limfa melalui duktus toraks ke Vena Subklavia Kiri masuk ke aliran darah.",
-          "Peranan Hati dalam Asimilasi:\n  • Metabolisme Glukosa: Menukarkan glukosa berlebihan kepada glikogen untuk disimpan (dirangsang oleh hormon insulin).\n  • Penyahaminaan: Menguraikan asid amino berlebihan menjadi urea (disingkirkan oleh ginjal) dan asid keto (ditukarkan kepada glukosa).\n  • Detoksifikasi: Menyahtoksik racun, dadah dan alkohol dalam darah."
+          "Mulut: Pengunyahan gigi dan tindakan amilase liur mencernakan kanji kepada maltosa pada pH neutral 6.5 - 7.5. Bolus ditolak melalui esofagus secara peristalsis.",
+          "Perut: Perembesan jus gaster oleh sel epitelium perut (Sel utama: pepsinogen aktif kepada pepsin oleh asid hidroklorik; Sel parietal: asid hidroklorik membunuh bakteria & sediakan pH 1.5 - 2; Sel mukus: lindungi dinding perut). Pepsin mencernakan protein kepada polipeptida/pepton.",
+          "Duodenum: Menerima kimus berasid. Hempedu (alkali) meneutralkan asid dan mengemulsikan lemak menjadi titisan halus; Jus pankreas: Amilase pankreas (kanji -> maltosa), Tripsin (polipeptida -> peptida), Lipase (lipid -> asid lemak + gliserol).",
+          "Usus Kecil (Ileum): Jus usus: Maltase (maltosa -> glukosa), Sukrase (sukrosa -> glukosa + fruktosa), Laktase (laktosa -> glukosa + galaktosa), Peptidase/Erepsin (peptida -> asid amino)."
         ],
-        "explanation": "Struktur vilus untuk penyerapan dan laluan nutrien ke hati melalui vena porta hepar."
+        "explanation": "Peristalsis ialah siri pengecutan dan pengendoran otot lingkar dan otot membujur secara beritma di dinding salur pencernaan."
       },
       {
-        "subtopic": "9.5 Penyahtinjaan & Isu Kesihatan Nutrisi",
-        "summary": "Fungsi kolon usus besar, pembentukan tinja, sembelit, dan gangguan pemakanan.",
-        "points": [
-          "Kolon (Usus Besar): Penyerapan semula air (kira-kira 90%) dan garam mineral; fermentasi sisa oleh bakteria simbiotik menghasilkan vitamin K dan vitamin B12.",
-          "Penyahtinjaan: Bahan tidak tercerna (selulosa/serat, bakteria mati, pigmen hempedu) membentuk tinja yang disimpan sementara dalam rektum sebelum disingkirkan melalui dubur.",
-          "Isu Pemakanan & Kesihatan:\n  • Sembelit: Kurang serat dan air dalam gizi, peristalsis perlahan menyebabkan air diserap terlalu banyak, tinja menjadi keras dan kering.\n  • Obesiti: Pengambilan kalori melebihi penggunaan tenaga, lemak berlebihan disimpan dalam tisu adipos.\n  • Anoreksia Nervosa: Gangguan psikologi di mana individu mengelak daripada makan kerana ketakutan melampau terhadap kegemukan.\n  • Bulimia Nervosa: Tabiat makan berlebihan secara kompulsif diikuti dengan pemuntahan secara paksa."
-        ],
+        "subtopic": "9.3 Penyerapan",
+        "summary": "Penyerapan hasil akhir pencernaan merentasi unjuran vilus dan mikrovilus di ileum ke dalam sistem peredaran darah dan sistem limfa.",
         "verbatim": [
-          "Kolon (Usus Besar): Penyerapan semula air (kira-kira 90%) dan garam mineral; fermentasi sisa oleh bakteria simbiotik menghasilkan vitamin K dan vitamin B12.",
-          "Penyahtinjaan: Bahan tidak tercerna (selulosa/serat, bakteria mati, pigmen hempedu) membentuk tinja yang disimpan sementara dalam rektum sebelum disingkirkan melalui dubur.",
-          "Isu Pemakanan & Kesihatan:\n  • Sembelit: Kurang serat dan air dalam gizi, peristalsis perlahan menyebabkan air diserap terlalu banyak, tinja menjadi keras dan kering.\n  • Obesiti: Pengambilan kalori melebihi penggunaan tenaga, lemak berlebihan disimpan dalam tisu adipos.\n  • Anoreksia Nervosa: Gangguan psikologi di mana individu mengelak daripada makan kerana ketakutan melampau terhadap kegemukan.\n  • Bulimia Nervosa: Tabiat makan berlebihan secara kompulsif diikuti dengan pemuntahan secara paksa."
+          "Penyesuaian Vilus untuk Penyerapan Cekap: Berjuta-juta unjuran vilus dan mikrovilus menambah luas permukaan; Lapisan epitelium setebal satu sel memudahkan resapan pantas; Jaringan kapilari darah padat mengangkut nutrien larut air; Lakteal di tengah vilus mengangkut titisan lipid larut lemak.",
+          "Bahan Masuk ke Kapilari Darah: Glukosa, galaktosa, asid amino (secara pengangkutan aktif dan resapan berbantu); Fruktosa (resapan berbantu); Vitamin larut air (B & C) dan air (secara osmosis). Salur darah bercantum membentuk Vena Port Hepar ke hati.",
+          "Bahan Masuk ke Lakteal: Asid lemak dan gliserol bergabung semula membentuk titisan kilomikron/trigliserida di sel epitelium, meresap ke dalam lakteal bersama vitamin larut lemak (A, D, E, K). Cecair limfa mengalir ke duktus toraks dan masuk ke sistem peredaran darah di vena subklavia kiri."
         ],
-        "explanation": "Fungsi kolon usus besar, pembentukan tinja, sembelit, dan gangguan pemakanan."
+        "explanation": "Struktur ileum yang panjang dan berlipat-lipat memastikan masa penyerapan nutrien yang mencukupi sebelum sisa masuk ke kolon."
+      },
+      {
+        "subtopic": "9.4 Asimilasi",
+        "summary": "Penggunaan nutrien yang diserap oleh sel-sel badan untuk pembinaan komponen sel, pembaikan tisu dan penjanaan tenaga.",
+        "verbatim": [
+          "Peranan Hati dalam Asimilasi: Metabolisme Karbohidrat (kelebihan glukosa ditukar kepada glikogen oleh hormon insulin; glikogen diurai kepada glukosa oleh glukagon apabila paras gula turun); Pendeaminaan Asid Amino (kelebihan asid amino diurai kumpulan aminonya kepada urea untuk disingkirkan oleh ginjal); Detoksifikasi (menyingkirkan bahan toksik dan ubat-ubatan dari darah); Penyimpanan nutrien (vitamin A, D, B12 dan zat besi).",
+          "Asimilasi dalam Sel Badan: Glukosa dioksidakan melalui respirasi sel menghasilkan ATP; Asid amino digunakan untuk mensintesis protein plasma, protoplasma baharu, dan enzim; Lipid membentuk dwilapisan membran plasma dan simpanan tenaga adipos."
+        ],
+        "explanation": "Vena port hepar mengangkut darah beroksigen rendah yang kaya dengan nutrien tercerna terus dari saluran gastrousus ke hati sebelum diedarkan ke seluruh badan."
+      },
+      {
+        "subtopic": "9.5 Penyahtinjaan",
+        "summary": "Pembentukan dan penyingkiran tinja melalui usus besar (kolon dan rektum) serta peranan mikrobiom usus.",
+        "verbatim": [
+          "Fungsi Usus Besar: Penyerapan semula air dan garam mineral daripada sisa makanan yang tidak tercerna; Pembentukan tinja yang terdiri daripada serat makanan (selulosa), sel epitelium mati, mukus dan bakteria.",
+          "Peranan Bakteria Usus (Mikrobiom): Bakteria simbiotik (seperti Escherichia coli) mensintesis vitamin K dan vitamin B12 serta asid folik untuk diserap ke dalam badan.",
+          "Proses Penyahtinjaan: Tinja disimpan sementara di dalam rektum; Apabila rektum penuh, tekanan merangsang pengecutan dinding rektum dan pengenduran sfinkter dubur untuk menolak tinja keluar melalui dubur."
+        ],
+        "explanation": "Pengambilan serat yang tidak mencukupi melambatkan pergerakan peristalsis kolon, menyebabkan penyerapan air berlebihan dan menghasilkan sembelit."
+      },
+      {
+        "subtopic": "9.6 Gizi Seimbang",
+        "summary": "Konsep pemakanan seimbang mengikut Pinggan Sihat Malaysia ('Suku-Suku Separuh') dan penentuan nilai tenaga serta vitamin C.",
+        "verbatim": [
+          "Tujuh Kelas Makanan: Karbohidrat, protein, lipid, vitamin, mineral, serat, dan air dalam kuantiti dan perkadaran yang betul mengikut keperluan individu.",
+          "Konsep Pinggan Sihat Malaysia: Suku karbohidrat (nasi/bijirin), Suku protein (ikan/ayam/kekacang), Separuh buah-buahan dan sayur-sayuran (vitamin, mineral, serat).",
+          "Nilai Tenaga Sampel Makanan: Ditentukan menggunakan kalorimeter bom: Nilai Tenaga = (4.2 J g⁻¹ °C⁻¹ × Jisim Air (g) × Kenaikan Suhu (°C)) / (Jisim Makanan (g) × 1000).",
+          "Ujian Kandungan Vitamin C: Menggunakan larutan DCPIP berwarna biru; Vitamin C melunturkan warna biru DCPIP."
+        ],
+        "explanation": "Keperluan kalori harian berbeza mengikut umur, jantina, pekerjaan dan saiz fizikal individu."
+      },
+      {
+        "subtopic": "9.7 Isu Kesihatan Berkaitan Sistem Pencernaan dan Tabiat Pemakanan",
+        "summary": "Gangguan kesihatan gastrousus akibat pemakanan tidak seimbang, kecelaruan psikologi pemakanan, dan pembedahan bariatrik.",
+        "verbatim": [
+          "Obesiti & Penyakit Kardiovaskular: Pengambilan kalori berlebihan (lemak tepu dan gula) disimpan sebagai lemak menyebabkan berat badan berlebihan, aterosklerosis, diabetes melitus jenis 2 dan darah tinggi.",
+          "Kecelaruan Pemakanan: Anoreksia Nervosa (keengganan makan kerana ketakutan melampau terhadap kegemukan, menyebabkan kekurangan zat teruk); Bulimia Nervosa (makan berlebihan diikuti memuntahkan makanan secara sengaja atau pengambilan julap, merosakkan esofagus dan mengganggu keseimbangan elektrolit).",
+          "Gastritis: Hakisan dinding perut akibat asid hidroklorik berlebihan kerana lewat makan, tekanan atau jangkitan bakteria Helicobacter pylori.",
+          "Pembedahan Pintasan Gaster (Gastric Bypass): Mengurangkan saiz kantung perut untuk merawat obesiti ekstrem (risiko kekurangan nutrien jangka panjang)."
+        ],
+        "explanation": "Kanser kolon sering dikaitkan dengan diet tinggi lemak haiwan dan kekurangan serat yang menyebabkan karsinogen berada lama di usus."
       }
     ],
     "steps": [
@@ -1636,60 +1555,93 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 10",
     "title": "PENGANGKUTAN DALAM MANUSIA DAN HAIWAN",
     "icon": "❤️",
-    "anyflipPages": "Halaman 178 – 202 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Sistem peredaran darah mengangkut oksigen, nutrien, hormon dan antibodi ke seluruh sel badan serta menyingkirkan bahan kumuh metabolik. Bab ini membincangkan perbandingan sistem peredaran terbuka dan tertutup (serangga, ikan, amfibia, mamalia), anatomi jantung dan salur darah manusia, mekanisme denyutan jantung dan pembekuan darah, kumpulan darah ABO dan faktor Rhesus, serta peranan sistem limfa dan penyakit kardiovaskular.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 200 – 233)",
+    "synopsis": "Mengkaji sistem peredaran organisma (terbuka vs tertutup), struktur anatomi jantung dan salur darah manusia, mekanisme peredaran ganda dua, pengepaman denyutan jantung, proses pembekuan darah, kumpulan darah ABO dan faktor Rhesus, sistem limfa serta penyakit kardiovaskular.",
     "notes": [
       {
-        "subtopic": "10.1 Sistem Peredaran Organisma & 10.2 Sistem Peredaran Manusia",
-        "summary": "Peredaran terbuka serangga, tunggal ikan, ganda dua manusia, dan struktur jantung 4 ruang.",
-        "points": [
-          "Jenis Sistem Peredaran:\n  • Terbuka (Serangga): Jantung mengepam hemolimfa ke dalam rongga hemocoel membasahi sel badan secara terus.\n  • Tertutup Tunggal (Ikan): Jantung 2 ruang (1 atrium, 1 ventrikel). Darah mengalir melalui jantung hanya sekali dalam satu peredaran lengkap (Jantung -> Insang -> Tisu badan -> Jantung).\n  • Tertutup Ganda Dua Lengkap (Manusia & Mamalia): Jantung 4 ruang (2 atrium, 2 ventrikel berasingan sepenuhnya). Darah melalui jantung dua kali: Peredaran Pulmonari (Jantung -> Peparu -> Jantung) dan Peredaran Sistemik (Jantung -> Seluruh badan -> Jantung). Tiada percampuran darah beroksigen dan terdeoksigen.",
-          "Struktur Jantung Manusia:\n  • Atrium Kanan: Menerima darah terdeoksigen dari seluruh badan melalui Vena Kava.\n  • Ventrikel Kanan: Dinding otot sederhana tebal, mengepam darah ke peparu melalui Arteri Pulmonari.\n  • Atrium Kiri: Menerima darah beroksigen dari peparu melalui Vena Pulmonari.\n  • Ventrikel Kiri: Mempunyai dinding otot paling tebal untuk menghasilkan tekanan tinggi mengepam darah beroksigen ke seluruh badan melalui Aorta.\n  • Injap Jantung: Injap Trikuspid (antara atrium kanan & ventrikel kanan), Injap Bikuspid (antara atrium kiri & ventrikel kiri), Injap Sabit (di pangkal aorta dan arteri pulmonari) menghalang aliran balik darah."
-        ],
+        "subtopic": "10.1 Jenis Sistem Peredaran",
+        "summary": "Sistem peredaran darah organisma multisel terbahagi kepada sistem peredaran terbuka dan sistem peredaran tertutup (tunggal atau ganda dua).",
         "verbatim": [
-          "Jenis Sistem Peredaran:\n  • Terbuka (Serangga): Jantung mengepam hemolimfa ke dalam rongga hemocoel membasahi sel badan secara terus.\n  • Tertutup Tunggal (Ikan): Jantung 2 ruang (1 atrium, 1 ventrikel). Darah mengalir melalui jantung hanya sekali dalam satu peredaran lengkap (Jantung -> Insang -> Tisu badan -> Jantung).\n  • Tertutup Ganda Dua Lengkap (Manusia & Mamalia): Jantung 4 ruang (2 atrium, 2 ventrikel berasingan sepenuhnya). Darah melalui jantung dua kali: Peredaran Pulmonari (Jantung -> Peparu -> Jantung) dan Peredaran Sistemik (Jantung -> Seluruh badan -> Jantung). Tiada percampuran darah beroksigen dan terdeoksigen.",
-          "Struktur Jantung Manusia:\n  • Atrium Kanan: Menerima darah terdeoksigen dari seluruh badan melalui Vena Kava.\n  • Ventrikel Kanan: Dinding otot sederhana tebal, mengepam darah ke peparu melalui Arteri Pulmonari.\n  • Atrium Kiri: Menerima darah beroksigen dari peparu melalui Vena Pulmonari.\n  • Ventrikel Kiri: Mempunyai dinding otot paling tebal untuk menghasilkan tekanan tinggi mengepam darah beroksigen ke seluruh badan melalui Aorta.\n  • Injap Jantung: Injap Trikuspid (antara atrium kanan & ventrikel kanan), Injap Bikuspid (antara atrium kiri & ventrikel kiri), Injap Sabit (di pangkal aorta dan arteri pulmonari) menghalang aliran balik darah."
+          "Keperluan Sistem Pengangkutan: Organisma kompleks mempunyai nisbah JLP/I yang kecil, maka resapan ringkas terlalu perlahan untuk membekalkan keperluan sel badan.",
+          "Sistem Peredaran Terbuka (Serangga/Arthropoda & Moluska): Darah (hemolimfa) dipam oleh satu atau lebih jantung terus ke dalam rongga badan (hemosel) dan membasahi sel-sel badan secara langsung tanpa salur darah tertutup.",
+          "Sistem Peredaran Tertutup (Cacing tanah, Ikan, Amfibia, Reptilia, Burung, Mamalia): Darah sentiasa terkandung dalam salur darah tertutup berterusan dan dipam oleh jantung berotot ke seluruh tisu.",
+          "Peredaran Tunggal vs Ganda Dua: Ikan: Peredaran tertutup tunggal (darah mengalir melalui jantung sekali sahaja dalam satu peredaran lengkap: Jantung 2 ruang -> insang -> sel badan -> jantung); Manusia/Mamalia: Peredaran tertutup ganda dua yang lengkap (darah melalui jantung sebanyak dua kali dalam satu kitaran: peredaran pulmonari ke paru-paru dan peredaran sistemik ke seluruh badan; Jantung 4 ruang menghalang pencampuran darah beroksigen dan terdeoksigen)."
         ],
-        "explanation": "Peredaran terbuka serangga, tunggal ikan, ganda dua manusia, dan struktur jantung 4 ruang."
+        "explanation": "Peredaran ganda dua lengkap membolehkan darah beroksigen dipam ke tisu badan pada tekanan hidrostatik tinggi untuk menyokong kadar metabolisme tinggi haiwan endotermik."
       },
       {
-        "subtopic": "10.3 Mekanisme Denyutan Jantung & 10.4 Pembekuan Darah",
-        "summary": "Perentak nodus sinoatrium (SAN) dan lata enzim pembekuan darah.",
-        "points": [
-          "Mekanisme Denyutan Jantung:\n  1. Nodus Sinoatrium (SAN, perentak jantung semula jadi) menjana impuls elektrik -> merebak merentasi kedua-dua atrium -> atrium mengecut serentak (sistol atrium).\n  2. Impuls sampai ke Nodus Atrioventrikel (AVN) -> dialirkan melalui Berkas His dan Gentian Purkinje ke apeks jantung.\n  3. Ventrikel mengecut serentak dari bawah ke atas (sistol ventrikel) -> Injap trikuspid dan bikuspid tertutup rapat menghasilkan bunyi 'LUB'.\n  4. Ventrikel mengendur (diastol) -> Injap sabit tertutup rapat menghasilkan bunyi 'DUB'.",
-          "Mekanisme Pembekuan Darah:\n  1. Salur darah terluka -> Platlet bergumpal pada luka dan membebaskan enzim Trombokinase (Tromboplastin).\n  2. Trombokinase dengan kehadiran ion kalsium (Ca²⁺) dan Vitamin K memangkin penukaran Protrombin (protein plasma tidak aktif) kepada Trombin (enzim aktif).\n  3. Trombin memangkin penukaran Fibrinogen (protein plasma larut) kepada Fibrin (jaringan bebenang tak larut).\n  4. Jaringan fibrin memerangkap sel darah merah membentuk bekuan darah (keruping) untuk menutup luka dan menghalang pendarahan lanjut serta jangkitan patogen."
-        ],
+        "subtopic": "10.2 Sistem Peredaran Manusia",
+        "summary": "Struktur empat ruang jantung berotot kardium, injap sehala, dan perbezaan struktur arteri, vena dan kapilari darah.",
         "verbatim": [
-          "Mekanisme Denyutan Jantung:\n  1. Nodus Sinoatrium (SAN, perentak jantung semula jadi) menjana impuls elektrik -> merebak merentasi kedua-dua atrium -> atrium mengecut serentak (sistol atrium).\n  2. Impuls sampai ke Nodus Atrioventrikel (AVN) -> dialirkan melalui Berkas His dan Gentian Purkinje ke apeks jantung.\n  3. Ventrikel mengecut serentak dari bawah ke atas (sistol ventrikel) -> Injap trikuspid dan bikuspid tertutup rapat menghasilkan bunyi 'LUB'.\n  4. Ventrikel mengendur (diastol) -> Injap sabit tertutup rapat menghasilkan bunyi 'DUB'.",
-          "Mekanisme Pembekuan Darah:\n  1. Salur darah terluka -> Platlet bergumpal pada luka dan membebaskan enzim Trombokinase (Tromboplastin).\n  2. Trombokinase dengan kehadiran ion kalsium (Ca²⁺) dan Vitamin K memangkin penukaran Protrombin (protein plasma tidak aktif) kepada Trombin (enzim aktif).\n  3. Trombin memangkin penukaran Fibrinogen (protein plasma larut) kepada Fibrin (jaringan bebenang tak larut).\n  4. Jaringan fibrin memerangkap sel darah merah membentuk bekuan darah (keruping) untuk menutup luka dan menghalang pendarahan lanjut serta jangkitan patogen."
+          "Struktur Jantung Manusia: Atrium kanan (menerima darah terdeoksigen dari vena kava), Ventrikel kanan (mengepam darah ke paru-paru melalui arteri pulmonari), Atrium kiri (menerima darah beroksigen dari vena pulmonari), Ventrikel kiri (mengepam darah beroksigen ke seluruh badan melalui aorta).",
+          "Ketebalan Dinding Ventrikel Kiri: Mempunyai dinding otot kardium paling tebal kerana perlu menghasilkan tekanan hidrostatik tinggi untuk mengepam darah ke seluruh badan.",
+          "Injap Jantung: Injap Trikuspid (antara atrium kanan & ventrikel kanan); Injap Bikuspid / Mitral (antara atrium kiri & ventrikel kiri); Injap Sabit (di pangkal aorta dan arteri pulmonari untuk halang aliran balik darah).",
+          "Perbandingan Tiga Jenis Salur Darah: Arteri (dinding tebal, berotot dan kenyal, lumen sempit, tiada injap, tekanan darah tinggi, bawa darah keluar dari jantung); Vena (dinding nipis, kurang berotot, lumen besar, mempunyai injap sehala, tekanan darah rendah, bawa darah ke jantung); Kapilari (dinding nipis setebal satu sel, tiada lapisan otot, lumen halus, telap membenarkan pertukaran bahan antara darah dan cecair tisu)."
         ],
-        "explanation": "Perentak nodus sinoatrium (SAN) dan lata enzim pembekuan darah."
+        "explanation": "Otot kardium bersifat miogenik, bermakna pengecutan dan pengendurannya berlaku secara automatik tanpa memerlukan rangsangan impuls saraf luar."
       },
       {
-        "subtopic": "10.5 Kumpulan Darah ABO & Faktor Rhesus",
-        "summary": "Keserasian pendermaan darah dan ketidakserasian faktor Rhesus pada kehamilan.",
-        "points": [
-          "Sistem ABO:\n  • Kumpulan A: Antigen A pada eritrosit, Antibodi Anti-B dalam plasma.\n  • Kumpulan B: Antigen B pada eritrosit, Antibodi Anti-A dalam plasma.\n  • Kumpulan AB: Antigen A dan B, TIADA antibodi (Penerima Universal).\n  • Kumpulan O: Tiada antigen, mempunyai Antibodi Anti-A dan Anti-B (Penderma Universal).\n  Ketidakserasian darah menyebabkan aglutinasi (penggumpalan eritrosit) yang menyumbat salur darah dan membawa maut.",
-          "Faktor Rhesus (Rh):\n  • Individu Rh⁺ mempunyai antigen D; individu Rh⁻ tiada antigen D.\n  • Bahaya Kehamilan: Jika ibu Rh⁻ mengandungkan anak pertama Rh⁺, semasa kelahiran darah bayi bercampur dengan darah ibu, merangsang ibu menghasilkan antibodi anti-D.\n  • Pada kehamilan kedua dengan anak Rh⁺, antibodi anti-D ibu yang kecil merentasi plasenta dan memusnahkan sel darah merah fetus -> menyebabkan Eritroblastosis Fetalis (bayi mengalami anemia teruk, kerosakan otak atau kematian)."
-        ],
+        "subtopic": "10.3 Mekanisme Denyutan Jantung",
+        "summary": "Penjanaan denyutan jantung secara miogenik bermula dari nodus sinoatrium (SAN) dan kawal atur kitar kardiak.",
         "verbatim": [
-          "Sistem ABO:\n  • Kumpulan A: Antigen A pada eritrosit, Antibodi Anti-B dalam plasma.\n  • Kumpulan B: Antigen B pada eritrosit, Antibodi Anti-A dalam plasma.\n  • Kumpulan AB: Antigen A dan B, TIADA antibodi (Penerima Universal).\n  • Kumpulan O: Tiada antigen, mempunyai Antibodi Anti-A dan Anti-B (Penderma Universal).\n  Ketidakserasian darah menyebabkan aglutinasi (penggumpalan eritrosit) yang menyumbat salur darah dan membawa maut.",
-          "Faktor Rhesus (Rh):\n  • Individu Rh⁺ mempunyai antigen D; individu Rh⁻ tiada antigen D.\n  • Bahaya Kehamilan: Jika ibu Rh⁻ mengandungkan anak pertama Rh⁺, semasa kelahiran darah bayi bercampur dengan darah ibu, merangsang ibu menghasilkan antibodi anti-D.\n  • Pada kehamilan kedua dengan anak Rh⁺, antibodi anti-D ibu yang kecil merentasi plasenta dan memusnahkan sel darah merah fetus -> menyebabkan Eritroblastosis Fetalis (bayi mengalami anemia teruk, kerosakan otak atau kematian)."
+          "Perentak Denyut Jantung: Nodus Sinoatrium (SAN) bertindak sebagai perentak semula jadi yang menjana impuls elektrik kardiak secara spontan.",
+          "Laluan Impuls Kardiak: 1. SAN menjana impuls merangsang pengecutan kedua-dua atrium serentak (sistol atrium); 2. Impuls sampai ke Nodus Atrioventrikel (AVN); 3. Melalui berkas His di septum jantung; 4. Menyebar ke gentian Purkinje menyebabkan kedua-dua ventrikel mengecut serentak dari bawah ke atas (sistol ventrikel).",
+          "Bunyi Jantung 'Lub-Dub': Bunyi pertama 'Lub' dihasilkan oleh penutupan serentak injap trikuspid dan bikuspid semasa sistol ventrikel; Bunyi kedua 'Dub' dihasilkan oleh penutupan injap sabit semasa diastol ventrikel.",
+          "Tekanan Darah Normal: Diukur menggunakan sfigmomanometer (cth: 120/80 mmHg: 120 mmHg ialah tekanan sistolik semasa ventrikel mengecut, 80 mmHg ialah tekanan diastolik semasa ventrikel mengendur)."
         ],
-        "explanation": "Keserasian pendermaan darah dan ketidakserasian faktor Rhesus pada kehamilan."
+        "explanation": "Kelewatan seketika impuls di AVN memberi masa kepada atrium untuk mengosongkan darah sepenuhnya ke dalam ventrikel sebelum ventrikel mula mengecut."
       },
       {
-        "subtopic": "10.6 Sistem Limfa & Penyakit Kardiovaskular",
-        "summary": "Pembentukan limfa, pengembalian cecair tisu, nodus limfa, dan aterosklerosis.",
-        "points": [
-          "Pembentukan Cecair Tisu dan Limfa: Tekanan hidrostatik tinggi di hujung arteriol kapilari darah menolak bendalir plasma darah (tanpa eritrosit dan protein besar) keluar ke ruang antara sel membentuk Cecair Tisu.\nKira-kira 85% cecair tisu diserap semula ke kapilari vena; baki 15% meresap ke dalam kapilari limfa dan dikenali sebagai Limfa.\nLimfa mengalir melalui salur limfa, ditapis oleh Nodus Limfa (mengandungi makrofaj dan limfosit memusnahkan bakteria), dan dikembalikan ke sistem darah melalui Duktus Toraks ke Vena Subklavia Kiri.",
-          "Penyakit Kardiovaskular:\n  • Aterosklerosis: Pembentukan plak kolesterol dan lipid pada lumen arteri menyempitkan laluan darah dan menaikkan tekanan darah.\n  • Arteriosklerosis: Pengerasan dinding arteri akibat mendapan kalsium menyebabkan kehilangan keanjalan salur darah.\n  • Infarksi Miokardium (Serangan Jantung): Sumbatan arteri koronari oleh bekuan darah (trombus) menghentikan bekalan O₂ kepada otot jantung."
-        ],
+        "subtopic": "10.4 Mekanisme Pembekuan Darah",
+        "summary": "Kaskad tindak balas biokimia pembekuan darah untuk menghentikan pendarahan luka dan mencegah kemasukan patogen.",
         "verbatim": [
-          "Pembentukan Cecair Tisu dan Limfa: Tekanan hidrostatik tinggi di hujung arteriol kapilari darah menolak bendalir plasma darah (tanpa eritrosit dan protein besar) keluar ke ruang antara sel membentuk Cecair Tisu.\nKira-kira 85% cecair tisu diserap semula ke kapilari vena; baki 15% meresap ke dalam kapilari limfa dan dikenali sebagai Limfa.\nLimfa mengalir melalui salur limfa, ditapis oleh Nodus Limfa (mengandungi makrofaj dan limfosit memusnahkan bakteria), dan dikembalikan ke sistem darah melalui Duktus Toraks ke Vena Subklavia Kiri.",
-          "Penyakit Kardiovaskular:\n  • Aterosklerosis: Pembentukan plak kolesterol dan lipid pada lumen arteri menyempitkan laluan darah dan menaikkan tekanan darah.\n  • Arteriosklerosis: Pengerasan dinding arteri akibat mendapan kalsium menyebabkan kehilangan keanjalan salur darah.\n  • Infarksi Miokardium (Serangan Jantung): Sumbatan arteri koronari oleh bekuan darah (trombus) menghentikan bekalan O₂ kepada otot jantung."
+          "Mekanisme Kaskad Pembekuan: 1. Platlet tergumpal pada salur darah yang rosak membebaskan enzim trombokinase (tromboplastin); 2. Trombokinase dengan bantuan ion kalsium (Ca²⁺) dan Vitamin K menukarkan protrombin (protein plasma tak aktif) kepada trombin (enzim aktif); 3. Trombin memangkinkan penukaran fibrinogen (protein plasma larut) kepada fibrin (bebenang protein tidak larut); 4. Fibrin membentuk jaringan serat yang memerangkap eritrosit membentuk bekuan darah (keruping luka).",
+          "Isu Pembekuan Darah: Hemofilia (penyakit genetik akibat kekurangan faktor pembeku darah, menyebabkan pendarahan berterusan); Trombosis (pembentukan bekuan darah abnormal di dalam salur darah utuh yang boleh menyebabkan strok atau serangan jantung)."
         ],
-        "explanation": "Pembentukan limfa, pengembalian cecair tisu, nodus limfa, dan aterosklerosis."
+        "explanation": "Kekurangan Vitamin K dalam diet boleh melambatkan masa pembekuan darah kerana vitamin K diperlukan oleh hati untuk mensintesis protrombin."
+      },
+      {
+        "subtopic": "10.5 Kumpulan Darah Manusia",
+        "summary": "Pengelasan kumpulan darah sistem ABO dan faktor Rhesus (Rh) serta implikasi keserasian pemindahan darah.",
+        "verbatim": [
+          "Sistem Kumpulan Darah ABO: Kumpulan A (Antigen A pada eritrosit, Antibodi Anti-B dalam plasma); Kumpulan B (Antigen B, Antibodi Anti-A); Kumpulan AB (Antigen A dan B, Tiada antibodi - Penerima Universal); Kumpulan O (Tiada antigen, Antibodi Anti-A dan Anti-B - Penderma Universal).",
+          "Aglutinasi (Penggumpalan): Berlaku jika antigen penderma bertemu dengan antibodi penerima yang sepadan (cth: Darah A didermakan kepada penerima darah B yang mempunyai Anti-A).",
+          "Faktor Rhesus (Rh): Rhesus positif (Rh⁺, mempunyai antigen D); Rhesus negatif (Rh⁻, tiada antigen D).",
+          "Eritroblastosis Fetalis: Ibu Rh⁻ hamil anak pertama Rh⁺ -> sel darah janin masuk ke ibu semasa kelahiran -> ibu menghasilkan antibodi anti-D; Semasa kehamilan kedua anak Rh⁺, antibodi anti-D ibu merentasi plasenta memusnahkan sel darah merah fetus -> anemia teruk, kerosakan otak atau kematian janin. Dicegah dengan suntikan globulin anti-Rh (RhoGAM) sejurus selepas kelahiran pertama."
+        ],
+        "explanation": "Dalam pemindahan darah kecemasan, keutamaan diberikan kepada keserasian antigen eritrosit penderma dengan antibodi plasma penerima."
+      },
+      {
+        "subtopic": "10.6 Isu Kesihatan Berkaitan Sistem Peredaran Manusia",
+        "summary": "Penyakit kardiovaskular utama (CVD) yang berkaitan dengan gaya hidup moden, pemakanan dan penuaan.",
+        "verbatim": [
+          "Aterosklerosis: Pemendapan kolesterol, lemak dan kalsium pada dinding arteri membentuk plak, menyebabkan lumen arteri menyempit dan dinding hilang kekenyalan.",
+          "Arteriosklerosis: Pengerasan dinding arteri akibat pengumpulan kalsium pada plak aterosklerosis.",
+          "Penyakit Jantung Koronari: Plak menyumbat arteri koronari yang membekalkan oksigen ke otot jantung; Boleh menyebabkan angina (sakit dada) atau infarksi miokardium (serangan jantung akibat kematian sel otot kardium).",
+          "Hipertensi (Tekanan Darah Tinggi): Tekanan darah melebihi 140/90 mmHg secara berterusan, meningkatkan risiko salur darah otak pecah (strok).",
+          "Rawatan Kardiovaskular: Pembedahan pintasan arteri koronari (CABG), angioplasti belon dan pemasangan stent, perentak jantung tiruan elektronik."
+        ],
+        "explanation": "Senaman aerobik yang konsisten dan pengurangan pengambilan garam serta lemak tepu mengurangkan risiko plak aterosklerosis."
+      },
+      {
+        "subtopic": "10.7 Sistem Limfa Manusia",
+        "summary": "Sistem pengaliran cecair limfa yang mengembalikan cecair interstis kepada sistem peredaran darah dan berperanan dalam pertahanan badan.",
+        "verbatim": [
+          "Pembentukan Cecair Tisu: Tekanan hidrostatik tinggi di hujung arteriol memaksa cecair plasma (tanpa eritrosit, platlet dan protein plasma besar) meresap keluar merentasi dinding kapilari ke ruang antara sel.",
+          "Pembentukan Limfa: Kira-kira 90% cecair tisu meresap kembali ke dalam kapilari darah di hujung venul; Baki 10% cecair tisu meresap ke dalam kapilari limfa membentuk bendalir limfa.",
+          "Salur & Nodus Limfa: Kapilari limfa bercantum membentuk salur limfa yang mempunyai injap sehala; Nodus limfa menghasilkan sel limfosit dan menapis bakteria/patogen.",
+          "Pengaliran Limfa ke Sistem Peredaran: Duktus Toraks mengalirkan limfa dari bahagian bawah badan, abdomen, dada kiri dan kepala kiri ke dalam Vena Subklavia Kiri; Duktus Limfa Kanan mengalirkan limfa dari bahagian atas kanan badan ke dalam Vena Subklavia Kanan."
+        ],
+        "explanation": "Aliran cecair limfa didorong oleh pengecutan otot rangka di sekeliling salur limfa dan injap sehala yang menghalang aliran balik."
+      },
+      {
+        "subtopic": "10.8 Isu Kesihatan Berkaitan Sistem Limfa Manusia",
+        "summary": "Gangguan fungsi pengaliran limfa yang mengakibatkan pengumpulan cecair tisu yang abnormal dalam tubuh.",
+        "verbatim": [
+          "Edema: Pengumpulan cecair tisu secara berlebihan di dalam ruang antara sel sehingga menyebabkan bahagian badan membengkak.",
+          "Punca Edema: (1) Penyumbatan salur limfa oleh cacing parasit filaria (cth: filariasis / penyakit untut); (2) Kehamilan (tekanan uterus ke atas salur darah panggul); (3) Kekurangan protein plasma (albumin) dalam diet (kwashiorkor) mengurangkan tekanan osmosis darah; (4) Kegagalan fungsi jantung atau kerosakan ginjal."
+        ],
+        "explanation": "Penyakit untut (filariasis limfatik) disebarkan oleh gigitan nyamuk Mansonia yang memindahkan larva cacing gelang mikroskopik."
       }
     ],
     "steps": [
@@ -1817,74 +1769,54 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 11",
     "title": "KEIMUNAN MANUSIA",
     "icon": "🛡️",
-    "anyflipPages": "Halaman 204 – 220 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Sistem keimunan melindungi tubuh daripada pencerobohan patogen penyakit. Bab ini membincangkan tiga barisan pertahanan badan (fizikal, fagositosis, dan keimunan adaptif sel B dan sel T), tindakan antibodi spesifik memusnahkan antigen, empat jenis keimunan (keimunan aktif semula jadi, keimunan aktif buatan, keimunan pasif semula jadi, dan keimunan pasif buatan), graf kepekatan antibodi aras keimunan, serta isu berkaitan Sindrom Kurang Daya Tahan Melawan Penyakit (HIV/AIDS).",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 234 – 257)",
+    "synopsis": "Mengkaji sistem pertahanan badan manusia merangkumi tiga barisan pertahanan, mekanisme tindakan antibodi spesifik terhadap antigen, pengelasan empat jenis keimunan (semula jadi vs buatan, aktif vs pasif), serta isu kesihatan keimunan (HIV/AIDS dan penyakit autoimun).",
     "notes": [
       {
-        "subtopic": "11.1 Tiga Barisan Pertahanan Badan",
-        "summary": "Pertahanan bukan spesifik (Barisan Pertama & Kedua) dan pertahanan spesifik (Barisan Ketiga).",
-        "points": [
-          "Barisan Pertahanan Pertama (Fizikal & Kimia - Bukan Spesifik):\n  • Kulit: Lapisan keratin tegar kalis air, perembesan sebum (asid lemak membantutkan bakteria) dan peluh (mengandungi enzim lisozim memusnahkan dinding sel bakteria).\n  • Membran Mukus: Melapisi salur pernafasan merembeskan mukus memerangkap habuk/mikrob; silium menyapu mukus ke farinks.\n  • Asid Hidroklorik (HCl) dalam perut memusnahkan patogen makanan.\n  • Enzim Lisozim dalam air mata, air liur dan mukus memecahkan dinding sel bakteria.",
-          "Barisan Pertahanan Kedua (Dalaman - Bukan Spesifik):\n  • Fagositosis: Leukosit neutrofil dan monosit/makrofaj mengepung, menelan dan mencerna patogen menggunakan enzim hidrolisis lisosom.\n  • Demam: Meningkatkan suhu badan untuk merencat pembiakan bakteria dan meningkatkan aktiviti fagositosis.\n  • Keradangan: Tisu rosak membebaskan histamin -> vasodilatasi kapilari dan peningkatan ketelapan salur darah -> lebih banyak fagosit dan cecair pembeku tiba di tapak luka.",
-          "Barisan Pertahanan Ketiga (Spesifik - Sistem Keimunan Adaptif):\n  • Melibatkan Limfosit T (menyerang sel yang dijangkiti dan merangsang limfosit B) dan Limfosit B (membahagi menghasilkan sel plasma yang merembeskan antibodi spesifik dan sel memori)."
-        ],
+        "subtopic": "11.1 Pertahanan Badan",
+        "summary": "Badan manusia dilindungi oleh tiga barisan pertahanan berstruktur: Barisan Pertama (fizikal & kimia), Barisan Kedua (keradangan & fagositosis), dan Barisan Ketiga (tindak balas imun spesifik).",
         "verbatim": [
-          "Barisan Pertahanan Pertama (Fizikal & Kimia - Bukan Spesifik):\n  • Kulit: Lapisan keratin tegar kalis air, perembesan sebum (asid lemak membantutkan bakteria) dan peluh (mengandungi enzim lisozim memusnahkan dinding sel bakteria).\n  • Membran Mukus: Melapisi salur pernafasan merembeskan mukus memerangkap habuk/mikrob; silium menyapu mukus ke farinks.\n  • Asid Hidroklorik (HCl) dalam perut memusnahkan patogen makanan.\n  • Enzim Lisozim dalam air mata, air liur dan mukus memecahkan dinding sel bakteria.",
-          "Barisan Pertahanan Kedua (Dalaman - Bukan Spesifik):\n  • Fagositosis: Leukosit neutrofil dan monosit/makrofaj mengepung, menelan dan mencerna patogen menggunakan enzim hidrolisis lisosom.\n  • Demam: Meningkatkan suhu badan untuk merencat pembiakan bakteria dan meningkatkan aktiviti fagositosis.\n  • Keradangan: Tisu rosak membebaskan histamin -> vasodilatasi kapilari dan peningkatan ketelapan salur darah -> lebih banyak fagosit dan cecair pembeku tiba di tapak luka.",
-          "Barisan Pertahanan Ketiga (Spesifik - Sistem Keimunan Adaptif):\n  • Melibatkan Limfosit T (menyerang sel yang dijangkiti dan merangsang limfosit B) dan Limfosit B (membahagi menghasilkan sel plasma yang merembeskan antibodi spesifik dan sel memori)."
+          "Konsep Asas: Keimunan (keupayaan badan melawan jangkitan penyakit); Patogen (mikroorganisma penyebab penyakit cth virus, bakteria); Antigen (bahan asing/protein pada permukaan patogen yang merangsang gerak balas imun); Antibodi (protein globular yang dihasilkan oleh sel limfosit untuk meneutralkan antigen).",
+          "Barisan Pertahanan Pertama (Bukan Spesifik): Menghalang kemasukan patogen. Kulit (lapisan keratin tegar kalis air, rembesan sebum & peluh berasid mengandungi enzim lisozim); Membran mukus (merembes mukus memerangkap habuk/mikrob); Asid hidroklorik dalam perut (membunuh patogen dalam makanan); Air mata dan air liur (mengandungi lisozim mencerna dinding sel bakteria).",
+          "Barisan Pertahanan Kedua (Bukan Spesifik): Bertindak apabila patogen melepasi barisan pertama. Fagositosis (sel neutrofil dan monosit/makrofaj menelan dan mencerna patogen); Demam (meningkatkan suhu badan untuk merencat pembiakan bakteria); Keradangan (tindak balas setempat akibat histamin yang menyebabkan vasodilatasi dan pengaliran fagosit ke tapak luka).",
+          "Barisan Pertahanan Ketiga (Spesifik): Melibatkan tindakan sel limfosit (Limfosit T memusnahkan sel yang dijangkiti; Limfosit B membahagi menjadi sel plasma yang merembeskan antibodi spesifik dan sel memori)."
         ],
-        "explanation": "Pertahanan bukan spesifik (Barisan Pertama & Kedua) dan pertahanan spesifik (Barisan Ketiga)."
+        "explanation": "Fagositosis berlaku apabila pseudopodium sel fagosit mengepung bakteria membentuk fagosom yang bergabung dengan lisosom untuk pencernaan hidrolitik."
       },
       {
-        "subtopic": "11.2 Tindakan Antibodi terhadap Antigen",
-        "summary": "5 mekanisme antibodi: Aglutinasi, Peneutralan, Pemendakan, Pengopsonan, dan Penguraian (Lisis).",
-        "points": [
-          "Aglutinasi: Antibodi menggumpalkan patogen pembawa antigen bersama-sama supaya mudah diperangkap dan dimusnahkan oleh sel fagosit.",
-          "Peneutralan: Antibodi mengikat pada toksin yang dihasilkan oleh bakteria, meneutralkan sifat toksik racun tersebut sebelum memudaratkan sel.",
-          "Pemendakan: Antibodi mengikat pada antigen larut membentuk kompleks tidak larut (mendakan) yang mudah disingkirkan oleh fagosit.",
-          "Pengopsonan: Antibodi bertindak sebagai penanda (opsonin) yang mengikat pada antigen bakteria, memudahkan fagosit mengenali dan memakannya.",
-          "Penguraian (Lisis): Antibodi bergabung dengan antigen dan mengaktifkan protein pelengkap yang menebuk liang pada membran sel bakteria sehingga bakteria lisis dan pecah."
-        ],
+        "subtopic": "11.2 Tindakan Antibodi",
+        "summary": "Lima mekanisme antibodi meneutralkan dan memusnahkan antigen patogen secara spesifik.",
         "verbatim": [
-          "Aglutinasi: Antibodi menggumpalkan patogen pembawa antigen bersama-sama supaya mudah diperangkap dan dimusnahkan oleh sel fagosit.",
-          "Peneutralan: Antibodi mengikat pada toksin yang dihasilkan oleh bakteria, meneutralkan sifat toksik racun tersebut sebelum memudaratkan sel.",
-          "Pemendakan: Antibodi mengikat pada antigen larut membentuk kompleks tidak larut (mendakan) yang mudah disingkirkan oleh fagosit.",
-          "Pengopsonan: Antibodi bertindak sebagai penanda (opsonin) yang mengikat pada antigen bakteria, memudahkan fagosit mengenali dan memakannya.",
-          "Penguraian (Lisis): Antibodi bergabung dengan antigen dan mengaktifkan protein pelengkap yang menebuk liang pada membran sel bakteria sehingga bakteria lisis dan pecah."
+          "1. Aglutinasi: Antibodi menggumpalkan patogen bersama-sama menjadikan mereka sasaran mudah untuk ditelan dan dicernakan oleh sel fagosit.",
+          "2. Peneutralan: Antibodi mengikat toksin yang dihasilkan oleh bakteria atau tapak pengikatan virus, meneutralkan kesan berbahayanya.",
+          "3. Pemendakan: Antibodi mengikat antigen larut membentuk kompleks tidak larut yang mendap keluar dari larutan agar mudah difagositosis.",
+          "4. Pengopsoninan: Antibodi mengikat permukaan antigen patogen sebagai penanda (opsonin) yang menarik dan memudahkan sel fagosit mengenali serta memakannya.",
+          "5. Penguraian (Lisis): Antibodi bergabung dengan antigen dan mengaktifkan sistem komplemen yang menebuk lubang pada membran sel bakteria, menyebabkan sel bakteria pecah dan musnah."
         ],
-        "explanation": "5 mekanisme antibodi: Aglutinasi, Peneutralan, Pemendakan, Pengopsonan, dan Penguraian (Lisis)."
+        "explanation": "Setiap molekul antibodi mempunyai struktur berbentuk 'Y' dengan tapak pengikatan antigen yang sangat spesifik seperti model kunci dan mangga."
       },
       {
-        "subtopic": "11.3 Jenis-Jenis Keimunan & Graf Aras Keimunan",
-        "summary": "Keimunan Aktif vs Keimunan Pasif (Semula Jadi dan Buatan).",
-        "points": [
-          "Keimunan Aktif Semula Jadi: Diperoleh apabila seseorang sembuh daripada jangkitan penyakit (cth: demam campak). Badan menghasilkan antibodi sendiri dan sel memori yang memberikan perlindungan jangka panjang / seumur hidup.",
-          "Keimunan Aktif Buatan: Diperoleh melalui suntikan Vaksin (patogen dilemahkan, mati atau toksin dinyahaslikan). Merangsang limfosit menghasilkan antibodi. Dos penggalak (booster) diperlukan untuk meningkatkan aras antibodi melebihi aras keimunan bagi perlindungan berpanjangan.",
-          "Keimunan Pasif Semula Jadi: Bayi menerima antibodi sedia ada daripada ibu melalui plasenta semasa dalam kandungan dan melalui kolostrum (susu awal ibu). Memberikan perlindungan serta-merta tetapi bersifat sementara (beberapa bulan) kerana tiada sel memori dihasilkan.",
-          "Keimunan Pasif Buatan: Diperoleh melalui suntikan Antiserum (plasma darah mengandungi antibodi sedia ada, cth: antitetanus, antivenom ular). Memberi perlindungan serta-merta semasa kecemasan, tetapi antibodi terurai selepas beberapa minggu (tiada perlindungan jangka panjang)."
-        ],
+        "subtopic": "11.3 Jenis Keimunan",
+        "summary": "Pengelasan empat jenis keimunan manusia: Keimunan Aktif Semula Jadi, Keimunan Aktif Buatan, Keimunan Pasif Semula Jadi, dan Keimunan Pasif Buatan.",
         "verbatim": [
-          "Keimunan Aktif Semula Jadi: Diperoleh apabila seseorang sembuh daripada jangkitan penyakit (cth: demam campak). Badan menghasilkan antibodi sendiri dan sel memori yang memberikan perlindungan jangka panjang / seumur hidup.",
-          "Keimunan Aktif Buatan: Diperoleh melalui suntikan Vaksin (patogen dilemahkan, mati atau toksin dinyahaslikan). Merangsang limfosit menghasilkan antibodi. Dos penggalak (booster) diperlukan untuk meningkatkan aras antibodi melebihi aras keimunan bagi perlindungan berpanjangan.",
-          "Keimunan Pasif Semula Jadi: Bayi menerima antibodi sedia ada daripada ibu melalui plasenta semasa dalam kandungan dan melalui kolostrum (susu awal ibu). Memberikan perlindungan serta-merta tetapi bersifat sementara (beberapa bulan) kerana tiada sel memori dihasilkan.",
-          "Keimunan Pasif Buatan: Diperoleh melalui suntikan Antiserum (plasma darah mengandungi antibodi sedia ada, cth: antitetanus, antivenom ular). Memberi perlindungan serta-merta semasa kecemasan, tetapi antibodi terurai selepas beberapa minggu (tiada perlindungan jangka panjang)."
+          "Keimunan Aktif (Badan menghasilkan antibodi sendiri, tahan lama, ada sel memori):",
+          "- Keimunan Aktif Semula Jadi: Diperoleh selepas sembuh daripada serangan penyakit (cth: sembuh dari demam campak).",
+          "- Keimunan Aktif Buatan: Diperoleh melalui suntikan VAKSIN (mengandungi patogen yang dilemahkan/dimatikan atau antigen rekombinan) untuk merangsang sel limfosit menghasilkan antibodi dan sel memori. Dos penggalak (booster) diperlukan untuk meningkatkan aras antibodi melepasi aras keimunan.",
+          "Keimunan Pasif (Badan menerima antibodi sedia ada dari luar, bertindak serta-merta, sementara, tiada sel memori):",
+          "- Keimunan Pasif Semula Jadi: Bayi menerima antibodi daripada ibu merentasi plasenta semasa kehamilan dan melalui susu ibu (kolostrum) selepas kelahiran.",
+          "- Keimunan Pasif Buatan: Diperoleh melalui suntikan ANTISERUM yang mengandungi antibodi tulen sedia ada (cth: antitetanus, antibisa ular, antirabies) untuk memberikan perlindungan segera terhadap jangkitan yang mengancam nyawa."
         ],
-        "explanation": "Keimunan Aktif vs Keimunan Pasif (Semula Jadi dan Buatan)."
+        "explanation": "Graf keimunan aktif buatan memerlukan dos kedua (penggalak) untuk melonjakkan kepekatan antibodi melepasi aras keimunan kekal."
       },
       {
-        "subtopic": "11.4 Isu Kesihatan Berkaitan Keimunan (HIV/AIDS)",
-        "summary": "Pemusnahan limfosit T pembantu oleh virus HIV melemahkan keseluruhan sistem imun.",
-        "points": [
-          "Virus Kurang Daya Tahan Manusia (HIV): Menyerang dan memusnahkan sel Limfosit T pembantu (CD4⁺ T-cells) yang merupakan komander utama mengaktifkan limfosit B dan fagosit.",
-          "AIDS (Sindrom Kurang Daya Tahan Melawan Penyakit): Fasa akhir jangkitan HIV di mana bilangan limfosit T merosot teruk. Sistem imun runtuh, menyebabkan pesakit terdedah kepada jangkitan oportunistik (seperti tuberkulosis, radang paru-paru pneumocystis, kanser sarkoma Kaposi) yang membawa maut.",
-          "Penularan: Hubungan seksual tanpa perlindungan, perkongsian jarum suntikan tercemar, pemindahan darah tercemar, dan penularan daripada ibu positif HIV kepada fetus semasa hamil atau menyusu."
-        ],
+        "subtopic": "11.4 Isu Kesihatan Berkaitan Keimunan Manusia",
+        "summary": "Gangguan fungsi sistem imun termasuk sindrom kurang daya tahan penyakit (AIDS), jangkitan virus HIV, dan penyakit autoimun.",
         "verbatim": [
-          "Virus Kurang Daya Tahan Manusia (HIV): Menyerang dan memusnahkan sel Limfosit T pembantu (CD4⁺ T-cells) yang merupakan komander utama mengaktifkan limfosit B dan fagosit.",
-          "AIDS (Sindrom Kurang Daya Tahan Melawan Penyakit): Fasa akhir jangkitan HIV di mana bilangan limfosit T merosot teruk. Sistem imun runtuh, menyebabkan pesakit terdedah kepada jangkitan oportunistik (seperti tuberkulosis, radang paru-paru pneumocystis, kanser sarkoma Kaposi) yang membawa maut.",
-          "Penularan: Hubungan seksual tanpa perlindungan, perkongsian jarum suntikan tercemar, pemindahan darah tercemar, dan penularan daripada ibu positif HIV kepada fetus semasa hamil atau menyusu."
+          "HIV & AIDS: Virus Kurang Daya Tahan Manusia (HIV) menjangkiti dan memusnahkan sel Limfosit T pembantu (CD4); Sistem imun pesakit lumpuh secara beransur-ansur; Pesakit menghidap AIDS (Sindrom Kurang Daya Tahan Penyakit) dan mudah dijangkiti jangkitan oportunistik (cth tuberkulosis, radang paru-paru) dan kanser.",
+          "Penularan HIV: Hubungan seks tanpa perlindungan, perkongsian jarum suntikan tercemar, pemindahan darah yang tercemar, dan penularan daripada ibu kepada anak semasa kehamilan/penyusuan.",
+          "Penyakit Autoimun: Keadaan di mana sistem imun gagal membezakan antara sel badan sendiri dengan sel asing, lalu antibodi menyerang tisu badan sendiri (cth: Lupus Eritematosus Sistemik / SLE merosakkan ginjal dan kulit; Artritis Reumatoid memusnahkan rawan sendi)."
         ],
-        "explanation": "Pemusnahan limfosit T pembantu oleh virus HIV melemahkan keseluruhan sistem imun."
+        "explanation": "HIV tidak boleh disebarkan melalui sentuhan biasa, perkongsian makanan, gigitan nyamuk atau penggunaan tandas awam."
       }
     ],
     "steps": [
@@ -2012,66 +1944,92 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 12",
     "title": "KOORDINASI DAN GERAK BALAS DALAM MANUSIA",
     "icon": "🧠",
-    "anyflipPages": "Halaman 222 – 244 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Koordinasi badan membolehkan hidupan mengesan rangsangan dan menghasilkan gerak balas yang tepat untuk kemandirian. Bab ini menerangkan sistem saraf (otak, saraf tunjang, neuron deria, perantaraan dan motor, sinaps kimia dan arka refleks), sistem endokrin (kelenjar pituitari, tiroid, adrenal, pankreas, gonad dan hormon masing-masing), perbandingan kawalan saraf vs endokrin, serta isu kesihatan seperti Parkinson, Alzheimer dan ketagihan dadah.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 258 – 287)",
+    "synopsis": "Mengkaji komponen sistem koordinasi badan, organisasi sistem saraf manusia, struktur neuron dan transmisi impuls merentasi sinaps, tindakan terkawal vs luar kawal (arka refleks), isu kesihatan sistem saraf, sistem endokrin serta ketidakseimbangan hormon.",
     "notes": [
       {
-        "subtopic": "12.1 Konsep Koordinasi & 12.2 Sistem Saraf Manusia",
-        "summary": "Laluan rangsangan -> reseptor -> pusat integrasi -> efektor -> gerak balas.",
-        "points": [
-          "Komponen Koordinasi: Rangsangan (dalaman/luaran) dikesan oleh Reseptor deria -> mencetuskan impuls saraf -> dihantar ke Pusat Integrasi (Otak/Saraf Tunjang) -> impuls dihantar ke Efektor (otot/kelenjar) -> menghasilkan Gerak Balas.",
-          "Bahagian Otak Manusia:\n  • Serebrum: Bahagian terbesar; mengawal pemikiran sedar, intelek, pertuturan, emosi, ingatan, dan pergerakan otot terkawal.\n  • Serebelum: Mengawal koordinasi pengecutan otot, mengekalkan postur dan keseimbangan badan.\n  • Medula Oblongata: Mengawal tindakan luar kawal autonomi asas hidup (kadar denyutan jantung, pernafasan, peristalsis, tekanan darah, refleks muntah/batuk).\n  • Hipotalamus: Pusat kawalan homeostasis (mengawal atur suhu badan, tekanan osmosis darah, lapar, dahaga) dan mengawal kelenjar pituitari.",
-          "Saraf Tunjang: Menghubungkan otak dengan saraf periferi dan mengawal tindakan refleks pantas."
-        ],
+        "subtopic": "12.1 Koordinasi dan Gerak Balas",
+        "summary": "Proses pengesanan rangsangan oleh reseptor deria dan penyelarasan gerak balas bersesuaian oleh efektor melalui sistem saraf dan endokrin.",
         "verbatim": [
-          "Komponen Koordinasi: Rangsangan (dalaman/luaran) dikesan oleh Reseptor deria -> mencetuskan impuls saraf -> dihantar ke Pusat Integrasi (Otak/Saraf Tunjang) -> impuls dihantar ke Efektor (otot/kelenjar) -> menghasilkan Gerak Balas.",
-          "Bahagian Otak Manusia:\n  • Serebrum: Bahagian terbesar; mengawal pemikiran sedar, intelek, pertuturan, emosi, ingatan, dan pergerakan otot terkawal.\n  • Serebelum: Mengawal koordinasi pengecutan otot, mengekalkan postur dan keseimbangan badan.\n  • Medula Oblongata: Mengawal tindakan luar kawal autonomi asas hidup (kadar denyutan jantung, pernafasan, peristalsis, tekanan darah, refleks muntah/batuk).\n  • Hipotalamus: Pusat kawalan homeostasis (mengawal atur suhu badan, tekanan osmosis darah, lapar, dahaga) dan mengawal kelenjar pituitari.",
-          "Saraf Tunjang: Menghubungkan otak dengan saraf periferi dan mengawal tindakan refleks pantas."
+          "Rangsangan (Stimulus): Perubahan dalam persekitaran luar (cahaya, bunyi, bau, suhu, sentuhan) atau persekitaran dalam (tekanan darah, suhu badan, aras gula darah).",
+          "Reseptor Deria: Struktur deria khusus yang mengesan rangsangan dan menukarkannya kepada impuls saraf elektrik.",
+          "Pusat Integrasi: Otak atau saraf tunjang mentafsir impuls dan menghantar arahan ke efektor.",
+          "Efektor: Organ sasaran (otot atau kelenjar) yang menghasilkan gerak balas biologi.",
+          "Laluan Gerak Balas: Rangsangan -> Reseptor -> Neuron Deria -> Sistem Saraf Pusat -> Neuron Motor -> Efektor -> Gerak Balas."
         ],
-        "explanation": "Laluan rangsangan -> reseptor -> pusat integrasi -> efektor -> gerak balas."
+        "explanation": "Koordinasi badan memastikan semua aktiviti fisiologi diselaraskan untuk kelangsungan hidup organisma."
       },
       {
-        "subtopic": "12.3 Struktur Neuron, Sinaps & Arka Refleks",
-        "summary": "3 jenis neuron, transmisi neurotransmiter merentasi celah sinaps, dan arka refleks 3-neuron.",
-        "points": [
-          "Jenis Neuron:\n  • Neuron Deria (Aferen): Membawa impuls dari reseptor ke saraf tunjang/otak. Badan sel terletak di ganglion akar dorsal saraf tunjang.\n  • Neuron Perantaraan (Geganti/Interneuron): Menghubungkan neuron deria dengan neuron motor di dalam jirim kelabu saraf tunjang.\n  • Neuron Motor (Eferen): Membawa impuls dari saraf tunjang/otak ke efektor (otot mengecut atau kelenjar merembes). Mempunyai akson panjang dan salut mielin tebal.\n  • Salut Mielin: Penebat lipid yang mempercepatkan pengaliran impuls saraf melalui konduksi saltatori (melompat dari satu Nodus Ranvier ke nodus seterusnya).",
-          "Sinaps: Jurang mikroskopik antara terminal akson satu neuron dengan dendrit neuron seterusnya. Apabila impuls tiba, vesikel sinaps membebaskan Neurotransmiter (cth: Asetilkolina, Dopamin, Serotonin) ke celah sinaps melalui eksositosis -> neurotransmiter meresap dan mengikat pada reseptor membran pascasinaps -> mencetuskan impuls saraf baharu.",
-          "Arka Refleks (Sentuhan Objek Panas): Reseptor haba kulit dikesan -> impuls dihantar melalui Neuron Deria ke saraf tunjang -> merentasi sinaps ke Neuron Perantaraan -> merentasi sinaps ke Neuron Motor -> Efektor (otot biseps lengan) mengecut menarik tangan serta-merta tanpa menunggu pemprosesan sedar otak."
-        ],
+        "subtopic": "12.2 Sistem Saraf",
+        "summary": "Sistem saraf manusia dibahagikan kepada Sistem Saraf Pusat (otak dan saraf tunjang) dan Sistem Saraf Periferi.",
         "verbatim": [
-          "Jenis Neuron:\n  • Neuron Deria (Aferen): Membawa impuls dari reseptor ke saraf tunjang/otak. Badan sel terletak di ganglion akar dorsal saraf tunjang.\n  • Neuron Perantaraan (Geganti/Interneuron): Menghubungkan neuron deria dengan neuron motor di dalam jirim kelabu saraf tunjang.\n  • Neuron Motor (Eferen): Membawa impuls dari saraf tunjang/otak ke efektor (otot mengecut atau kelenjar merembes). Mempunyai akson panjang dan salut mielin tebal.\n  • Salut Mielin: Penebat lipid yang mempercepatkan pengaliran impuls saraf melalui konduksi saltatori (melompat dari satu Nodus Ranvier ke nodus seterusnya).",
-          "Sinaps: Jurang mikroskopik antara terminal akson satu neuron dengan dendrit neuron seterusnya. Apabila impuls tiba, vesikel sinaps membebaskan Neurotransmiter (cth: Asetilkolina, Dopamin, Serotonin) ke celah sinaps melalui eksositosis -> neurotransmiter meresap dan mengikat pada reseptor membran pascasinaps -> mencetuskan impuls saraf baharu.",
-          "Arka Refleks (Sentuhan Objek Panas): Reseptor haba kulit dikesan -> impuls dihantar melalui Neuron Deria ke saraf tunjang -> merentasi sinaps ke Neuron Perantaraan -> merentasi sinaps ke Neuron Motor -> Efektor (otot biseps lengan) mengecut menarik tangan serta-merta tanpa menunggu pemprosesan sedar otak."
+          "Sistem Saraf Pusat (SSP):",
+          "- Otak: Serebrum (pusat kawalan kecerdasan, ingatan, penaakulan, deria, dan tindakan terkawal); Serebelum (mengawal koordinasi otot dan keseimbangan badan); Medula Oblongata (mengawal tindakan luar kawal autonomi cth denyutan jantung, pernafasan, peristalsis, muntah); Hipotalamus (mengawal atur homeostasis cth suhu badan, dahaga, tidur); Kelenjar Pituitari (kelenjar utama endokrin).",
+          "- Saraf Tunjang: Menghubungkan otak dengan saraf periferi dan mengawal tindakan refleks di bawah leher.",
+          "Sistem Saraf Periferi (SSP): Terdiri daripada 12 pasang saraf kranium (dari otak) dan 31 pasang saraf spina (dari saraf tunjang)."
         ],
-        "explanation": "3 jenis neuron, transmisi neurotransmiter merentasi celah sinaps, dan arka refleks 3-neuron."
+        "explanation": "Bahan kelabu di otak mengandungi badan sel neuron di bahagian luar, manakala di saraf tunjang bahan kelabu berada di bahagian dalam berbentuk rama-rama."
       },
       {
-        "subtopic": "12.4 Sistem Endokrin & Perbandingan dengan Sistem Saraf",
-        "summary": "Kelenjar tanpa salur merembeskan hormon ke dalam darah.",
-        "points": [
-          "Kelenjar Endokrin Utama:\n  • Kelenjar Pituitari ('Kelenjar Induk'): Merembeskan GH (hormon pertumbuhan), TSH (merangsang tiroid), ACTH (merangsang adrenal), ADH (penyerapan air di ginjal), Oksitosin (pengecutan rahim), FSH & LH (mengawal kitar haid/gametogenesis).\n  • Kelenjar Tiroid: Merembeskan Tiroksina (mengawal atur kadar metabolisme badan dan perkembangan mental).\n  • Kelenjar Adrenal: Merembeskan Adrenalina (menyediakan badan untuk situasi cemas 'lawan atau lari' - menaikkan kadar denyutan jantung, glukosa darah dan pernafasan) dan Aldosteron (penyerapan garam di ginjal).\n  • Pankreas: Sel Islet Langerhans merembeskan Insulin (menurunkan aras glukosa darah dengan menukarkannya kepada glikogen) dan Glukagon (menaikkan aras glukosa darah dengan menguraikan glikogen di hati).\n  • Ovari (Estrogen & Progesteron) dan Testis (Testosteron).",
-          "Perbandingan Saraf vs Endokrin:\n  • Sistem Saraf: Isyarat elektrik (impuls), penghantaran sangat pantas melalui gentian saraf, sasaran setempat spesifik, kesan gerak balas serta-merta dan berbalik singkat.\n  • Sistem Endokrin: Isyarat kimia (hormon), penghantaran perlahan melalui aliran darah, sasaran meluas (organ sasaran), kesan berterusan dan tahan lama."
-        ],
+        "subtopic": "12.3 Neuron dan Sinaps",
+        "summary": "Struktur sel saraf khusus (neuron deria, perantaraan, motor) dan mekanisme penghantaran impuls elektrik merentasi celah sinaps melalui neurotransmiter.",
         "verbatim": [
-          "Kelenjar Endokrin Utama:\n  • Kelenjar Pituitari ('Kelenjar Induk'): Merembeskan GH (hormon pertumbuhan), TSH (merangsang tiroid), ACTH (merangsang adrenal), ADH (penyerapan air di ginjal), Oksitosin (pengecutan rahim), FSH & LH (mengawal kitar haid/gametogenesis).\n  • Kelenjar Tiroid: Merembeskan Tiroksina (mengawal atur kadar metabolisme badan dan perkembangan mental).\n  • Kelenjar Adrenal: Merembeskan Adrenalina (menyediakan badan untuk situasi cemas 'lawan atau lari' - menaikkan kadar denyutan jantung, glukosa darah dan pernafasan) dan Aldosteron (penyerapan garam di ginjal).\n  • Pankreas: Sel Islet Langerhans merembeskan Insulin (menurunkan aras glukosa darah dengan menukarkannya kepada glikogen) dan Glukagon (menaikkan aras glukosa darah dengan menguraikan glikogen di hati).\n  • Ovari (Estrogen & Progesteron) dan Testis (Testosteron).",
-          "Perbandingan Saraf vs Endokrin:\n  • Sistem Saraf: Isyarat elektrik (impuls), penghantaran sangat pantas melalui gentian saraf, sasaran setempat spesifik, kesan gerak balas serta-merta dan berbalik singkat.\n  • Sistem Endokrin: Isyarat kimia (hormon), penghantaran perlahan melalui aliran darah, sasaran meluas (organ sasaran), kesan berterusan dan tahan lama."
+          "Tiga Jenis Neuron: (1) Neuron Deria (dendrit panjang, akson pendek, badan sel di ganglion akar dorsal, hantar impuls dari reseptor ke SSP); (2) Neuron Perantaraan/Interneuron (badan sel di dalam jirim kelabu saraf tunjang, menghubungkan neuron deria dengan motor); (3) Neuron Motor (dendrit pendek, akson panjang bermielin, badan sel di jirim kelabu akar ventral, hantar impuls dari SSP ke efektor otot/kelenjar).",
+          "Salut Mielin: Melapisi akson, bertindak sebagai penebat elektrik dan mempercepatkan transmisi impuls saraf secara konduksi saltatori dari satu nodus Ranvier ke nodus berikutnya.",
+          "Penghantaran Impuls di Sinaps: 1. Impuls elektrik sampai di bonggol sinaps; 2. Merangsang vesikel sinaps membebaskan neurotransmiter (cth: asetilkolina, dopamin, noradrenalina) ke dalam celah sinaps; 3. Neurotransmiter meresap merentasi celah sinaps; 4. Mengikat pada protein reseptor spesifik pada membran post-sinaps; 5. Menjana impuls elektrik baharu pada neuron penerima.",
+          "Penyingkiran Neurotransmiter: Enzim (seperti asetilkolinesterase) menguraikan neurotransmiter untuk mengelakkan stimulasi impuls berterusan."
         ],
-        "explanation": "Kelenjar tanpa salur merembeskan hormon ke dalam darah."
+        "explanation": "Transmisi impuls merentasi sinaps hanya berlaku sehala kerana vesikel sinaps hanya berada di hujung prasinaps dan reseptor hanya di membran pascasinaps."
       },
       {
-        "subtopic": "12.5 Isu Kesihatan Sistem Saraf",
-        "summary": "Penyakit neurodegeneratif dan kesan penyalahgunaan dadah.",
-        "points": [
-          "Penyakit Parkinson: Kemerosotan sel saraf di bahagian otak yang menghasilkan neurotransmiter Dopamin. Menyebabkan tangan menggeletar (tremor), otot tegang dan pergerakan perlahan.",
-          "Penyakit Alzheimer: Kehilangan sel neuron otak dan kemerosotan tisu serebrum akibat pembentukan plak protein beta-amiloid. Menyebabkan kehilangan memori, kekeliruan mental dan perubahan tingkah laku.",
-          "Kesan Dadah Terhadap Sistem Saraf: Dadah perangsang (cth: amfetamin, kokain) meningkatkan aktiviti neurotransmiter, manakala dadah penenang (cth: heroin, barbiturat) merencat penghantaran impuls sinaps, melambatkan gerak balas dan membawa kepada ketagihan kronik."
-        ],
+        "subtopic": "12.4 Tindakan Terkawal dan Tindakan Luar Kawal",
+        "summary": "Perbezaan tindakan terkawal di bawah kawalan sedar otak berbanding tindakan luar kawal automatik dan arka refleks pelindung.",
         "verbatim": [
-          "Penyakit Parkinson: Kemerosotan sel saraf di bahagian otak yang menghasilkan neurotransmiter Dopamin. Menyebabkan tangan menggeletar (tremor), otot tegang dan pergerakan perlahan.",
-          "Penyakit Alzheimer: Kehilangan sel neuron otak dan kemerosotan tisu serebrum akibat pembentukan plak protein beta-amiloid. Menyebabkan kehilangan memori, kekeliruan mental dan perubahan tingkah laku.",
-          "Kesan Dadah Terhadap Sistem Saraf: Dadah perangsang (cth: amfetamin, kokain) meningkatkan aktiviti neurotransmiter, manakala dadah penenang (cth: heroin, barbiturat) merencat penghantaran impuls sinaps, melambatkan gerak balas dan membawa kepada ketagihan kronik."
+          "Tindakan Terkawal: Tindakan yang disedari dan dikawal oleh kemahuan otak besar (korteks serebrum). Contoh: Membaca, bercakap, berjalan, menulis.",
+          "Tindakan Luar Kawal: Tindakan automatik tanpa kawalan sedar yang dikawal oleh medula oblongata dan hipotalamus. Contoh: Peristalsis, denyutan jantung, rembesan air liur, vasokonstriksi salur darah.",
+          "Tindakan Refleks: Gerak balas automatik dan pantas terhadap rangsangan berbahaya tanpa penglibatan pemikiran otak untuk melindungi badan daripada kecederaan.",
+          "Arka Refleks Sentakan Lutut (Refleks Monosinaps): Ketukan tendon patela -> Reseptor regangan otot paha terangsang -> Impuls dihantar melalui Neuron Deria terus ke Neuron Motor di saraf tunjang -> Otot kuadriseps mengecut -> Kaki menyentak ke hadapan.",
+          "Arka Refleks Menarik Tangan dari Objek Panas (Refleks Tiga Neuron): Reseptor haba kulit -> Neuron deria -> Neuron perantaraan (saraf tunjang) -> Neuron motor -> Otot biseps mengecut -> Tangan ditarik serta-merta."
         ],
-        "explanation": "Penyakit neurodegeneratif dan kesan penyalahgunaan dadah."
+        "explanation": "Dalam arka refleks tiga neuron, neuron perantaraan turut menghantar impuls ke otak supaya individu menyedari rasa sakit sejurus selepas gerak balas refleks berlaku."
+      },
+      {
+        "subtopic": "12.5 Isu Kesihatan Berkaitan Sistem Saraf Manusia",
+        "summary": "Penyakit neurodegeneratif sistem saraf dan kesan penyalahgunaan dadah serta bahan perangsang.",
+        "verbatim": [
+          "Penyakit Parkinson: Kemerosotan neuron di bahagian otak yang menghasilkan dopamin; Gejala: Menggeletar (tremor) pada tangan, kekakuan otot, pergerakan lambat, hilang keseimbangan badan.",
+          "Penyakit Alzheimer: Kemerosotan sel otak dan kehilangan tisu otak akibat pembentukan plak protein amiloid; Gejala: Hilang ingatan, kekeliruan ruang/masa, perubahan personaliti dan hilang keupayaan mengurus diri.",
+          "Sklerosis Berganda (Multiple Sclerosis): Penyakit autoimun yang memusnahkan salut mielin akson dalam sistem saraf pusat; Menghalang konduksi impuls saraf pantas.",
+          "Penyalahgunaan Dadah & Alkohol: Dadah penenang (sedatif) melambatkan transmisi impuls di sinaps; Dadah perangsang (stimulan cth amfetamin, kokain) merangsang pembebasan berlebihan dopamin menyebabkan euforia dan ketagihan."
+        ],
+        "explanation": "Bahan neurotoksin boleh menyekat tapak reseptor neurotransmiter di sinaps, melumpuhkan koordinasi otot secara fatal."
+      },
+      {
+        "subtopic": "12.6 Sistem Endokrin",
+        "summary": "Sistem kawal atur kimia badan yang terdiri daripada kelenjar tanpa salur yang merembeskan hormon terus ke dalam aliran darah.",
+        "verbatim": [
+          "Ciri Hormon: Molekul kimia organik (protein atau steroid); Dirembes oleh kelenjar endokrin tanpa salur; Diangkut oleh darah ke sel/organ sasaran; Memberikan tindak balas perlahan tetapi berpanjangan.",
+          "Kelenjar Endokrin Utama & Hormonnya:",
+          "- Hipotalamus: Merembes hormon pelepas (GnRH, TRH) dan menghasilkan ADH serta oksitosin yang disimpan di pituitari posterior.",
+          "- Kelenjar Pituitari (Kelenjar Utama): Pituitari anterior merembes Hormon Pertumbuhan (GH), Hormon Perangsang Tiroid (TSH), Hormon Adrenokortikotropik (ACTH), FSH, dan LH.",
+          "- Kelenjar Tiroid: Tiroksina (kawal atur kadar metabolisme basal, pertumbuhan fizikal dan mental).",
+          "- Kelenjar Adrenal: Adrenalina (menyediakan badan menghadapi situasi cemas 'Lawan atau Lari' dengan meningkatkan kadar jantung, pernafasan, dan paras glukosa darah); Aldosteron (kawal atur penyerapan garam).",
+          "- Pankreas: Insulin (turunkan glukosa darah dengan tukar kepada glikogen); Glukagon (naikkan glukosa darah dengan urai glikogen kepada glukosa).",
+          "- Ovari: Estrogen (ciri seks sekunder wanita & baiki endometrium); Progesteron (kekalkan ketebalan endometrium).",
+          "- Testis: Testosteron (ciri seks sekunder lelaki & rangsang spermatogenesis)."
+        ],
+        "explanation": "Koordinasi tindak balas 'Lawan atau Lari' menggabungkan sistem saraf simpatetik dan hormon adrenalina secara serentak."
+      },
+      {
+        "subtopic": "12.7 Isu Kesihatan Berkaitan Sistem Endokrin Manusia",
+        "summary": "Kesan ketidakseimbangan perembesan hormon (hiperrembesan dan hiporrembesan) terhadap fungsi fisiologi badan manusia.",
+        "verbatim": [
+          "Diabetes Melitus: Kekurangan perembesan insulin oleh pankreas atau kegagalan sel bertindak balas terhadap insulin; Paras glukosa darah tinggi berlebihan (glukosuria), kerap kencing dan dahaga.",
+          "Diabetes Insipidus: Kekurangan perembesan hormon antidiuresis (ADH) oleh pituitari posterior; Tubul ginjal gagal menyerap semula air, pesakit mengeluarkan air kencing cair dalam kuantiti yang sangat banyak (sehingga 20 liter sehari).",
+          "Isu Hormon Pertumbuhan (GH): Kekurangan semasa kanak-kanak menyebabkan Kerdil (Dwarfisme); Berlebihan semasa kanak-kanak menyebabkan Kegergasian (Gigantisme); Berlebihan semasa dewasa menyebabkan Akromegali (pembesaran tulang muka, tangan dan kaki).",
+          "Isu Tiroksina: Kekurangan tiroksina menyebabkan Kretinisme pada kanak-kanak (kerencatan fizikal dan mental) atau Miksedema pada orang dewasa (metabolisme rendah, lesu, pertambahan berat badan) serta Beguk (Gondok akibat kekurangan iodin); Berlebihan tiroksina menyebabkan Hipertiroidisme (kadar metabolisme sangat tinggi, mata terbeliak, kurus, jantung berdebar pantas)."
+        ],
+        "explanation": "Kelenjar tiroid memerlukan mineral iodin untuk mensintesis hormon tiroksina; kekurangan iodin menyebabkan pembengkakan kelenjar tiroid."
       }
     ],
     "steps": [
@@ -2199,53 +2157,48 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 13",
     "title": "HOMEOSTASIS DAN SISTEM URINARI MANUSIA",
     "icon": "💧",
-    "anyflipPages": "Halaman 246 – 264 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Homeostasis mengekalkan kestabilan persekitaran dalaman badan (suhu, glukosa darah, tekanan osmosis darah) melalui mekanisme suap balik negatif. Bab ini membincangkan pengawalaturan suhu badan dan glukosa, struktur ginjal dan nefron, proses pembentukan air kencing (ultraturasan, penyerapan semula, rembesan), kawal atur tekanan osmosis darah oleh hormon ADH dan Aldosteron, serta rawatan hemodialisis bagi kegagalan ginjal.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 288 – 309)",
+    "synopsis": "Mengkaji konsep homeostasis dan prinsip suap balik negatif dalam mengawal atur faktor fizikal dan kimia persekitaran dalaman, struktur anatomi sistem urinari dan unit nefron ginjal, mekanisme pembentukan air kencing (ultraturasan, penyerapan semula, rembesan), pengosmokawalaturan, serta isu kesihatan sistem urinari.",
     "notes": [
       {
-        "subtopic": "13.1 Konsep Homeostasis & Pengawalaturan Badan",
-        "summary": "Mekanisme suap balik negatif mengembalikan parameter badan yang menyimpang ke julat normal.",
-        "points": [
-          "Prinsip Suap Balik Negatif: Apabila nilai faktor fizikal/kimia persekitaran dalaman menyimpang daripada aras normal, mekanisme pembetulan diaktifkan untuk mengembalikan nilai ke aras julat normal.",
-          "Kawal Atur Suhu Badan (Termoregulasi):\n  • Suhu Meningkat (Hari Panas): Termoreseptor kulit dan hipotalamus terangsang -> Vasodilatasi arteriol kulit (lebih banyak darah mengalir ke permukaan menyingkirkan haba secara radiasi), kelenjar peluh merembeskan peluh (penyejatan menyerap haba pendam), otot erektor mengendur (bulu roma condong ke kulit), kadar metabolisme dan rembesan tiroksina berkurang.\n  • Suhu Menurun (Hari Sejuk): Vasokonstriksi arteriol kulit (kurangkan kehilangan haba), kelenjar peluh tidak aktif, otot erektor mengecut (bulu roma tegak memerangkap lapisan udara penebat), otot rangka mengecut dan mengendur secara pantas (menggigil menghasilkan haba), rembesan tiroksina dan adrenalina meningkat memacu metabolisme haba.",
-          "Kawal Atur Aras Glukosa Darah:\n  • Glukosa Tinggi (Selepas Makan): Sel beta pankreas merembeskan Insulin -> merangsang sel hati dan otot menyerap glukosa dan menukarkannya kepada glikogen (glikogenesis) -> aras glukosa turun ke normal (90 mg/100 ml).\n  • Glukosa Rendah (Berpuasa): Sel alfa pankreas merembeskan Glukagon -> merangsang hati menguraikan glikogen kepada glukosa (glikogenolisis) -> aras glukosa naik ke normal."
-        ],
+        "subtopic": "13.1 Homeostasis",
+        "summary": "Pengekalan faktor fizikal dan kimia persekitaran dalaman badan dalam julat optimum yang seimbang melalui mekanisme suap balik negatif.",
         "verbatim": [
-          "Prinsip Suap Balik Negatif: Apabila nilai faktor fizikal/kimia persekitaran dalaman menyimpang daripada aras normal, mekanisme pembetulan diaktifkan untuk mengembalikan nilai ke aras julat normal.",
-          "Kawal Atur Suhu Badan (Termoregulasi):\n  • Suhu Meningkat (Hari Panas): Termoreseptor kulit dan hipotalamus terangsang -> Vasodilatasi arteriol kulit (lebih banyak darah mengalir ke permukaan menyingkirkan haba secara radiasi), kelenjar peluh merembeskan peluh (penyejatan menyerap haba pendam), otot erektor mengendur (bulu roma condong ke kulit), kadar metabolisme dan rembesan tiroksina berkurang.\n  • Suhu Menurun (Hari Sejuk): Vasokonstriksi arteriol kulit (kurangkan kehilangan haba), kelenjar peluh tidak aktif, otot erektor mengecut (bulu roma tegak memerangkap lapisan udara penebat), otot rangka mengecut dan mengendur secara pantas (menggigil menghasilkan haba), rembesan tiroksina dan adrenalina meningkat memacu metabolisme haba.",
-          "Kawal Atur Aras Glukosa Darah:\n  • Glukosa Tinggi (Selepas Makan): Sel beta pankreas merembeskan Insulin -> merangsang sel hati dan otot menyerap glukosa dan menukarkannya kepada glikogen (glikogenesis) -> aras glukosa turun ke normal (90 mg/100 ml).\n  • Glukosa Rendah (Berpuasa): Sel alfa pankreas merembeskan Glukagon -> merangsang hati menguraikan glikogen kepada glukosa (glikogenolisis) -> aras glukosa naik ke normal."
+          "Maksud Homeostasis: Kawal atur keadaan persekitaran dalaman (cecair interstis dan plasma darah) supaya sentiasa malar dan optimum bagi kemandirian sel badan.",
+          "Faktor Fizikal yang Dikawal Atur: Suhu badan (37 °C), Tekanan darah (120/80 mmHg), Tekanan osmosis darah.",
+          "Faktor Kimia yang Dikawal Atur: Paras glukosa darah (70 - 110 mg/dL), Nilai pH darah (pH 7.35 - 7.45), Kepekatan ion mineral.",
+          "Mekanisme Suap Balik Negatif: Apabila faktor persekitaran dalaman menyimpang daripada aras normal, reseptor mengesan perubahan dan mencetuskan mekanisme pembetulan untuk mengembalikan faktor tersebut ke aras normal.",
+          "Kawal Atur Suhu Badan: (1) Apabila suhu sejuk: Vasokonstriksi arteriol kulit (kurangkan kehilangan haba), otot erektor mengecut bulu roma tegak, otot rangka mengecut bergetar (menggigil jana haba), rembesan tiroksina & adrenalina naik; (2) Apabila suhu panas: Vasodilatasi arteriol kulit (banyak haba dibebaskan secara radiasi), kelenjar peluh aktif merembes peluh (penyejatan haba), bulu roma condong.",
+          "Kawal Atur Gula Darah: Paras glukosa tinggi -> Sel beta pulau Langerhans pankreas rembes Insulin -> Tukar glukosa ke glikogen; Paras glukosa rendah -> Sel alfa rembes Glukagon -> Tukar glikogen ke glukosa."
         ],
-        "explanation": "Mekanisme suap balik negatif mengembalikan parameter badan yang menyimpang ke julat normal."
+        "explanation": "Enzim sel hanya dapat berfungsi pada kecekapan maksimum dalam julat suhu dan pH yang sempit; kegagalan homeostasis boleh merencat fungsi enzim metabolik secara fatal."
       },
       {
-        "subtopic": "13.2 Sistem Urinari & Struktur Nefron",
-        "summary": "Anatomi ginjal dan unit penuras mikroskopik nefron.",
-        "points": [
-          "Struktur Ginjal: Korteks (bahagian luar), Medula (bahagian dalam berbentuk piramid), Pelvis ginjal (mengumpul air kencing), Ureter membawa air kencing ke Pundi Kencing.",
-          "Struktur Nefron (Unit Berfungsi Ginjal):\n  • Kapsul Bowman: Kantung cawan di korteks yang menyelaputi gumpalan kapilari darah Glomerulus.\n  • Tubul Berliku Proksimal: Salur berliku pertama di korteks, tapak utama penyerapan semula.\n  • Liku Henle: Tiub berbentuk 'U' yang menjunam ke dalam medula (cabang menurun telap air, cabang menaik telap garam).\n  • Tubul Berliku Distal: Salur berliku kedua di korteks, tapak rembesan bahan kumuh dan kawal atur elektrolit.\n  • Tubul Pengumpul: Menerima hasil turasan dari beberapa nefron, menyalurkan air kencing ke pelvis ginjal."
-        ],
+        "subtopic": "13.2 Sistem Urinari",
+        "summary": "Struktur anatomi ginjal dan nefron, serta proses pembentukan air kencing yang melibatkan ultraturasan, penyerapan semula dan rembesan.",
         "verbatim": [
-          "Struktur Ginjal: Korteks (bahagian luar), Medula (bahagian dalam berbentuk piramid), Pelvis ginjal (mengumpul air kencing), Ureter membawa air kencing ke Pundi Kencing.",
-          "Struktur Nefron (Unit Berfungsi Ginjal):\n  • Kapsul Bowman: Kantung cawan di korteks yang menyelaputi gumpalan kapilari darah Glomerulus.\n  • Tubul Berliku Proksimal: Salur berliku pertama di korteks, tapak utama penyerapan semula.\n  • Liku Henle: Tiub berbentuk 'U' yang menjunam ke dalam medula (cabang menurun telap air, cabang menaik telap garam).\n  • Tubul Berliku Distal: Salur berliku kedua di korteks, tapak rembesan bahan kumuh dan kawal atur elektrolit.\n  • Tubul Pengumpul: Menerima hasil turasan dari beberapa nefron, menyalurkan air kencing ke pelvis ginjal."
+          "Struktur Ginjal: Korteks (bahagian luar), Medula (bahagian dalam berbentuk piramid), dan Pelvis (ruang mengumpul air kencing sebelum disalurkan ke ureter).",
+          "Struktur Nefron (Unit Fungsian Ginjal): Kapsul Bowman & Glomerulus -> Tubul Berlingkar Proksimal -> Liku Henle -> Tubul Berlingkar Distal -> Duktus Pengumpul.",
+          "Tiga Peringkat Pembentukan Air Kencing:",
+          "1. Ultraturasan di Glomerulus: Diameter arteriol eferen lebih kecil daripada arteriol aferen menghasilkan tekanan hidrostatik darah yang sangat tinggi; Memaksa cecair plasma meresap merentasi dinding kapilari glomerulus dan podosit ke dalam rongga kapsul Bowman membentuk Hasil Turasan Glomerulus (mengandungi air, glukosa, asid amino, urea, garam; Tanpa eritrosit, platlet dan protein plasma besar).",
+          "2. Penyerapan Semula: Di Tubul Berlingkar Proksimal (100% glukosa dan asid amino diserap semula secara pengangkutan aktif, sebahagian air secara osmosis dan ion Na⁺/Cl⁻); Di Liku Henle (penyerapan semula air di bahagian menurun dan garam di bahagian menaik); Di Tubul Berlingkar Distal dan Duktus Pengumpul (penyerapan air dan ion dikawal atur oleh hormon).",
+          "3. Rembesan: Bahan buangan toksik, ion H⁺, ion K⁺, dadah dan racun dirembes keluar secara pengangkutan aktif dari kapilari peritubul ke dalam tubul berlingkar distal untuk dibuang dalam air kencing.",
+          "Mekanisme Pengosmokawalaturan Ginjal:",
+          "- Apabila Tekanan Osmosis Darah Tinggi (kurang air / makan masin): Osmoreseptor di hipotalamus mengesan rangsangan -> Rangsang pituitari posterior merembes lebih banyak ADH -> Ketelapan tubul berlingkar distal dan duktus pengumpul terhadap air bertambah -> Lebih banyak air diserap semula ke dalam darah -> Tekanan osmosis darah turun kembali ke normal; Air kencing yang dihasilkan pekat dan sedikit.",
+          "- Kawal Atur Garam oleh Aldosteron: Paras ion Na⁺ rendah merangsang korteks adrenal merembes aldosteron untuk meningkatkan penyerapan semula Na⁺ di tubul distal."
         ],
-        "explanation": "Anatomi ginjal dan unit penuras mikroskopik nefron."
+        "explanation": "Kehadiran glukosa dalam air kencing adalah petunjuk jelas penyakit diabetes melitus kerana melebihi had keupayaan penyerapan semula maksimum tubul proksimal."
       },
       {
-        "subtopic": "13.3 Proses Pembentukan Air Kencing & Pengosmokawalaturan",
-        "summary": "Ultraturasan, Penyerapan Semula, Rembesan, dan peranan hormon ADH serta Aldosteron.",
-        "points": [
-          "1. Ultraturasan (di Kapsul Bowman):\n  • Diameter arteriol aferen yang membawa darah masuk lebih besar daripada diameter arteriol eferen yang membawa darah keluar -> menghasilkan Tekanan Hidrostatik Darah Sangat Tinggi dalam glomerulus.\n  • Bendalir plasma darah ditapis merentasi membran asas dinding kapilari ke dalam kapsul Bowman membentuk Hasil Turasan Glomerulus (mengandungi air, glukosa, asid amino, urea, garam mineral).\n  • Sel darah merah, platlet dan protein plasma besar (seperti albumin) TIDAK dituras kerana saiz molekulnya terlalu besar.",
-          "2. Penyerapan Semula:\n  • Di Tubul Berliku Proksimal: 100% glukosa dan asid amino diserap semula ke dalam kapilari darah secara pengangkutan aktif; kebanyakan ion Na⁺ diserap secara aktif, ion Cl⁻ dan molekul air diserap semula secara osmosis (kira-kira 65-80%).\n  • Di Liku Henle: Penyerapan semula air secara osmosis di cabang menurun dan ion Na⁺/Cl⁻ secara aktif di cabang menaik.\n  • Di Tubul Berliku Distal: Penyerapan semula air dan garam dikawal oleh hormon.",
-          "3. Rembesan (di Tubul Berliku Distal & Pengumpul):\n  • Bahan kumuh seperti urea, asid urik, kreatinin, ion H⁺, ion K⁺, toksin dan ubat disingkirkan dari kapilari peritubul ke dalam lumen tubul secara pengangkutan aktif dan resapan untuk mengekalkan pH darah (7.35–7.45).",
-          "4. Pengosmokawalaturan Tekanan Osmosis Darah:\n  • Tekanan Osmosis Darah Meningkat (Kurang minum air / banyak berpeluh): Osmoreseptor hipotalamus dirangsang -> Kelenjar Pituitari Posterior merembeskan lebih banyak Hormon Antidiuresis (ADH) ke dalam darah -> Dinding tubul berliku distal dan tubul pengumpul menjadi LEBIH TELAP kepada air -> Lebih banyak air diserap semula ke dalam darah -> Air kencing dihasilkan dalam isi padu sedikit dan pekat.\n  • Tekanan Osmosis Darah Menurun (Minum banyak air): Kurang ADH dirembeskan -> Dinding tubul menjadi KURANG TELAP kepada air -> Kurang air diserap semula -> Air kencing terhasil dalam isi padu banyak dan cair."
-        ],
+        "subtopic": "13.3 Isu Kesihatan Berkaitan Sistem Urinari",
+        "summary": "Penyakit kegagalan ginjal, rawatan hemodialisis, pembentukan batu karang dan kaedah pencegahannya.",
         "verbatim": [
-          "1. Ultraturasan (di Kapsul Bowman):\n  • Diameter arteriol aferen yang membawa darah masuk lebih besar daripada diameter arteriol eferen yang membawa darah keluar -> menghasilkan Tekanan Hidrostatik Darah Sangat Tinggi dalam glomerulus.\n  • Bendalir plasma darah ditapis merentasi membran asas dinding kapilari ke dalam kapsul Bowman membentuk Hasil Turasan Glomerulus (mengandungi air, glukosa, asid amino, urea, garam mineral).\n  • Sel darah merah, platlet dan protein plasma besar (seperti albumin) TIDAK dituras kerana saiz molekulnya terlalu besar.",
-          "2. Penyerapan Semula:\n  • Di Tubul Berliku Proksimal: 100% glukosa dan asid amino diserap semula ke dalam kapilari darah secara pengangkutan aktif; kebanyakan ion Na⁺ diserap secara aktif, ion Cl⁻ dan molekul air diserap semula secara osmosis (kira-kira 65-80%).\n  • Di Liku Henle: Penyerapan semula air secara osmosis di cabang menurun dan ion Na⁺/Cl⁻ secara aktif di cabang menaik.\n  • Di Tubul Berliku Distal: Penyerapan semula air dan garam dikawal oleh hormon.",
-          "3. Rembesan (di Tubul Berliku Distal & Pengumpul):\n  • Bahan kumuh seperti urea, asid urik, kreatinin, ion H⁺, ion K⁺, toksin dan ubat disingkirkan dari kapilari peritubul ke dalam lumen tubul secara pengangkutan aktif dan resapan untuk mengekalkan pH darah (7.35–7.45).",
-          "4. Pengosmokawalaturan Tekanan Osmosis Darah:\n  • Tekanan Osmosis Darah Meningkat (Kurang minum air / banyak berpeluh): Osmoreseptor hipotalamus dirangsang -> Kelenjar Pituitari Posterior merembeskan lebih banyak Hormon Antidiuresis (ADH) ke dalam darah -> Dinding tubul berliku distal dan tubul pengumpul menjadi LEBIH TELAP kepada air -> Lebih banyak air diserap semula ke dalam darah -> Air kencing dihasilkan dalam isi padu sedikit dan pekat.\n  • Tekanan Osmosis Darah Menurun (Minum banyak air): Kurang ADH dirembeskan -> Dinding tubul menjadi KURANG TELAP kepada air -> Kurang air diserap semula -> Air kencing terhasil dalam isi padu banyak dan cair."
+          "Kegagalan Ginjal: Kehilangan keupayaan nefron untuk menapis sisa metabolik daripada darah akibat diabetes melitus kronik, tekanan darah tinggi, atau jangkitan kuman; Mengakibatkan pengumpulan toksin urea (uremia) dan lebihan cecair dalam badan.",
+          "Rawatan Dialisis (Hemodialisis): Darah pesakit dialirkan melalui mesin hemodialisis mengandungi tiub separa telap yang dikelilingi cecair dialisis; Urea dan sisa toksik meresap keluar mengikut cerun kepekatan; Dilakukan 3 kali seminggu selama 4 jam setiap sesi.",
+          "Pemindahan Ginjal: Menggantikan ginjal rosak dengan ginjal penderma yang serasi; Pesakit perlu mengambil ubat imunosupresan sepanjang hayat untuk elak penolakan tisu.",
+          "Batu Karang (Renal Calculi): Pemendapan hablur garam kalsium oksalat atau asid urik di dalam pelvis ginjal atau ureter; Menyekat aliran air kencing dan menyebabkan kesakitan teruk; Dicegah dengan minum banyak air bersih setiap hari."
         ],
-        "explanation": "Ultraturasan, Penyerapan Semula, Rembesan, dan peranan hormon ADH serta Aldosteron."
+        "explanation": "Komposisi cecair dialisis dirumus khusus supaya isotonik dengan plasma darah normal tetapi sifar kepekatan urea untuk memastikan perembesan urea berlaku secara maksimum."
       }
     ],
     "steps": [
@@ -2373,66 +2326,55 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 14",
     "title": "SOKONGAN DAN PERGERAKAN DALAM MANUSIA DAN HAIWAN",
     "icon": "🦴",
-    "anyflipPages": "Halaman 266 – 284 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Sistem rangka dan otot membolehkan organisma mengekalkan bentuk badan, melindungi organ dalaman, dan melakukan lokomosi. Bab ini merangkumi tiga jenis rangka hidupan (hidrostatik, rangka luar, rangka dalam), sistem rangka manusia (rangka paksi dan rangka apendaj), struktur sendi sinovia dan tisu penghubung (rawan, ligamen, tendon), tindakan otot berantagonis dalam pergerakan lengan manusia, mekanisme lokomosi haiwan (cacing tanah, belalang, burung, ikan), serta isu kesihatan sistem muskuloskeletal (osteoporosis, artritis, skoliosis).",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 310 – 333)",
+    "synopsis": "Mengkaji jenis-jenis rangka organisma (rangka luar, rangka dalam, rangka hidrostatik), sistem rangka manusia (rangka paksi dan rangka apendaj), sendi sinovia dan tisu sokongan, mekanisme pergerakan otot berantagonis manusia, lokomosi haiwan (cacing tanah, belalang, burung, ikan), serta isu kesihatan sistem otot rangka.",
     "notes": [
       {
-        "subtopic": "14.1 Jenis Sistem Rangka & 14.2 Sistem Rangka Manusia",
-        "summary": "Rangka hidrostatik, rangka luar kitin, endoskeleton, dan 206 tulang rangka manusia.",
-        "points": [
-          "Jenis Rangka Hidupan:\n  • Rangka Hidrostatik: Cecair selom bertekanan dalam badan haiwan invertebrata lembut (cth: cacing tanah, obor-obor).\n  • Rangka Luar (Eksoskeleton): Kutikel berlilin keras daripada bahan kitin pada artropoda/serangga. Perlu mengalami ekdisis (penyalinan kulit berkala) untuk membolehkan tumbesaran.\n  • Rangka Dalam (Endoskeleton): Tulang dan rawan di dalam tubuh haiwan vertebrata (termasuk manusia).",
-          "Rangka Paksi Manusia (80 Tulang):\n  • Tengkorak: Kranium melindungi otak dan tulang muka melindungi organ deria.\n  • Turus Vertebra: 33 ruas vertebra (7 Serviks termasuk Atlas & Aksis, 12 Toraks bersendi dengan rusuk, 5 Lumbar paling besar menampung berat badan, 5 Sakrum bercantum, 4 Koksiks bercantum).\n  • Sangkar Rusuk: 12 pasang rusuk (7 pasang rusuk benar, 3 pasang rusuk palsu, 2 pasang rusuk melayang) dan Sternum, melindungi jantung dan peparu.",
-          "Rangka Apendaj Manusia (126 Tulang):\n  • Lengkungan Pektoral (klavikel & skapula) dan Anggota Hadapan (humerus, radius, ulna, karpus, metakarpus, falanks).\n  • Lengkungan Pelvis (ilium, iskium, pubis bercantum) dan Anggota Belakang (femur tulang terpanjang, patela, tibia, fibula, tarsus, metatarsus, falanks)."
-        ],
+        "subtopic": "14.1 Jenis Rangka",
+        "summary": "Tiga jenis sistem sokongan rangka dalam alam haiwan iaitu rangka luar, rangka dalam dan rangka hidrostatik.",
         "verbatim": [
-          "Jenis Rangka Hidupan:\n  • Rangka Hidrostatik: Cecair selom bertekanan dalam badan haiwan invertebrata lembut (cth: cacing tanah, obor-obor).\n  • Rangka Luar (Eksoskeleton): Kutikel berlilin keras daripada bahan kitin pada artropoda/serangga. Perlu mengalami ekdisis (penyalinan kulit berkala) untuk membolehkan tumbesaran.\n  • Rangka Dalam (Endoskeleton): Tulang dan rawan di dalam tubuh haiwan vertebrata (termasuk manusia).",
-          "Rangka Paksi Manusia (80 Tulang):\n  • Tengkorak: Kranium melindungi otak dan tulang muka melindungi organ deria.\n  • Turus Vertebra: 33 ruas vertebra (7 Serviks termasuk Atlas & Aksis, 12 Toraks bersendi dengan rusuk, 5 Lumbar paling besar menampung berat badan, 5 Sakrum bercantum, 4 Koksiks bercantum).\n  • Sangkar Rusuk: 12 pasang rusuk (7 pasang rusuk benar, 3 pasang rusuk palsu, 2 pasang rusuk melayang) dan Sternum, melindungi jantung dan peparu.",
-          "Rangka Apendaj Manusia (126 Tulang):\n  • Lengkungan Pektoral (klavikel & skapula) dan Anggota Hadapan (humerus, radius, ulna, karpus, metakarpus, falanks).\n  • Lengkungan Pelvis (ilium, iskium, pubis bercantum) dan Anggota Belakang (femur tulang terpanjang, patela, tibia, fibula, tarsus, metatarsus, falanks)."
+          "Rangka Luar (Eksoskeleton): Lapisan luar tegar yang diperbuat daripada kitin (cth: serangga, krustasea, ketam); Memberikan sokongan fizikal, melindungi organ dalaman, mencegah dehidrasi kehilangan air, dan menyediakan tapak pelekatan otot; Pertumbuhan terhad memerlukan proses ekdisis (penyalinan kulit berkala mengikut graf pertumbuhan tangga).",
+          "Rangka Dalam (Endoskeleton): Rangka tulang dan rawan keras di dalam badan vertebrata (cth: mamalia, burung, reptilia, amfibia, ikan); Menyokong berat badan, melindungi organ vital (otak, jantung, peparu), menghasilkan sel darah merah dalam sumsum tulang, dan bertindak sebagai tuas pergerakan bersama otot.",
+          "Rangka Hidrostatik: Ruang selom berbendalir di bawah tekanan hidrostatik di dalam haiwan berbadan lembut (cth: cacing tanah, lintah, ubur-ubur, anemone laut); Mengekalkan bentuk badan tegang dan membolehkan pergerakan melalui pengecutan otot badan menentang bendalir."
         ],
-        "explanation": "Rangka hidrostatik, rangka luar kitin, endoskeleton, dan 206 tulang rangka manusia."
+        "explanation": "Semasa ekdisis, serangga menyedut udara untuk memecahkan rangka luar lama dan mengembangkan rangka luar baharu sebelum mengeras."
       },
       {
-        "subtopic": "14.3 Sendi Sinovia & Tisu Sokongan",
-        "summary": "Sendi bebas bergerak, ligamen, tendon, rawan, dan bendalir sinovia.",
-        "points": [
-          "Sendi Sinovia (Sendi Bergerak Bebas):\n  • Sendi Engsel: Membenarkan pergerakan pada satu satah sahaja (cth: sendi siku dan sendi lutut).\n  • Sendi Lesung (Ball-and-Socket): Membenarkan pergerakan putaran bebas dalam semua satah (cth: sendi bahu antara humerus dengan skapula, sendi punggung antara femur dengan pelvis).",
-          "Tisu Berkaitan Sendi:\n  • Tulang Rawan (Kartilaj): Melapisi hujung tulang; bertindak sebagai kusyen penyerap hentakan dan mengurangkan geseran semasa pergerakan sendi.\n  • Cecair Sinovia: Cecair pelincir yang dirembeskan oleh membran sinovia untuk melincirkan pergerakan sendi.\n  • Ligamen: Tisu penghubung kenyal, kuat dan anjal yang menyambungkan Tulang kepada Tulang; memegang sendi pada kedudukannya dan menghalang kehelan.\n  • Tendon: Tisu penghubung tidak anjal dan sangat kuat (kaya gentian kolagen) yang menyambungkan Otot Rangka kepada Tulang; memindahkan daya tarikan pengecutan otot ke tulang."
-        ],
+        "subtopic": "14.2 Sistem Otot Rangka Manusia",
+        "summary": "Sistem rangka manusia terdiri daripada 206 tulang yang dibahagikan kepada Rangka Paksi dan Rangka Apendaj, disokong oleh sendi sinovia, ligamen dan tendon.",
         "verbatim": [
-          "Sendi Sinovia (Sendi Bergerak Bebas):\n  • Sendi Engsel: Membenarkan pergerakan pada satu satah sahaja (cth: sendi siku dan sendi lutut).\n  • Sendi Lesung (Ball-and-Socket): Membenarkan pergerakan putaran bebas dalam semua satah (cth: sendi bahu antara humerus dengan skapula, sendi punggung antara femur dengan pelvis).",
-          "Tisu Berkaitan Sendi:\n  • Tulang Rawan (Kartilaj): Melapisi hujung tulang; bertindak sebagai kusyen penyerap hentakan dan mengurangkan geseran semasa pergerakan sendi.\n  • Cecair Sinovia: Cecair pelincir yang dirembeskan oleh membran sinovia untuk melincirkan pergerakan sendi.\n  • Ligamen: Tisu penghubung kenyal, kuat dan anjal yang menyambungkan Tulang kepada Tulang; memegang sendi pada kedudukannya dan menghalang kehelan.\n  • Tendon: Tisu penghubung tidak anjal dan sangat kuat (kaya gentian kolagen) yang menyambungkan Otot Rangka kepada Tulang; memindahkan daya tarikan pengecutan otot ke tulang."
+          "Rangka Paksi (80 tulang): Tengkorak (kranium & tulang muka), Turus vertebra (33 vertebra: 7 serviks, 12 toraks, 5 lumbar, 5 sakrum bercantum, 4 koksiks bercantum), Sangkar rusuk (12 pasang tulang rusuk) dan Sternum.",
+          "Ciri Khas Vertebra: Salur saraf (laluan saraf tunjang), Sentrum (menyokong berat), Cuaran spina & cuaran melintang (tapak pelekatan otot); Vertebra serviks mempunyai foramen melintang; Tulang atlas (serviks pertama) membenarkan anggukan kepala; Tulang aksis (serviks kedua) membenarkan putaran kepala menggeleng.",
+          "Rangka Apendaj (126 tulang): Lengkungan pektoral (klavikel & skapula), Anggota hadapan (humerus, radius, ulna, karpus, metakarpus, falanks), Lengkungan pelvis (ilium, iskium, pubis), Anggota belakang (femur - tulang terpanjang, tibia, fibula, patela, tarsus, metatarsus, falanks).",
+          "Sendi Sinovia (Bebas Bergerak): Sendi Lesung (cth bahu dan punggung - putaran pelbagai satah) dan Sendi Engsel (cth siku dan lutut - pergerakan satu satah).",
+          "Tisu Berkaitan Sendi: Rawan (melapisi hujung tulang mengurangkan geseran dan menyerap hentakan); Cecair Sinovia (melicinkan pergerakan sendi); Ligamen (tisu penghubung kenyal menyambungkan tulang kepada tulang); Tendon (tisu penghubung tidak kenyal menyambungkan otot rangka kepada tulang)."
         ],
-        "explanation": "Sendi bebas bergerak, ligamen, tendon, rawan, dan bendalir sinovia."
+        "explanation": "Ligamen perlu kenyal untuk membenarkan pergerakan sendi sambil mengekalkan kestabilan tulang pada kedudukannya."
       },
       {
-        "subtopic": "14.4 Mekanisme Pergerakan Otot Antagonistik & Lokomosi Haiwan",
-        "summary": "Tindakan pasangan otot berlawanan pada manusia dan adaptasi lokomosi haiwan.",
-        "points": [
-          "Otot Antagonistik pada Lengan Manusia:\n  • Membengkokkan Lengan (Fleksi): Otot Biseps mengecut manakala Otot Triseps mengendur -> Tendon biseps menarik tulang radius ke atas -> Lengan dibengkokkan.\n  • Meluruskan Lengan (Ekstensi): Otot Triseps mengecut manakala Otot Biseps mengendur -> Tendon triseps menarik tulang ulna ke bawah -> Lengan diluruskan.",
-          "Lokomosi Haiwan:\n  • Cacing Tanah: Gelombang peristalsis pengecutan otot melingkar (badan memanjang & menipis) dan otot membujur (badan memendek & menebal) secara berselang-seli dibantu oleh cengkaman keta.\n  • Burung (Penerbangan): Pasangan otot pektoralis major mengecut (menarik sayap ke bawah menghasilkan daya tujah ke atas) dan pektoralis minor mengecut (menaikkan sayap ke atas); tulang berongga (pneumatik) dan sternum berkunas (keel).\n  • Ikan: Pengecutan otot miotom berbentuk 'W' berselang-seli di kedua-dua sisi badan menghasilkan daya tujah air ke hadapan dibantu sirip kaudal."
-        ],
+        "subtopic": "14.3 Mekanisme Pergerakan dan Gerak Alih",
+        "summary": "Tindakan pasangan otot berantagonis (apabila satu otot mengecut, pasangannya mengendur) dalam pergerakan anggota badan manusia dan lokomosi haiwan.",
         "verbatim": [
-          "Otot Antagonistik pada Lengan Manusia:\n  • Membengkokkan Lengan (Fleksi): Otot Biseps mengecut manakala Otot Triseps mengendur -> Tendon biseps menarik tulang radius ke atas -> Lengan dibengkokkan.\n  • Meluruskan Lengan (Ekstensi): Otot Triseps mengecut manakala Otot Biseps mengendur -> Tendon triseps menarik tulang ulna ke bawah -> Lengan diluruskan.",
-          "Lokomosi Haiwan:\n  • Cacing Tanah: Gelombang peristalsis pengecutan otot melingkar (badan memanjang & menipis) dan otot membujur (badan memendek & menebal) secara berselang-seli dibantu oleh cengkaman keta.\n  • Burung (Penerbangan): Pasangan otot pektoralis major mengecut (menarik sayap ke bawah menghasilkan daya tujah ke atas) dan pektoralis minor mengecut (menaikkan sayap ke atas); tulang berongga (pneumatik) dan sternum berkunas (keel).\n  • Ikan: Pengecutan otot miotom berbentuk 'W' berselang-seli di kedua-dua sisi badan menghasilkan daya tujah air ke hadapan dibantu sirip kaudal."
+          "Mekanisme Membengkokkan Lengan (Fleksi): Otot biseps (otot fleksor) mengecut manakala otot triseps (otot ekstensor) mengendur; Daya tarikan dipindahkan ke radius melalui tendon, membengkokkan lengan ke atas di sendi siku.",
+          "Mekanisme Meluruskan Lengan (Ekstensi): Otot triseps mengecut manakala otot biseps mengendur; Daya tarikan dipindahkan ke ulna, meluruskan lengan ke bawah.",
+          "Lokomosi Cacing Tanah: Menggunakan pasangan otot berantagonis (otot lingkar dan otot membujur) serta keta (kejur halus untuk cengkaman tanah); Apabila otot lingkar mengecut (otot membujur mengendur), segmen badan memanjang dan menipis; Apabila otot membujur mengecut (otot lingkar mengendur), segmen badan memendek dan menebal menghasilkan gelombang peristalsis ke hadapan.",
+          "Lokomosi Belalang: Melompat menggunakan kaki belakang panjang berotot; Otot fleksor mengecut membengkokkan kaki belakang; Apabila otot ekstensor mengecut pantas, kaki melurus laju menolak tanah melonjakkan belalang ke udara.",
+          "Lokomosi Burung: Sayap digerakkan oleh otot pektoralis major (mengecut menarik sayap ke bawah menghasilkan daya tujah dan angkat) dan pektoralis minor (mengecut menarik sayap ke atas).",
+          "Lokomosi Ikan: Pergerakan beralun disebabkan pengecutan dan pengendoran berantagonis blok otot miotom di kedua-dua sisi badan berselang-seli."
         ],
-        "explanation": "Tindakan pasangan otot berlawanan pada manusia dan adaptasi lokomosi haiwan."
+        "explanation": "Otot hanya berupaya menghasilkan daya melalui tarikan semasa mengecut, dan tidak boleh menolak; oleh itu otot sentiasa bertindak secara berpasangan antagonis."
       },
       {
-        "subtopic": "14.5 Isu Kesihatan Sistem Muskuloskeletal",
-        "summary": "Osteoporosis, osteomalasia, artritis, dan skoliosis.",
-        "points": [
-          "Osteoporosis: Kehilangan jisim dan ketumpatan tulang, menjadikan tulang poros, rapuh dan mudah patah. Lazim dialami oleh wanita pascamonopaus akibat penurunan aras hormon estrogen dan kekurangan kalsium serta vitamin D.",
-          "Osteomalasia (Dewasa) / Riket (Kanak-kanak): Kelembutan tulang akibat kekurangan kalsium, fosforus atau vitamin D, menyebabkan tulang kaki membengkok membentuk huruf 'O' atau 'X'.",
-          "Artritis (Osteoartritis & Reumatoid Artritis): Hakisan tulang rawan pada sendi dan kekurangan cecair sinovia menyebabkan geseran tulang-ke-tulang, radang, sakit dan sendi bengkak kaku.",
-          "Skoliosis: Keadaan tulang belakang membengkok ke sisi membentuk lengkung huruf 'S' atau 'C'."
-        ],
+        "subtopic": "14.4 Isu Kesihatan Berkaitan Sistem Otot Rangka Manusia",
+        "summary": "Gangguan muskuloskeletal akibat penuaan, kekurangan nutrien kalsium/vitamin D, postur buruk dan kecederaan fizikal.",
         "verbatim": [
-          "Osteoporosis: Kehilangan jisim dan ketumpatan tulang, menjadikan tulang poros, rapuh dan mudah patah. Lazim dialami oleh wanita pascamonopaus akibat penurunan aras hormon estrogen dan kekurangan kalsium serta vitamin D.",
-          "Osteomalasia (Dewasa) / Riket (Kanak-kanak): Kelembutan tulang akibat kekurangan kalsium, fosforus atau vitamin D, menyebabkan tulang kaki membengkok membentuk huruf 'O' atau 'X'.",
-          "Artritis (Osteoartritis & Reumatoid Artritis): Hakisan tulang rawan pada sendi dan kekurangan cecair sinovia menyebabkan geseran tulang-ke-tulang, radang, sakit dan sendi bengkak kaku.",
-          "Skoliosis: Keadaan tulang belakang membengkok ke sisi membentuk lengkung huruf 'S' atau 'C'."
+          "Osteoporosis: Kehilangan jisim dan ketumpatan tulang akibat kemerosotan kalsium; Tulang menjadi poros, rapuh dan mudah patah terutamanya dalam kalangan wanita menopaus (kekurangan estrogen); Dicegah dengan pengambilan kalsium, vitamin D dan senaman galas berat.",
+          "Osteomalasia & Riket: Tulang menjadi lembut dan bengkok akibat kekurangan vitamin D dan kalsium (riket pada kanak-kanak menyebabkan kaki berbentuk busur).",
+          "Artritis: Keradangan sendi. Osteoartritis (kehausan lapisan rawan sendi akibat penuaan menghasilkan geseran tulang yang sakit); Artritis Reumatoid (penyakit autoimun membran sinovia meradang membengkak); Gout (pemendapan hablur asid urik pada sendi terutamanya ibu jari kaki).",
+          "Skoliosis: Keadaan di mana turus vertebra melengkung secara abnormal ke sisi membentuk huruf 'S' atau 'C'.",
+          "Kekejangan Otot (Kram): Pengecutan otot secara tiba-tiba dan menyakitkan akibat dehidrasi, kekurangan elektrolit (Na⁺, K⁺, Ca²⁺), atau pengumpulan asid laktik."
         ],
-        "explanation": "Osteoporosis, osteomalasia, artritis, dan skoliosis."
+        "explanation": "Amalan postur yang betul semasa duduk, berdiri dan mengangkat objek berat mengurangkan tekanan berlebihan ke atas cakera rawan turus vertebra."
       }
     ],
     "steps": [
@@ -2560,64 +2502,97 @@ const BIOLOGI_DATA = [
     "babNum": "BAB 15",
     "title": "PEMBIAKAN SEKS, PERKEMBANGAN DAN PERTUMBUHAN DALAM MANUSIA DAN HAIWAN",
     "icon": "👶",
-    "anyflipPages": "Halaman 286 – 314 (Buku Teks Biologi Tingkatan 4 KSSM)",
-    "synopsis": "Pembiakan seks mengekalkan kesinambungan spesies dan menghasilkan variasi genetik. Bab ini menghuraikan sistem pembiakan lelaki dan perempuan, gametogenesis (spermatogenesis dalam testis dan oogenesis dalam ovari), peranan 4 hormon utama kitar haid (FSH, Estrogen, LH, Progesteron), persenyawaan dan perkembangan fetus manusia, peranan plasenta, pembentukan kembar seiras vs tak seiras, rawatan kemandulan (IVF), serta lengkung pertumbuhan manusia dan serangga.",
+    "anyflipPages": "Buku Teks Biologi Tingkatan 4 KSSM (Halaman 334 – 367)",
+    "synopsis": "Mengkaji anatomi sistem pembiakan manusia, gametogenesis (spermatogenesis dan oogenesis), kitar haid dan peranan empat hormon pembiakan, persenyawaan, perkembangan fetus dan peranan plasenta, pembentukan kembar (seiras vs tak seiras), isu kemandulan, serta pola pertumbuhan organisma (lengkung sigmoid dan tangga).",
     "notes": [
       {
-        "subtopic": "15.1 Sistem Pembiakan & 15.2 Gametogenesis",
-        "summary": "Spermatogenesis berterusan menghasilkan 4 sperma vs Oogenesis menghasilkan 1 ovum berfungsi.",
-        "points": [
-          "Sistem Pembiakan Lelaki: Testis (menghasilkan sperma & hormon testosteron), Epididimis (mematangkan sperma), Vas Deferens (mengangkut sperma), Vesikel Semen & Kelenjar Prostat (merembeskan bendalir nutrien alkali semen).",
-          "Sistem Pembiakan Perempuan: Ovari (menghasilkan oosit sekunder, estrogen & progesteron), Tiub Falopio (tapak persenyawaan), Uterus (tapak penempelan dan perkembangan embrio), Serviks, Faraj.",
-          "Spermatogenesis (dalam Tubul Seminiferus Testis):\n  • Sel germa primordium membahagi secara mitosis membentuk Spermatogonium (2n).\n  • Spermatogonium membesar menjadi Spermatosit Primer (2n).\n  • Meiosis I menghasilkan 2 Spermatosit Sekunder (n).\n  • Meiosis II menghasilkan 4 Spermatid (n).\n  • Spermatid menjalani pembezaan (membentuk kepala nukleus, akrosom dan ekor flagelum) menjadi 4 Sel Sperma (n) matang.",
-          "Oogenesis (dalam Ovari):\n  • Semasa perkembangan fetus perempuan: Oogonium (2n) membahagi secara mitosis membentuk Oosit Primer (2n) yang terhenti pada peringkat Profasa I meiosis.\n  • Bermula baligh, setiap kitar haid satu oosit primer menyambung Meiosis I membentuk satu Oosit Sekunder (n) besar dan satu Jasad Kutub Pertama (n) kecil.\n  • Oosit sekunder memulakan Meiosis II tetapi terhenti pada peringkat Metafasa II dan diovulasikan ke tiub Falopio.\n  • Meiosis II hanya lengkap sekiranya persenyawaan oleh sperma berlaku, menghasilkan satu Ovum (n) matang dan satu Jasad Kutub Kedua (n)."
-        ],
+        "subtopic": "15.1 Sistem Pembiakan Manusia",
+        "summary": "Struktur anatomi dan fungsi organ pembiakan lelaki dan perempuan untuk penghasilan gamet dan pembiakan seks.",
         "verbatim": [
-          "Sistem Pembiakan Lelaki: Testis (menghasilkan sperma & hormon testosteron), Epididimis (mematangkan sperma), Vas Deferens (mengangkut sperma), Vesikel Semen & Kelenjar Prostat (merembeskan bendalir nutrien alkali semen).",
-          "Sistem Pembiakan Perempuan: Ovari (menghasilkan oosit sekunder, estrogen & progesteron), Tiub Falopio (tapak persenyawaan), Uterus (tapak penempelan dan perkembangan embrio), Serviks, Faraj.",
-          "Spermatogenesis (dalam Tubul Seminiferus Testis):\n  • Sel germa primordium membahagi secara mitosis membentuk Spermatogonium (2n).\n  • Spermatogonium membesar menjadi Spermatosit Primer (2n).\n  • Meiosis I menghasilkan 2 Spermatosit Sekunder (n).\n  • Meiosis II menghasilkan 4 Spermatid (n).\n  • Spermatid menjalani pembezaan (membentuk kepala nukleus, akrosom dan ekor flagelum) menjadi 4 Sel Sperma (n) matang.",
-          "Oogenesis (dalam Ovari):\n  • Semasa perkembangan fetus perempuan: Oogonium (2n) membahagi secara mitosis membentuk Oosit Primer (2n) yang terhenti pada peringkat Profasa I meiosis.\n  • Bermula baligh, setiap kitar haid satu oosit primer menyambung Meiosis I membentuk satu Oosit Sekunder (n) besar dan satu Jasad Kutub Pertama (n) kecil.\n  • Oosit sekunder memulakan Meiosis II tetapi terhenti pada peringkat Metafasa II dan diovulasikan ke tiub Falopio.\n  • Meiosis II hanya lengkap sekiranya persenyawaan oleh sperma berlaku, menghasilkan satu Ovum (n) matang dan satu Jasad Kutub Kedua (n)."
+          "Sistem Pembiakan Lelaki: Testis (menghasilkan sperma dan hormon testosteron di dalam tubul seminiferus); Skrotum (kantung luar mengekalkan suhu testis 2-3 °C lebih rendah daripada suhu badan untuk spermatogenesis optimum); Epididimis (tapak pematangan dan penyimpanan sperma); Duktus sperma / Vas deferens (mengangkut sperma dari epididimis ke uretra); Vesikel semen dan Kelenjar prostat (merembes bendalir bernutrisi alkali membentuk semen bagi melindungi sperma daripada keasidan faraj); Zakar (organ persetubuhan).",
+          "Sistem Pembiakan Perempuan: Ovari (menghasilkan oosit sekunder/ovum dan merembes hormon estrogen dan progesteron); Tiub Falopio (tapak persenyawaan ovum oleh sperma, dilapisi silium); Uterus (organ berotot tebal tapak penempelan dan perkembangan embrio); Endometrium (lapisan dalaman uterus yang kaya salur darah); Serviks (leher sempit uterus yang merembes mukus); Faraj (saluran menerima sperma dan laluan kelahiran bayi)."
         ],
-        "explanation": "Spermatogenesis berterusan menghasilkan 4 sperma vs Oogenesis menghasilkan 1 ovum berfungsi."
+        "explanation": "Suhu testis yang berada di luar rongga abdomen adalah kritikal kerana suhu badan normal 37 °C boleh merencat pematangan sel sperma."
       },
       {
-        "subtopic": "15.3 Kitar Haid dan Peranan Hormon",
-        "summary": "Kitaran 28 hari yang dikawal oleh paksi hipotalamus-pituitari-ovari.",
-        "points": [
-          "Fasa Kitar Haid (Purata 28 Hari):\n  • Hari 1–5 (Fasa Haid): Aras progesteron dan estrogen merosot -> lapisan endometrium runtuh bersama darah disingkirkan.\n  • Hari 6–13 (Fasa Perkembangan Folikel): Kelenjar pituitari merembeskan Hormon Perangsang Folikel (FSH) -> merangsang folikel ovari berkembang. Folikel merembeskan Estrogen yang membaiki dan menebalkan dinding endometrium.\n  • Hari 14 (Ovulasi): Aras estrogen tinggi mencetuskan lonjakan Hormon Peluteinan (LH) -> folikel Graaf matang meletus membebaskan oosit sekunder ke tiub Falopio (Ovulasi).\n  • Hari 15–28 (Fasa Luteal): Sisa folikel membentuk Korpus Luteum yang merembeskan Progesteron dan Estrogen. Progesteron merangsang penebalan lanjut endometrium menjadi tebal, kaya salur darah dan berlendir bagi persediaan penempelan embrio.\n  • Jika tiada persenyawaan: Korpus luteum merosot -> aras progesteron jatuh menjunam -> kitar haid berulang semula."
-        ],
+        "subtopic": "15.2 Gametogenesis Manusia",
+        "summary": "Proses pembentukan sel gamet haploid melalui meiosis di dalam gonad, iaitu spermatogenesis pada lelaki dan oogenesis pada perempuan.",
         "verbatim": [
-          "Fasa Kitar Haid (Purata 28 Hari):\n  • Hari 1–5 (Fasa Haid): Aras progesteron dan estrogen merosot -> lapisan endometrium runtuh bersama darah disingkirkan.\n  • Hari 6–13 (Fasa Perkembangan Folikel): Kelenjar pituitari merembeskan Hormon Perangsang Folikel (FSH) -> merangsang folikel ovari berkembang. Folikel merembeskan Estrogen yang membaiki dan menebalkan dinding endometrium.\n  • Hari 14 (Ovulasi): Aras estrogen tinggi mencetuskan lonjakan Hormon Peluteinan (LH) -> folikel Graaf matang meletus membebaskan oosit sekunder ke tiub Falopio (Ovulasi).\n  • Hari 15–28 (Fasa Luteal): Sisa folikel membentuk Korpus Luteum yang merembeskan Progesteron dan Estrogen. Progesteron merangsang penebalan lanjut endometrium menjadi tebal, kaya salur darah dan berlendir bagi persediaan penempelan embrio.\n  • Jika tiada persenyawaan: Korpus luteum merosot -> aras progesteron jatuh menjunam -> kitar haid berulang semula."
+          "Spermatogenesis (di Tubul Seminiferus Testis): Sel germa primordium (2n) membahagi secara mitosis menghasilkan spermatogonium (2n) -> Membesar menjadi spermatosit primer (2n) -> Menjalani Meiosis I menghasilkan dua spermatosit sekunder (n) -> Menjalani Meiosis II menghasilkan empat spermatid (n) -> Spermatid mengalami pembezaan membentuk empat spermatozoa / sperma matang berflagelum (n). Proses bermula pada akil baligh dan berterusan sepanjang hayat.",
+          "Oogenesis (di Ovari): Bermula semasa peringkat fetus perempuan dalam kandungan: Sel germa primordium (2n) membahagi secara mitosis menghasilkan oogonium (2n) -> Membesar menjadi oosit primer (2n) yang terhenti pada peringkat Profasa I Meiosis; Semasa akil baligh, satu oosit primer meneruskan Meiosis I setiap bulan menghasilkan satu oosit sekunder (n) besar dan satu jasad kutub pertama (n) kecil -> Oosit sekunder terhenti pada Metafasa II dan dibebaskan semasa ovulasi; Meiosis II hanya lengkap jika oosit sekunder disenyawakan oleh sperma, menghasilkan satu ovum matang (n) dan jasad kutub kedua.",
+          "Perbezaan Spermatogenesis vs Oogenesis: Spermatogenesis menghasilkan 4 sperma berfungsi sama saiz secara berterusan; Oogenesis hanya menghasilkan 1 ovum berfungsi besar kaya sitoplasma dan 3 jasad kutub yang merosot secara berkala sebulan sekali."
         ],
-        "explanation": "Kitaran 28 hari yang dikawal oleh paksi hipotalamus-pituitari-ovari."
+        "explanation": "Sitoplasma diagihkan secara tidak sama rata semasa oogenesis untuk memastikan ovum mempunyai rizab nutrien mencukupi bagi menyokong pembahagian embrio awal."
       },
       {
-        "subtopic": "15.4 Perkembangan Fetus, Plasenta & Pembentukan Kembar",
-        "summary": "Persenyawaan di tiub Falopio, peranan plasenta, kembar seiras vs tak seiras.",
-        "points": [
-          "Persenyawaan dan Perkembangan:\n  • Persenyawaan berlaku di satu pertiga tiub Falopio (sperma bercantum dengan ovum membentuk Zigot diploid 2n).\n  • Zigot membahagi secara mitosis (pembelahan) membentuk Morula (bebola sel pepejal) -> Blastosista (bebola sel berongga) yang menempel pada dinding endometrium (Penempelan).\n  • Blastosista berkembang menjadi Embrio dan seterusnya Fetus.",
-          "Fungsi Plasenta dan Tali Pusat:\n  • Plasenta: Tapak pertukaran bahan antara darah ibu dengan darah fetus tanpa percampuran fizikal darah (menghalang sel darah bertekanan tinggi ibu merosakkan kapilari fetus halus, dan menghalang aglutinasi jika kumpulan darah berbeza).\n  • Meresapkan O₂, glukosa, asid amino, antibodi daripada darah ibu ke fetus; menyingkirkan $CO_2$ dan urea daripada fetus ke ibu.\n  • Plasenta juga bertindak sebagai kelenjar endokrin sementara merembeskan progesteron bermula bulan ke-3 kehamilan.",
-          "Pembentukan Kembar:\n  • Kembar Seiras (Monozigot): 1 ovum disenyawakan oleh 1 sperma -> 1 zigot membahagi dua embrio berasingan -> berkongsi 1 plasenta, jantina sama, rupa paras dan kandungan genetik 100% seiras.\n  • Kembar Tak Seiras (Dizigot): 2 ovum berasingan diovulasikan dan disenyawakan oleh 2 sperma berbeza -> 2 zigot berasingan -> 2 plasenta berasingan, jantina boleh sama atau berbeza, kandungan genetik berbeza seperti adik-beradik biasa.\n  • Kembar Siam: Pembahagian blastosista kembar seiras tidak berlaku sepenuhnya, menyebabkan bayi melekat pada bahagian tubuh tertentu."
-        ],
+        "subtopic": "15.3 Kitar Haid",
+        "summary": "Kitaran perubahan berkala pada dinding endometrium uterus dan ovari selama kira-kira 28 hari yang dikawal selia oleh empat hormon utama.",
         "verbatim": [
-          "Persenyawaan dan Perkembangan:\n  • Persenyawaan berlaku di satu pertiga tiub Falopio (sperma bercantum dengan ovum membentuk Zigot diploid 2n).\n  • Zigot membahagi secara mitosis (pembelahan) membentuk Morula (bebola sel pepejal) -> Blastosista (bebola sel berongga) yang menempel pada dinding endometrium (Penempelan).\n  • Blastosista berkembang menjadi Embrio dan seterusnya Fetus.",
-          "Fungsi Plasenta dan Tali Pusat:\n  • Plasenta: Tapak pertukaran bahan antara darah ibu dengan darah fetus tanpa percampuran fizikal darah (menghalang sel darah bertekanan tinggi ibu merosakkan kapilari fetus halus, dan menghalang aglutinasi jika kumpulan darah berbeza).\n  • Meresapkan O₂, glukosa, asid amino, antibodi daripada darah ibu ke fetus; menyingkirkan $CO_2$ dan urea daripada fetus ke ibu.\n  • Plasenta juga bertindak sebagai kelenjar endokrin sementara merembeskan progesteron bermula bulan ke-3 kehamilan.",
-          "Pembentukan Kembar:\n  • Kembar Seiras (Monozigot): 1 ovum disenyawakan oleh 1 sperma -> 1 zigot membahagi dua embrio berasingan -> berkongsi 1 plasenta, jantina sama, rupa paras dan kandungan genetik 100% seiras.\n  • Kembar Tak Seiras (Dizigot): 2 ovum berasingan diovulasikan dan disenyawakan oleh 2 sperma berbeza -> 2 zigot berasingan -> 2 plasenta berasingan, jantina boleh sama atau berbeza, kandungan genetik berbeza seperti adik-beradik biasa.\n  • Kembar Siam: Pembahagian blastosista kembar seiras tidak berlaku sepenuhnya, menyebabkan bayi melekat pada bahagian tubuh tertentu."
+          "Empat Hormon Kitar Haid: FSH (Hormon Perangsang Folikel), LH (Hormon Peluteinan) daripada pituitari; Estrogen, Progesteron daripada ovari.",
+          "Fasa Kitar Haid (Kitaran 28 Hari):",
+          "1. Fasa Haid (Hari 1 - 5): Aras estrogen dan progesteron jatuh merudum -> Lapisan endometrium runtuh dan disingkirkan bersama darah haid melalui faraj.",
+          "2. Fasa Proliferasi / Folikel (Hari 6 - 13): Kelenjar pituitari merembes FSH -> Rangsang perkembangan folikel Graaf dalam ovari -> Folikel merembes Estrogen -> Estrogen memulihkan dan menebalkan dinding endometrium serta merangsang pituitari merembes LH (mekanisme suap balik positif).",
+          "3. Ovulasi (Hari 14): Lonjakan aras hormon LH secara mendadak merangsang pembebasan oosit sekunder daripada folikel Graaf ke dalam tiub Falopio.",
+          "4. Fasa Rembesan / Luteal (Hari 15 - 28): Sisa folikel Graaf bertukar menjadi Korpus Luteum -> Korpus luteum merembes Progesteron dan Estrogen -> Progesteron mengekalkan ketebalan endometrium, menjadikannya bervaskular dan bersedia untuk penempelan embrio serta merencat rembesan FSH & LH.",
+          "Jika Tiada Persenyawaan: Korpus luteum merosot -> Aras progesteron dan estrogen jatuh mendadak -> Kitar haid berulang semula dengan fasa haid."
         ],
-        "explanation": "Persenyawaan di tiub Falopio, peranan plasenta, kembar seiras vs tak seiras."
+        "explanation": "Jika persenyawaan berlaku, korpus luteum terus merembes progesteron sehingga plasenta terbentuk untuk mengelakkan keguguran kandungan."
       },
       {
-        "subtopic": "15.5 Isu Kesihatan Pembiakan & 15.6 Pertumbuhan Organisma",
-        "summary": "Kemandulan & IVF, lengkung pertumbuhan sigmoid mamalia vs tangga ekdisis serangga.",
-        "points": [
-          "Kemandulan dan Teknologi Pembiakan:\n  • Rawatan Bayi Tabung Uji (IVF - In Vitro Fertilisation): Oosit matang disedut keluar dari ovari dan disenyawakan dengan sperma di dalam piring kultur kaca makmal. Embrio yang berkembang kemudiannya dimasukkan ke dalam uterus ibu untuk penempelan.",
-          "Lengkung Pertumbuhan:\n  • Manusia & Tumbuhan: Lengkung Pertumbuhan Sigmoid (bentuk 'S') merangkumi Fasa Permulaan (pertumbuhan perlahan), Fasa Eksponen (pertumbuhan pesat), Fasa Pertumbuhan Perlahan, Fasa Matang (pertumbuhan sifar), dan Fasa Penuaan.\n  • Serangga (Rangka Luar): Lengkung Pertumbuhan Berbentuk Tangga. Eksoskeleton kitin tegar tidak boleh meregang. Pertumbuhan saiz hanya berlaku secara mendadak semasa Ekdisis (penyalinan kulit) di mana serangga menyedut udara untuk mengembangkan rangka luar baharu yang masih lembut sebelum mengeras."
-        ],
+        "subtopic": "15.4 Perkembangan Fetus Manusia",
+        "summary": "Persenyawaan di tiub Falopio, penempelan blastosista di endometrium, peranan hormon hCG, serta fungsi plasenta dan tali pusat.",
         "verbatim": [
-          "Kemandulan dan Teknologi Pembiakan:\n  • Rawatan Bayi Tabung Uji (IVF - In Vitro Fertilisation): Oosit matang disedut keluar dari ovari dan disenyawakan dengan sperma di dalam piring kultur kaca makmal. Embrio yang berkembang kemudiannya dimasukkan ke dalam uterus ibu untuk penempelan.",
-          "Lengkung Pertumbuhan:\n  • Manusia & Tumbuhan: Lengkung Pertumbuhan Sigmoid (bentuk 'S') merangkumi Fasa Permulaan (pertumbuhan perlahan), Fasa Eksponen (pertumbuhan pesat), Fasa Pertumbuhan Perlahan, Fasa Matang (pertumbuhan sifar), dan Fasa Penuaan.\n  • Serangga (Rangka Luar): Lengkung Pertumbuhan Berbentuk Tangga. Eksoskeleton kitin tegar tidak boleh meregang. Pertumbuhan saiz hanya berlaku secara mendadak semasa Ekdisis (penyalinan kulit) di mana serangga menyedut udara untuk mengembangkan rangka luar baharu yang masih lembut sebelum mengeras."
+          "Persenyawaan & Penempelan: Satu sperma mensenyawakan oosit sekunder di tiub Falopio membentuk zigot (2n) -> Zigot membahagi secara mitosis membentuk bebola sel padat morula -> Berkembang menjadi blastosista berongga -> Menempel pada dinding endometrium (implantasi) kira-kira 7 hari selepas persenyawaan.",
+          "Hormon hCG (Human Chorionic Gonadotropin): Dirembeskan oleh blastosista untuk mengekalkan korpus luteum terus menghasilkan hormon progesteron dan estrogen pada peringkat awal kehamilan (dikesan dalam ujian air kencing kehamilan).",
+          "Peranan Plasenta: Terbentuk daripada gabungan tisu ibu dan tisu embrio; Bertindak sebagai organ pertukaran bahan (oksigen, glukosa, asid amino, antibodi meresap dari darah ibu ke darah fetus; CO₂ dan urea meresap dari darah fetus ke ibu); Menggantikan korpus luteum merembes progesteron dan estrogen bermula bulan ketiga kehamilan.",
+          "Peranan Tali Pusat: Menghubungkan fetus dengan plasenta; Mengandungi satu Vena Tali Pusat (mengangkut darah beroksigen dan nutrien dari plasenta ke fetus) dan dua Arteri Tali Pusat (mengangkut darah terdeoksigen dan sisa buangan dari fetus ke plasenta).",
+          "Ketiadaan Pencampuran Darah Ibu dan Fetus: Darah ibu dan fetus dipisahkan oleh membran plasenta nipis untuk: (1) Mengelakkan kapilari darah fetus yang halus daripada pecah akibat tekanan darah tinggi ibu; (2) Mengelakkan aglutinasi jika kumpulan darah ibu dan fetus tidak serasi; (3) Menghalang pemindahan sebahagian bakteria dan toksin berbahaya."
         ],
-        "explanation": "Kemandulan & IVF, lengkung pertumbuhan sigmoid mamalia vs tangga ekdisis serangga."
+        "explanation": "Walaupun membran plasenta menapis kebanyakan patogen, sesetengah virus (seperti HIV, rubela) dan dadah/alkohol boleh merentasinya dan menjejaskan fetus."
+      },
+      {
+        "subtopic": "15.5 Pembentukan Kembar",
+        "summary": "Perbandingan mekanisme pembentukan kembar seiras, kembar tak seiras dan kembar siam.",
+        "verbatim": [
+          "Kembar Seiras (Monozigot): Satu ovum disenyawakan oleh satu sperma membentuk satu zigot -> Semasa peringkat awal pembahagian sel, embrio terbahagi kepada dua jisim sel berasingan -> Berkongsi satu plasenta yang sama tetapi mempunyai kantung amnion berasingan -> Jantina, rupa paras dan kandungan genetik (DNA) adalah 100% SEIRAS.",
+          "Kembar Tak Seiras (Dizigot): Dua ovum berasingan dibebaskan serentak semasa ovulasi dan disenyawakan oleh dua sperma yang berbeza -> Membentuk dua zigot berbeza -> Mempunyai plasenta dan kantung amnion berasingan -> Jantina boleh sama atau berbeza, kandungan genetik adalah berbeza seperti adik-beradik biasa.",
+          "Kembar Siam: Terjadi apabila pembahagian embrio kembar seiras tidak berlaku secara lengkap; Bayi dilahirkan bercantum pada bahagian tubuh tertentu (cth kepala, dada atau punggung) dan mungkin berkongsi organ dalaman vital."
+        ],
+        "explanation": "Kembar seiras mempunyai cap jari yang berbeza sedikit kerana pembentukan rabung kulit dipengaruhi oleh tekanan bendalir amnion dalam uterus."
+      },
+      {
+        "subtopic": "15.6 Isu Kesihatan Berkaitan Sistem Pembiakan Manusia",
+        "summary": "Punca kemandulan lelaki dan wanita, teknologi pembiakan berbantu (ART), dan kaedah pencegahan kehamilan.",
+        "verbatim": [
+          "Punca Kemandulan Lelaki: Bilangan sperma rendah (oligospermia), kualiti atau motiliti sperma lemah, salur vas deferens tersumbat, disfungsi ereksi, ketidakseimbangan hormon.",
+          "Punca Kemandulan Wanita: Tiub Falopio tersumbat, kegagalan ovari menghasilkan ovum matang, endometriosis (pertumbuhan tisu endometrium di luar uterus), fibroid uterus.",
+          "Teknologi Pembiakan Berbantu (ART):",
+          "- Persenyawaan In Vitro (IVF / Bayi Tabung Uji): Ovum dan sperma disenyawakan di luar badan di dalam piring kultur kaca; Embrio yang terbentuk dipindahkan ke dalam uterus ibu.",
+          "- Suntikan Sperma Intrasitoplasma (ICSI): Satu sperma terpilih disuntik terus ke dalam sitoplasma oosit sekunder di makmal.",
+          "- Rawatan Hormon: Suntikan hormon gonadotropin merangsang ovulasi pada wanita yang sukar menghasilkan ovum.",
+          "Kaedah Kontrasepsi (Pencegahan Kehamilan): Pil pencegah hamil (kombinasi hormon merencat ovulasi), Kondom (halang sperma masuk faraj dan cegah STD), Alat Kontraseptif Dalam Urah / IUCD (halang penempelan blastosista), Vasektomi (memotong dan mengikat vas deferens lelaki), Ligasi (memotong dan mengikat tiub Falopio wanita)."
+        ],
+        "explanation": "Vasektomi tidak menjejaskan kejantanan atau penghasilan hormon testosteron kerana testis terus berfungsi normal, cuma semen tidak lagi mengandungi sperma."
+      },
+      {
+        "subtopic": "15.7 Pertumbuhan dalam Manusia dan Haiwan",
+        "summary": "Parameter ukuran pertumbuhan organisma, bentuk graf pertumbuhan sigmoid organisma multisel, serta graf pertumbuhan berperingkat tangga pada serangga berangka luar.",
+        "verbatim": [
+          "Maksud Pertumbuhan: Proses kekal dan tidak berbalik yang melibatkan pertambahan saiz, jisim kering, bilangan sel dan pembezaan sel organisma.",
+          "Parameter Pertumbuhan: Ketinggian/Panjang, Jisim Segar (mudah diukur tetapi berubah mengikut kandungan air), Jisim Kering (jisim sebenar organisma tanpa kandungan air, paling tepat tetapi organisma mesti dimatikan dan dikeringkan dalam ketuhar).",
+          "Lengkung Pertumbuhan Sigmoid (Bentuk 'S' pada Manusia & Tumbuhan):",
+          "1. Fasa Permulaan (Lag): Kadar pertumbuhan rendah kerana sel sedang menyesuaikan diri;",
+          "2. Fasa Eksponen (Log): Kadar pertumbuhan paling pantas akibat pembahagian sel mitosis yang aktif;",
+          "3. Fasa Pertumbuhan Perlahan: Kadar pertumbuhan menurun kerana sel mencapai kematangan;",
+          "4. Fasa Matang (Plato): Kadar pertumbuhan sifar, saiz badan malar (kadar pembahagian sel sama dengan kadar kematian sel);",
+          "5. Fasa Penuaan: Kadar kemerosotan sel melebihi penggantian sel;",
+          "6. Fasa Kematian: Organisma mati.",
+          "Lengkung Pertumbuhan Berperingkat (Bentuk Tangga pada Serangga / Arthropoda):",
+          "- Rangka luar kitin yang keras dan tidak kenyal menghalang pertumbuhan berterusan.",
+          "- Pertumbuhan hanya berlaku semasa proses Ekdisis (salin kulit): Serangga menyedut udara mengembangkan badan untuk memecahkan rangka luar lama; Badan membesar dengan cepat sebelum rangka luar baharu mengeras.",
+          "- Bahagian menegak tangga mewakili pertumbuhan pantas semasa ekdisis; Bahagian mendatar tangga mewakili tempoh instars (pertumbuhan saiz terhenti apabila rangka luar telah mengeras)."
+        ],
+        "explanation": "Metamorfosis lengkap melibatkan empat fasa (telur -> larva -> pupa -> dewasa cth rama-rama), manakala metamorfosis tidak lengkap melibatkan tiga fasa (telur -> nimfa -> dewasa cth belalang)."
       }
     ],
     "steps": [

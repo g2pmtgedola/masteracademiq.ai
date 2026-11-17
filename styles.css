@@ -2854,3 +2854,102 @@ body.theme-biologi .character-frame {
   transform: translateY(-2px);
 }
 
+/* ==========================================================================
+   TINGKATAN 4 & 5 SWITCHER STYLES
+   ========================================================================== */
+.portal-form-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(4, 18, 45, 0.75);
+  border: 1.5px solid rgba(0, 242, 254, 0.35);
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+  margin: 0 auto 1.8rem;
+  backdrop-filter: blur(10px);
+}
+
+.p-form-btn {
+  background: transparent;
+  border: none;
+  color: #8da4c4;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 0.45rem 1.3rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.p-form-btn:hover {
+  color: #ffffff;
+}
+
+.p-form-btn.active {
+  background: linear-gradient(135deg, var(--cyan-neon) 0%, #0099ff 100%);
+  color: #071329;
+  font-weight: 800;
+  box-shadow: 0 0 18px rgba(0, 242, 254, 0.55);
+}
+
+.form-toggle-pill {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(0, 242, 254, 0.08);
+  border: 1.5px solid rgba(0, 242, 254, 0.32);
+  border-radius: 999px;
+  padding: 2px;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+}
+
+.btn-form-pill {
+  background: transparent;
+  border: none;
+  color: #8da4c4;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-form-pill:hover {
+  color: #ffffff;
+}
+
+.btn-form-pill.active {
+  background: var(--cyan-neon);
+  color: #071329;
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.5);
+}
+
+.panduan-koreksi {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.12);
+  border-left: 3px solid #60a5fa;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+}
+
+.markah-badge {
+  display: inline-block;
+  background: rgba(234, 179, 8, 0.2);
+  color: #facc15;
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-left: 0.5rem;
+}
+
+
