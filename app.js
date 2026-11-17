@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       portalSelectedForm = currentForm;
     }
     const savedSubject = localStorage.getItem("academiq_subject");
-    if (savedSubject && ["sejarah", "sains", "matematik", "kimia", "fizik", "biologi"].includes(savedSubject)) {
+    if (savedSubject && ["sejarah", "sains", "matematik", "kimia", "fizik", "biologi", "perakaunan", "ekonomi"].includes(savedSubject)) {
       setForm(currentForm, false);
       setSubject(savedSubject, false);
       closeSubjectPortal();
@@ -106,7 +106,7 @@ function renderPortalCards(form) {
             <span class="shc-pill">🎯 50+ Kuiz & SPM Struktur</span>
           </div>
           <button class="shc-btn btn-history-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('sejarah', 5)">
-            <span>Masuk Kelas Sejarah T5</span>
+            <span>Masuk Kelas Sejarah</span>
             <span class="btn-arrow">➔</span>
           </button>
         </div>
@@ -133,7 +133,7 @@ function renderPortalCards(form) {
             <span class="shc-pill">🎯 45+ Kuiz & Kertas 2</span>
           </div>
           <button class="shc-btn btn-science-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('sains', 5)">
-            <span>Masuk Makmal Sains T5</span>
+            <span>Masuk Makmal Sains</span>
             <span class="btn-arrow">➔</span>
           </button>
         </div>
@@ -160,7 +160,7 @@ function renderPortalCards(form) {
             <span class="shc-pill">🎯 40+ Kuiz & Kertas 2</span>
           </div>
           <button class="shc-btn btn-math-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('matematik', 5)">
-            <span>Masuk Kelas Matematik T5</span>
+            <span>Masuk Kelas Matematik</span>
             <span class="btn-arrow">➔</span>
           </button>
         </div>
@@ -187,7 +187,7 @@ function renderPortalCards(form) {
             <span class="shc-pill">🎯 35+ Kuiz & SPM Struktur</span>
           </div>
           <button class="shc-btn btn-chemistry-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('kimia', 5)">
-            <span>Masuk Makmal Kimia T5</span>
+            <span>Masuk Makmal Kimia</span>
             <span class="btn-arrow">➔</span>
           </button>
         </div>
@@ -214,7 +214,7 @@ function renderPortalCards(form) {
             <span class="shc-pill">🎯 40+ Kuiz & SPM Struktur</span>
           </div>
           <button class="shc-btn btn-physics-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('fizik', 5)">
-            <span>Masuk Makmal Fizik T5</span>
+            <span>Masuk Makmal Fizik</span>
             <span class="btn-arrow">➔</span>
           </button>
         </div>
@@ -241,7 +241,61 @@ function renderPortalCards(form) {
             <span class="shc-pill">🎯 65+ Kuiz & SPM Struktur</span>
           </div>
           <button class="shc-btn btn-biology-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('biologi', 5)">
-            <span>Masuk Makmal Biologi T5</span>
+            <span>Masuk Makmal Biologi</span>
+            <span class="btn-arrow">➔</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- KAD 7: PRINSIP PERAKAUNAN TINGKATAN 5 -->
+      <div class="subject-hero-card card-perakaunan" onclick="selectSubjectAndEnter('perakaunan', 5)">
+        <div class="shc-glow"></div>
+        <div class="shc-badge badge-perakaunan">💼 SILIBUS KSSM TINGKATAN 5</div>
+        <div class="shc-avatar-wrap">
+          <img src="assets/hero-accounting-tutor.png" alt="Tutor Perakaunan 3D" class="shc-avatar-img" />
+          <div class="shc-mini-floats">
+            <span class="sm-float sf-1">📊</span>
+            <span class="sm-float sf-2">TPM</span>
+            <span class="sm-float sf-3">RM</span>
+          </div>
+        </div>
+        <div class="shc-body">
+          <h2 class="shc-title">PRINSIP PERAKAUNAN TINGKATAN 5</h2>
+          <p class="shc-summary">Analisis Nisbah Kewangan (Keberuntungan, Kecairan, Kecekapan), Rekod Tak Lengkap (Kaedah Perbandingan & Analisis), Kawalan Tunai & Belanjawan Tunai, Penyata Penyesuaian Bank, Perkongsian & Realisasi, Syarikat Berhad Menurut Syer, Kelab & Persatuan, serta Perakaunan Kos & Titik Pulang Modal (TPM).</p>
+          <div class="shc-features">
+            <span class="shc-pill">💼 7 Modul & 24 Subtopik</span>
+            <span class="shc-pill">📐 Jalan Kerja Pengiraan Lengkap</span>
+            <span class="shc-pill">🎯 35+ Kuiz & Kertas 2 Berskema</span>
+          </div>
+          <button class="shc-btn btn-accounting-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('perakaunan', 5)">
+            <span>Masuk Kelas Perakaunan</span>
+            <span class="btn-arrow">➔</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- KAD 8: EKONOMI TINGKATAN 5 -->
+      <div class="subject-hero-card card-ekonomi" onclick="selectSubjectAndEnter('ekonomi', 5)">
+        <div class="shc-glow"></div>
+        <div class="shc-badge badge-ekonomi">📊 SILIBUS KSSM TINGKATAN 5</div>
+        <div class="shc-avatar-wrap">
+          <img src="assets/hero-economics-tutor.png" alt="Tutor Ekonomi 3D" class="shc-avatar-img" />
+          <div class="shc-mini-floats">
+            <span class="sm-float sf-1">📈</span>
+            <span class="sm-float sf-2">IHP</span>
+            <span class="sm-float sf-3">KPA</span>
+          </div>
+        </div>
+        <div class="shc-body">
+          <h2 class="shc-title">EKONOMI TINGKATAN 5</h2>
+          <p class="shc-summary">Peranan Kerajaan dalam Ekonomi, Objektif Makroekonomi, Pengiraan Kadar Inflasi berasaskan IHP, Pengiraan Tenaga Buruh & Kadar Pengangguran, Dasar Fiskal & Kewangan, Globalisasi, Sekatan Perdagangan, Pengiraan Imbangan Akaun Semasa, serta Pengiraan Kadar Pertukaran Asing.</p>
+          <div class="shc-features">
+            <span class="shc-pill">📊 2 Bab & 7 Subtopik</span>
+            <span class="shc-pill">💡 Analisis Makro & Pengiraan</span>
+            <span class="shc-pill">🎯 20+ Kuiz & SPM Struktur</span>
+          </div>
+          <button class="shc-btn btn-economics-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('ekonomi', 5)">
+            <span>Masuk Kelas Ekonomi</span>
             <span class="btn-arrow">➔</span>
           </button>
         </div>
@@ -411,6 +465,60 @@ function renderPortalCards(form) {
           </button>
         </div>
       </div>
+
+      <!-- KAD 7: PRINSIP PERAKAUNAN TINGKATAN 4 -->
+      <div class="subject-hero-card card-perakaunan" onclick="selectSubjectAndEnter('perakaunan', 4)">
+        <div class="shc-glow"></div>
+        <div class="shc-badge badge-perakaunan">💼 SILIBUS KSSM TINGKATAN 4</div>
+        <div class="shc-avatar-wrap">
+          <img src="assets/hero-accounting-tutor.png" alt="Tutor Perakaunan 3D" class="shc-avatar-img" />
+          <div class="shc-mini-floats">
+            <span class="sm-float sf-1">A=L+EP</span>
+            <span class="sm-float sf-2">DR/CR</span>
+            <span class="sm-float sf-3">RM</span>
+          </div>
+        </div>
+        <div class="shc-body">
+          <h2 class="shc-title">PRINSIP PERAKAUNAN TINGKATAN 4</h2>
+          <p class="shc-summary">Pengenalan Perakaunan & Kitaran, Persamaan Perakaunan, Dokumen Sumber, Buku Catatan Pertama (Jurnal Am/Khas & Panjar Tunai Runcit), Lejar & Catatan Bergu, Akaun Kawalan, Imbangan Duga, Penyata Kewangan Tanpa Pelarasan, Pelarasan Tarikh Imbangan (Akruan, PHR & Susut Nilai), serta Pembetulan Kesilapan.</p>
+          <div class="shc-features">
+            <span class="shc-pill">💼 9 Modul & 37 Subtopik</span>
+            <span class="shc-pill">📐 Jalan Kerja Pengiraan Lengkap</span>
+            <span class="shc-pill">🎯 45+ Kuiz & Kertas 2 Berskema</span>
+          </div>
+          <button class="shc-btn btn-accounting-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('perakaunan', 4)">
+            <span>Masuk Kelas Perakaunan T4</span>
+            <span class="btn-arrow">➔</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- KAD 8: EKONOMI TINGKATAN 4 -->
+      <div class="subject-hero-card card-ekonomi" onclick="selectSubjectAndEnter('ekonomi', 4)">
+        <div class="shc-glow"></div>
+        <div class="shc-badge badge-ekonomi">📊 SILIBUS KSSM TINGKATAN 4</div>
+        <div class="shc-avatar-wrap">
+          <img src="assets/hero-economics-tutor.png" alt="Tutor Ekonomi 3D" class="shc-avatar-img" />
+          <div class="shc-mini-floats">
+            <span class="sm-float sf-1">KKP</span>
+            <span class="sm-float sf-2">Ed</span>
+            <span class="sm-float sf-3">Qd=Qs</span>
+          </div>
+        </div>
+        <div class="shc-body">
+          <h2 class="shc-title">EKONOMI TINGKATAN 4</h2>
+          <p class="shc-summary">Konsep Kekurangan, Pilihan & Kos Lepas KKP, Sistem Ekonomi, Keseimbangan Pasaran (Qd = Qs), Pengiraan Keanjalan Harga Permintaan & Penawaran, Wang & Bank Pusat, Pengiraan Lengkap Pendapatan Boleh Guna (KWSP, SOCSO, Cukai & Zakat), serta Pengiraan Kos Pengeluaran (TC, AC, MC) & Untung Maksimum.</p>
+          <div class="shc-features">
+            <span class="shc-pill">📊 4 Bab & 9 Subtopik</span>
+            <span class="shc-pill">💡 Pengiraan Keanjalan & Kos</span>
+            <span class="shc-pill">🎯 30+ Kuiz & Kertas 2 Berskema</span>
+          </div>
+          <button class="shc-btn btn-economics-enter" onclick="event.stopPropagation(); selectSubjectAndEnter('ekonomi', 4)">
+            <span>Masuk Kelas Ekonomi T4</span>
+            <span class="btn-arrow">➔</span>
+          </button>
+        </div>
+      </div>
     `;
   }
 }
@@ -464,6 +572,8 @@ function setDefaultChapterId() {
     else if (currentSubject === "kimia") currentBabId = "kimia5-bab1";
     else if (currentSubject === "fizik") currentBabId = "fizik5-bab1";
     else if (currentSubject === "biologi") currentBabId = "bio5-bab1";
+    else if (currentSubject === "perakaunan") currentBabId = "akaun5-bab1";
+    else if (currentSubject === "ekonomi") currentBabId = "eko5-bab1";
   } else {
     if (currentSubject === "sejarah") currentBabId = "bab1";
     else if (currentSubject === "sains") currentBabId = "sains-bab1";
@@ -471,6 +581,8 @@ function setDefaultChapterId() {
     else if (currentSubject === "kimia") currentBabId = "kimia-bab1";
     else if (currentSubject === "fizik") currentBabId = "fizik-bab1";
     else if (currentSubject === "biologi") currentBabId = "bio-bab1";
+    else if (currentSubject === "perakaunan") currentBabId = "akaun-bab1";
+    else if (currentSubject === "ekonomi") currentBabId = "eko-bab1";
   }
 }
 
@@ -518,7 +630,9 @@ function setSubject(subject, triggerAnimation = true) {
     matematik: "📐",
     kimia: "⚗️",
     fizik: "🔭",
-    biologi: "🧬"
+    biologi: "🧬",
+    perakaunan: "💼",
+    ekonomi: "📊"
   };
 
   if (switchIcon) switchIcon.textContent = iconMap[currentSubject] || "📘";
@@ -887,6 +1001,113 @@ function updateHeroSectionUI() {
         `;
       }
     }
+  } else if (currentSubject === "perakaunan") {
+    // Subject: PRINSIP PERAKAUNAN
+    if (heroSubjectSpan) heroSubjectSpan.textContent = "Accounting";
+    if (heroSubtitle) heroSubtitle.textContent = currentForm === 5 ? "Kuasai Analisis Nisbah, Rekod Tak Lengkap, Belanjawan Tunai, Perkongsian & TPM • 7 Modul Lengkap Tingkatan 5 KSSM" : "Kuasai Catatan Bergu, Lejar, Imbangan Duga, Penyata Kewangan & Pelarasan • 9 Modul Lengkap Tingkatan 4 KSSM";
+    if (heroCharImg) {
+      heroCharImg.src = "assets/hero-accounting-tutor.png";
+      heroCharImg.alt = "Tutor Perakaunan 3D";
+    }
+    if (fallbackEmoji) fallbackEmoji.textContent = "🧑‍💼📊💰";
+    if (fallbackCaption) fallbackCaption.textContent = `Mod Prinsip Perakaunan Tingkatan ${currentForm} Aktif`;
+    if (ribbonEyebrow) ribbonEyebrow.textContent = `SILIBUS LENGKAP PRINSIP PERAKAUNAN TINGKATAN ${currentForm} KSSM`;
+    if (ribbonTitle) ribbonTitle.textContent = `Pilih Modul Perakaunan Pembelajaran Anda (Fokus Jalan Kerja Pengiraan Lengkap)`;
+    if (guideStep1P) guideStep1P.textContent = currentForm === 5 ? "Pilih daripada 7 Modul Prinsip Perakaunan Tingkatan 5 dengan fokus jalan kerja pengiraan nisbah & kos" : "Pilih daripada 9 Modul Prinsip Perakaunan Tingkatan 4 dengan fokus persamaan & pelarasan";
+    if (viewNotaDesc) viewNotaDesc.innerHTML = "Setiap nota di bawah merangkumi jalan kerja pengiraan lengkap, format lejar/penyata, dan prinsip catatan bergu KSSM.";
+
+    // Floating Neon Accounting Symbols
+    if (symbolsContainer) {
+      if (currentForm === 5) {
+        symbolsContainer.innerHTML = `
+          <div class="floating-symbol sym-1" title="Persamaan Titik Pulang Modal">TPM</div>
+          <div class="floating-symbol sym-2" title="Nisbah Semasa & Ujian Asid">Nisbah</div>
+          <div class="floating-symbol sym-3" title="Belanjawan Tunai">Tunai</div>
+          <div class="floating-symbol sym-4" title="Perkongsian & Realisasi">Kongsi</div>
+          <div class="floating-symbol sym-5" title="Syer Syarikat Berhad">Dividen</div>
+          <div class="floating-symbol sym-6" title="Kos Pengeluaran & Prima">Kos</div>
+        `;
+      } else {
+        symbolsContainer.innerHTML = `
+          <div class="floating-symbol sym-1" title="Persamaan Perakaunan: Aset = Liabiliti + Ekuiti">A=L+EP</div>
+          <div class="floating-symbol sym-2" title="Catatan Bergu: Debit & Kredit">DR/CR</div>
+          <div class="floating-symbol sym-3" title="Ringgit Malaysia">RM</div>
+          <div class="floating-symbol sym-4" title="Imbangan Duga">Baki</div>
+          <div class="floating-symbol sym-5" title="Untung Kasar & Untung Bersih">Untung</div>
+          <div class="floating-symbol sym-6" title="Susut Nilai & Hutang Ragu">Pelarasan</div>
+        `;
+      }
+    }
+
+    // Mini Book Stack for Perakaunan
+    if (bookStackContainer) {
+      if (currentForm === 5) {
+        bookStackContainer.innerHTML = `
+          <div class="book-spine book-yellow" onclick="selectChapterAndScroll('akaun5-bab1')">📊 Modul 10: Analisis Nisbah</div>
+          <div class="book-spine book-green" onclick="selectChapterAndScroll('akaun5-bab4')">🤝 Modul 13: Perkongsian</div>
+          <div class="book-spine book-purple" onclick="selectChapterAndScroll('akaun5-bab7')">🏭 Modul 16: Perakaunan Kos</div>
+        `;
+      } else {
+        bookStackContainer.innerHTML = `
+          <div class="book-spine book-yellow" onclick="selectChapterAndScroll('akaun-bab2')">⚖️ Modul 2: Persamaan Akaun</div>
+          <div class="book-spine book-blue" onclick="selectChapterAndScroll('akaun-bab5')">📑 Modul 5: Lejar & Catatan Bergu</div>
+          <div class="book-spine book-green" onclick="selectChapterAndScroll('akaun-bab8')">🔍 Modul 8: Pelarasan & Penyata</div>
+        `;
+      }
+    }
+  } else if (currentSubject === "ekonomi") {
+    // Subject: EKONOMI
+    if (heroSubjectSpan) heroSubjectSpan.textContent = "Economics";
+    if (heroSubtitle) heroSubtitle.textContent = currentForm === 5 ? "Kuasai Dasar Fiskal, Dasar Kewangan, Inflasi, Imbangan Pembayaran & KPA • 2 Bab Lengkap Tingkatan 5 KSSM" : "Kuasai Konsep Kekurangan, Keseimbangan Pasaran, Keanjalan Harga, Yd & Kos Pengeluaran • 4 Bab Lengkap Tingkatan 4 KSSM";
+    if (heroCharImg) {
+      heroCharImg.src = "assets/hero-economics-tutor.png";
+      heroCharImg.alt = "Tutor Ekonomi 3D";
+    }
+    if (fallbackEmoji) fallbackEmoji.textContent = "👨‍💼📈🌐";
+    if (fallbackCaption) fallbackCaption.textContent = `Mod Ekonomi Tingkatan ${currentForm} Aktif`;
+    if (ribbonEyebrow) ribbonEyebrow.textContent = `SILIBUS LENGKAP EKONOMI TINGKATAN ${currentForm} KSSM`;
+    if (ribbonTitle) ribbonTitle.textContent = `Pilih Bab Ekonomi Pembelajaran Anda (Fokus Jalan Kerja Pengiraan Lengkap)`;
+    if (guideStep1P) guideStep1P.textContent = currentForm === 5 ? "Pilih daripada 2 Bab Ekonomi Tingkatan 5 dengan fokus jalan kerja pengiraan makroekonomi & kadar pertukaran asing" : "Pilih daripada 4 Bab Ekonomi Tingkatan 4 dengan fokus jalan kerja pengiraan keanjalan & kos pengeluaran";
+    if (viewNotaDesc) viewNotaDesc.innerHTML = "Setiap nota di bawah merangkumi jalan kerja pengiraan lengkap, formula kuantitatif, jadual dan analisis ekonomi KSSM.";
+
+    // Floating Neon Economics Symbols
+    if (symbolsContainer) {
+      if (currentForm === 5) {
+        symbolsContainer.innerHTML = `
+          <div class="floating-symbol sym-1" title="Kadar Inflasi IHP">IHP</div>
+          <div class="floating-symbol sym-2" title="Kadar Pertumbuhan Ekonomi">KDNK</div>
+          <div class="floating-symbol sym-3" title="Kadar Pengangguran & Buruh">Guna Tenaga</div>
+          <div class="floating-symbol sym-4" title="Dasar Fiskal & Kewangan">OPR/SRR</div>
+          <div class="floating-symbol sym-5" title="Kadar Pertukaran Asing">KPA</div>
+          <div class="floating-symbol sym-6" title="Akaun Semasa & Imbangan Dagangan">Akaun Semasa</div>
+        `;
+      } else {
+        symbolsContainer.innerHTML = `
+          <div class="floating-symbol sym-1" title="Keluk Kemungkinan Pengeluaran">KKP</div>
+          <div class="floating-symbol sym-2" title="Keseimbangan Pasaran: Permintaan = Penawaran">Qd=Qs</div>
+          <div class="floating-symbol sym-3" title="Keanjalan Harga Permintaan">Ed</div>
+          <div class="floating-symbol sym-4" title="Pendapatan Boleh Guna">Yd</div>
+          <div class="floating-symbol sym-5" title="Jumlah Kos & Kos Purata">TC/AC</div>
+          <div class="floating-symbol sym-6" title="Kos Sut & Hasil Sut">MC=MR</div>
+        `;
+      }
+    }
+
+    // Mini Book Stack for Ekonomi
+    if (bookStackContainer) {
+      if (currentForm === 5) {
+        bookStackContainer.innerHTML = `
+          <div class="book-spine book-blue" onclick="selectChapterAndScroll('eko5-bab1')">🏛️ Bab 1: Ekonomi & Kerajaan</div>
+          <div class="book-spine book-purple" onclick="selectChapterAndScroll('eko5-bab2')">🌐 Bab 2: Malaysia & Ekonomi Global</div>
+        `;
+      } else {
+        bookStackContainer.innerHTML = `
+          <div class="book-spine book-blue" onclick="selectChapterAndScroll('eko-bab1')">📉 Bab 1: Kekurangan & KKP</div>
+          <div class="book-spine book-green" onclick="selectChapterAndScroll('eko-bab2')">⚖️ Bab 2: Keseimbangan & Keanjalan</div>
+          <div class="book-spine book-purple" onclick="selectChapterAndScroll('eko-bab4')">🏭 Bab 4: Kos & Hasil Pengeluaran</div>
+        `;
+      }
+    }
   }
 }
 
@@ -911,6 +1132,8 @@ function getActiveSubjectData() {
     if (currentSubject === "kimia") return (typeof KIMIA_T5_DATA !== "undefined" ? KIMIA_T5_DATA : []);
     if (currentSubject === "fizik") return (typeof FIZIK_T5_DATA !== "undefined" ? FIZIK_T5_DATA : []);
     if (currentSubject === "biologi") return (typeof BIOLOGI_T5_DATA !== "undefined" ? BIOLOGI_T5_DATA : []);
+    if (currentSubject === "perakaunan") return (typeof PERAKAUNAN_T5_DATA !== "undefined" ? PERAKAUNAN_T5_DATA : []);
+    if (currentSubject === "ekonomi") return (typeof EKONOMI_T5_DATA !== "undefined" ? EKONOMI_T5_DATA : []);
     return (typeof SEJARAH_T5_DATA !== "undefined" ? SEJARAH_T5_DATA : []);
   } else {
     if (currentSubject === "sains") return (typeof SAINS_DATA !== "undefined" ? SAINS_DATA : []);
@@ -918,6 +1141,8 @@ function getActiveSubjectData() {
     if (currentSubject === "kimia") return (typeof KIMIA_DATA !== "undefined" ? KIMIA_DATA : []);
     if (currentSubject === "fizik") return (typeof FIZIK_DATA !== "undefined" ? FIZIK_DATA : []);
     if (currentSubject === "biologi") return (typeof BIOLOGI_DATA !== "undefined" ? BIOLOGI_DATA : []);
+    if (currentSubject === "perakaunan") return (typeof PERAKAUNAN_DATA !== "undefined" ? PERAKAUNAN_DATA : []);
+    if (currentSubject === "ekonomi") return (typeof EKONOMI_DATA !== "undefined" ? EKONOMI_DATA : []);
     return (typeof SEJARAH_DATA !== "undefined" ? SEJARAH_DATA : []);
   }
 }
@@ -1847,6 +2072,16 @@ function getSubjectTutorInfo() {
       name: `Tutor AI Biologi T${currentForm}`,
       avatar: "assets/hero-biology-tutor.png",
       subjectDisplayName: `Biologi Tingkatan ${currentForm} KSSM`
+    },
+    perakaunan: {
+      name: `Tutor AI Perakaunan T${currentForm}`,
+      avatar: "assets/hero-accounting-tutor.png",
+      subjectDisplayName: `Prinsip Perakaunan Tingkatan ${currentForm} KSSM`
+    },
+    ekonomi: {
+      name: `Tutor AI Ekonomi T${currentForm}`,
+      avatar: "assets/hero-economics-tutor.png",
+      subjectDisplayName: `Ekonomi Tingkatan ${currentForm} KSSM`
     }
   };
   return map[currentSubject] || map.sejarah;

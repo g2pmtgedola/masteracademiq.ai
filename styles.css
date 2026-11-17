@@ -1753,7 +1753,7 @@ body {
 }
 
 .portal-container {
-  max-width: 1280px;
+  max-width: 1440px;
   width: 100%;
   margin: auto;
   text-align: center;
@@ -1817,11 +1817,11 @@ body {
   line-height: 1.55;
 }
 
-/* Enam Kad Subjek */
+/* Lapan Kad Subjek (4 Kolum x 2 Baris) */
 .subject-cards-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
   text-align: left;
   align-items: stretch;
 }
@@ -1908,6 +1908,26 @@ body {
   box-shadow: 0 28px 65px rgba(0, 0, 0, 0.65), 0 0 35px rgba(16, 185, 129, 0.45);
 }
 
+.card-perakaunan {
+  background: linear-gradient(160deg, rgba(6, 44, 34, 0.92) 0%, rgba(3, 24, 18, 0.96) 100%);
+  border-color: rgba(245, 158, 11, 0.55);
+}
+
+.card-perakaunan:hover {
+  border-color: #fbbf24;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.65), 0 0 35px rgba(251, 191, 36, 0.45);
+}
+
+.card-ekonomi {
+  background: linear-gradient(160deg, rgba(30, 27, 75, 0.92) 0%, rgba(15, 12, 45, 0.96) 100%);
+  border-color: rgba(129, 140, 248, 0.55);
+}
+
+.card-ekonomi:hover {
+  border-color: #818cf8;
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.65), 0 0 35px rgba(129, 140, 248, 0.45);
+}
+
 .shc-badge {
   display: inline-flex;
   align-items: center;
@@ -1966,6 +1986,18 @@ body {
   color: #a7f3d0;
 }
 
+.badge-perakaunan {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: #f59e0b;
+  color: #fde68a;
+}
+
+.badge-ekonomi {
+  background: rgba(129, 140, 248, 0.2);
+  border-color: #818cf8;
+  color: #c7d2fe;
+}
+
 .shc-avatar-wrap {
   position: relative;
   width: 100%;
@@ -2000,6 +2032,14 @@ body {
 
 .card-biologi .shc-avatar-wrap {
   background: radial-gradient(circle at 50% 30%, #064e3b, #022c22);
+}
+
+.card-perakaunan .shc-avatar-wrap {
+  background: radial-gradient(circle at 50% 30%, #064e3b, #032016);
+}
+
+.card-ekonomi .shc-avatar-wrap {
+  background: radial-gradient(circle at 50% 30%, #1e1b4b, #0f0c2d);
 }
 
 .shc-avatar-img {
@@ -2047,38 +2087,37 @@ body {
 }
 
 .shc-title {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 800;
   color: #ffffff;
   line-height: 1.25;
   margin-bottom: 0.55rem;
-  min-height: 3.3rem;
-  height: 3.3rem;
+  min-height: 2.9rem;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
+  word-break: normal;
 }
 
 .shc-summary {
   font-size: 0.81rem;
   color: var(--text-muted);
   line-height: 1.48;
-  margin-bottom: 1rem;
-  min-height: 7.5rem;
-  height: 7.5rem;
+  margin-bottom: 0.9rem;
+  min-height: 4.8rem;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  flex-shrink: 0;
+  flex: 1 1 auto;
 }
 
 .shc-features {
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  margin-bottom: 1.15rem;
-  min-height: 6.8rem;
+  margin-bottom: 1.1rem;
+  min-height: 5.6rem;
   flex-shrink: 0;
 }
 
@@ -2103,21 +2142,24 @@ body {
 .shc-btn {
   margin-top: auto;
   width: 100%;
-  padding: 0.82rem 1rem;
+  padding: 0.75rem 0.9rem;
   border-radius: 14px;
   border: none;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 800;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
   transition: var(--transition-smooth);
-  height: 46px;
+  min-height: 46px;
+  height: auto;
   flex-shrink: 0;
   box-sizing: border-box;
+  white-space: normal;
+  text-align: center;
 }
 
 .btn-history-enter {
@@ -2184,6 +2226,62 @@ body {
 .btn-biology-enter:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(16, 185, 129, 0.7);
+}
+
+.btn-accounting-enter {
+  background: linear-gradient(135deg, #d97706 0%, #059669 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.45);
+}
+
+.btn-accounting-enter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(217, 119, 6, 0.7);
+}
+
+.btn-economics-enter {
+  background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45);
+}
+
+.btn-economics-enter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(79, 70, 229, 0.7);
+}
+
+/* THEME ACCENTS FOR PERAKAUNAN */
+body.theme-perakaunan {
+  background: radial-gradient(circle at 50% 18%, #133a2a 0%, #0c241a 45%, #05140f 100%);
+}
+
+body.theme-perakaunan .hero-stage {
+  background:
+    radial-gradient(circle at 50% 25%, rgba(245, 158, 11, 0.22) 0%, transparent 60%),
+    radial-gradient(circle at 80% 65%, rgba(5, 150, 105, 0.2) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(8, 28, 20, 0.6) 0%, rgba(4, 15, 10, 0.95) 100%);
+}
+
+body.theme-perakaunan .active-chapter-hero {
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(245, 158, 11, 0.15);
+}
+
+/* THEME ACCENTS FOR EKONOMI */
+body.theme-ekonomi {
+  background: radial-gradient(circle at 50% 18%, #201c4e 0%, #131033 45%, #09071c 100%);
+}
+
+body.theme-ekonomi .hero-stage {
+  background:
+    radial-gradient(circle at 50% 25%, rgba(79, 70, 229, 0.25) 0%, transparent 60%),
+    radial-gradient(circle at 80% 65%, rgba(6, 182, 212, 0.2) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(16, 12, 38, 0.6) 0%, rgba(7, 5, 20, 0.95) 100%);
+}
+
+body.theme-ekonomi .active-chapter-hero {
+  border-color: rgba(129, 140, 248, 0.45);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(129, 140, 248, 0.15);
 }
 
 /* THEME ACCENTS FOR SAINS */
@@ -2291,19 +2389,13 @@ body.theme-biologi .character-frame {
   left: 0.45rem !important;
 }
 
-@media (max-width: 1550px) {
-  .subject-cards-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 980px) {
+@media (max-width: 1280px) {
   .subject-cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .subject-cards-grid {
     grid-template-columns: 1fr;
   }
